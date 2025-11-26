@@ -1,0 +1,92 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "SF Pro",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#FFFF00",
+    "accent": "#9CA3AF",
+    "background": "#F3F3F5",
+    "textPrimary": "#000000",
+    "link": "#9CA3AF"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "SF Pro",
+      "heading": "SF Pro"
+    },
+    "fontStacks": {
+      "heading": [
+        "SF-Pro"
+      ],
+      "body": [
+        "SF-Pro"
+      ],
+      "paragraph": [
+        "SF-Pro"
+      ]
+    },
+    "fontSizes": {
+      "h1": "48px",
+      "h2": "48px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "8px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "8px"
+    },
+    "buttonPrimary": {
+      "background": "#000000",
+      "textColor": "#FFFFFF",
+      "borderRadius": "8px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://www.zero2seventeen.com/_nuxt/logo.189acc67.svg",
+    "favicon": "https://www.zero2seventeen.com/favicon.ico",
+    "ogImage": null
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "The logo matches the brand name 'Zero2Seventeen' and is located in the header, making it the main brand logo.",
+    "confidence": 0.95
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "GET IT ONGoogle Play",
+      "reasoning": "Button #0 has action-oriented text 'GET IT ON Google Play' and is the only button with a vibrant color that stands out as a primary call-to-action."
+    },
+    "secondary": {
+      "index": 1,
+      "text": "Download on theApp Store",
+      "reasoning": "Button #1 has the same background color as Button #0, making it invalid as a secondary button. However, since both buttons are the same color, I will set secondaryButtonIndex to -1 as no valid secondary button exists."
+    },
+    "confidence": 0.9
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "young adults and tech-savvy users"
+  },
+  "designSystem": {
+    "framework": "tailwind",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.9,
+    "colors": 0.95,
+    "overall": 0.925
+  }
+}
