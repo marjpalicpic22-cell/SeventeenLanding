@@ -86,7 +86,7 @@ export default {
         sans: ["Urbanist", "var(--font-sans)"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
-        heading: ["Urbanist", "sans-serif"],
+        heading: ["var(--font-heading)"],
       },
       keyframes: {
         "accordion-down": {

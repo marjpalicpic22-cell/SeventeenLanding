@@ -17,7 +17,7 @@ export function OriginStory() {
             </div>
 
             <h2
-              className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground font-heading"
               data-testid="story-headline"
             >
               Where Our Story Begins
@@ -53,6 +53,7 @@ export function OriginStory() {
               src={storyImage}
               alt="Mother with child representing the Zero to Seventeen story"
               className="relative rounded-2xl shadow-xl w-full h-auto object-cover"
+              loading="lazy"
               data-testid="story-image"
             />
           </div>

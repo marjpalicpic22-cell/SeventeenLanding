@@ -14,14 +14,6 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-      setIsMobileMenuOpen(false);
-    }
-  };
-
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -43,27 +35,27 @@ export function Navigation() {
           </div>
 
           <div className="hidden md:flex items-center gap-8">
-            <button
-              onClick={() => scrollToSection("how-it-works")}
+            <a
+              href="#how-it-works"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-how-it-works"
             >
               How It Works
-            </button>
-            <button
-              onClick={() => scrollToSection("our-story")}
+            </a>
+            <a
+              href="#our-story"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-our-story"
             >
               Our Story
-            </button>
-            <button
-              onClick={() => scrollToSection("download")}
+            </a>
+            <a
+              href="#download"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-download"
             >
               Download
-            </button>
+            </a>
           </div>
 
           <div className="hidden md:flex items-center gap-3">
@@ -100,6 +92,8 @@ export function Navigation() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             data-testid="button-mobile-menu"
             aria-label="Toggle menu"
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMobileMenuOpen ? (
               <X className="h-6 w-6 text-foreground" />
@@ -112,31 +106,35 @@ export function Navigation() {
 
       {isMobileMenuOpen && (
         <div
+          id="mobile-menu"
           className="md:hidden bg-background border-b border-border"
           data-testid="mobile-menu"
         >
           <div className="px-4 py-4 space-y-3">
-            <button
-              onClick={() => scrollToSection("how-it-works")}
+            <a
+              href="#how-it-works"
+              onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-mobile-how-it-works"
             >
               How It Works
-            </button>
-            <button
-              onClick={() => scrollToSection("our-story")}
+            </a>
+            <a
+              href="#our-story"
+              onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-mobile-our-story"
             >
               Our Story
-            </button>
-            <button
-              onClick={() => scrollToSection("download")}
+            </a>
+            <a
+              href="#download"
+              onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-mobile-download"
             >
               Download
-            </button>
+            </a>
             <div className="pt-3 space-y-2">
               <a
                 href="https://play.google.com/store/apps/details?id=com.appetiser.zerotwoseventeen"

@@ -36,7 +36,7 @@ export function CommunityImpact() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground font-heading mb-4"
             data-testid="impact-headline"
           >
             Our Community Impact

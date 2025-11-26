@@ -56,28 +56,22 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <button
-                  onClick={() => {
-                    const element = document.getElementById("how-it-works");
-                    element?.scrollIntoView({ behavior: "smooth" });
-                  }}
+                <a
+                  href="#how-it-works"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   data-testid="link-footer-how-it-works"
                 >
                   How It Works
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => {
-                    const element = document.getElementById("our-story");
-                    element?.scrollIntoView({ behavior: "smooth" });
-                  }}
+                <a
+                  href="#our-story"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   data-testid="link-footer-our-story"
                 >
                   Our Story
-                </button>
+                </a>
               </li>
               <li>
                 <a
