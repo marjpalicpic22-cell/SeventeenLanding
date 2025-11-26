@@ -75,24 +75,6 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="/blog"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  data-testid="link-footer-blog"
-                >
-                  Resources
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/app"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  data-testid="link-footer-app"
-                >
-                  App
-                </a>
-              </li>
-              <li>
-                <a
                   href="mailto:support@zero2seventeen.com"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   data-testid="link-footer-contact"
