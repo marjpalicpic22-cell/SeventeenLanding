@@ -57,6 +57,13 @@ export function Navigation() {
               Resources
             </a>
             <a
+              href="/app"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              data-testid="link-app"
+            >
+              App
+            </a>
+            <a
               href="#download"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-download"
@@ -141,6 +148,14 @@ export function Navigation() {
               data-testid="link-mobile-blog"
             >
               Resources
+            </a>
+            <a
+              href="/app"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
+              data-testid="link-mobile-app"
+            >
+              App
             </a>
             <a
               href="#download"
