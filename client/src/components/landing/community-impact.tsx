@@ -1,5 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Package, Users, Leaf } from "lucide-react";
+import itemsImage from "@assets/stock_images/children_toys_boxes__35d377c1.jpg";
+import familiesImage from "@assets/stock_images/happy_families_mothe_da294cb8.jpg";
+import recyclingImage from "@assets/stock_images/recycling_environmen_cd2fce70.jpg";
 
 const stats = [
   {
@@ -7,21 +10,24 @@ const stats = [
     number: "10,000+",
     label: "Items Rehomed",
     description: "Giving children's items a second life",
-    testId: "stat-items-rehomed"
+    testId: "stat-items-rehomed",
+    image: itemsImage
   },
   {
     icon: Users,
     number: "5,000+",
     label: "Families Connected",
     description: "Building a caring community",
-    testId: "stat-families-connected"
+    testId: "stat-families-connected",
+    image: familiesImage
   },
   {
     icon: Leaf,
     number: "50+ Tons",
     label: "Waste Diverted",
     description: "Protecting our planet together",
-    testId: "stat-waste-diverted"
+    testId: "stat-waste-diverted",
+    image: recyclingImage
   }
 ];
 
@@ -55,13 +61,18 @@ export function CommunityImpact() {
             return (
               <Card
                 key={index}
-                className="hover-elevate transition-all duration-300 border-card-border bg-card"
+                className="hover-elevate transition-all duration-300 border-card-border bg-card overflow-hidden flex flex-col"
                 data-testid={stat.testId}
               >
-                <CardContent className="p-8 text-center space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto" data-testid={`${stat.testId}-icon`}>
-                    <Icon className="w-8 h-8 text-primary" />
-                  </div>
+                <div className="h-48 w-full overflow-hidden" data-testid={`${stat.testId}-image-container`}>
+                  <img
+                    src={stat.image}
+                    alt={stat.label}
+                    className="w-full h-full object-cover"
+                    data-testid={`${stat.testId}-image`}
+                  />
+                </div>
+                <CardContent className="p-8 text-center space-y-4 flex-1 flex flex-col justify-between">
                   <div className="space-y-2">
                     <div
                       className="text-4xl md:text-5xl font-bold text-primary"
@@ -75,13 +86,13 @@ export function CommunityImpact() {
                     >
                       {stat.label}
                     </div>
-                    <p
-                      className="text-sm text-muted-foreground"
-                      data-testid={`${stat.testId}-description`}
-                    >
-                      {stat.description}
-                    </p>
                   </div>
+                  <p
+                    className="text-sm text-muted-foreground"
+                    data-testid={`${stat.testId}-description`}
+                  >
+                    {stat.description}
+                  </p>
                 </CardContent>
               </Card>
             );
