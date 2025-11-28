@@ -21,31 +21,31 @@ export function Footer() {
                 href="https://www.instagram.com/zero2seventeen"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="transition-transform hover:scale-110"
                 aria-label="Instagram"
                 data-testid="link-instagram"
               >
-                <SiInstagram className="w-5 h-5" />
+                <SiInstagram className="w-5 h-5" style={{ color: "#E4405F" }} />
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61572776604472"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="transition-transform hover:scale-110"
                 aria-label="Facebook"
                 data-testid="link-facebook"
               >
-                <SiFacebook className="w-5 h-5" />
+                <SiFacebook className="w-5 h-5" style={{ color: "#1877F2" }} />
               </a>
               <a
                 href="https://www.tiktok.com/@zero2seventeen"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="transition-transform hover:scale-110"
                 aria-label="TikTok"
                 data-testid="link-tiktok"
               >
-                <SiTiktok className="w-5 h-5" />
+                <SiTiktok className="w-5 h-5" style={{ color: "#000000" }} />
               </a>
             </div>
           </div>
