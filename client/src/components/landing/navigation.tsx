@@ -50,11 +50,11 @@ export function Navigation() {
               Our Story
             </a>
             <a
-              href="/blog"
+              href="/community"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-blog"
+              data-testid="link-community"
             >
-              Blog
+              Community
             </a>
             <a
               href="/calculator"
@@ -142,12 +142,12 @@ export function Navigation() {
               Our Story
             </a>
             <a
-              href="/blog"
+              href="/community"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-mobile-blog"
+              data-testid="link-mobile-community"
             >
-              Blog
+              Community
             </a>
             <a
               href="/calculator"

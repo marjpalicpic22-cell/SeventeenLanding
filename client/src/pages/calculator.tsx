@@ -9,74 +9,65 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Leaf, TrendingDown } from "lucide-react";
 
 export default function EnvironmentalCalculator() {
-  const [transportation, setTransportation] = useState({
-    mode: "car",
-    distance: "",
-    frequency: "daily",
+  const [shopping, setShopping] = useState({
+    newItems: "",
+    secondHandItems: "",
   });
 
-  const [energy, setEnergy] = useState({
-    electricity: "",
-    gas: "",
-    renewable: "0",
+  const [donations, setDonations] = useState({
+    itemsDonated: "",
   });
 
-  const [diet, setDiet] = useState({
-    meatServings: "",
-    dairyServings: "",
+  const [recycling, setRecycling] = useState({
+    itemsRecycled: "",
   });
 
-  const calculateEmissions = () => {
-    let total = 0;
+  const calculateImpact = () => {
+    let totalItems = 0;
+    let wasteReduction = 0;
+    let carbonSaved = 0;
 
-    if (transportation.distance) {
-      const distance = parseFloat(transportation.distance);
-      const multiplier =
-        transportation.frequency === "daily"
-          ? 250
-          : transportation.frequency === "weekly"
-            ? 52
-            : 12;
-      const emissions =
-        transportation.mode === "car"
-          ? distance * 0.19
-          : transportation.mode === "bus"
-            ? distance * 0.05
-            : distance * 0.02;
-      total += emissions * multiplier;
+    if (shopping.newItems) {
+      totalItems += parseFloat(shopping.newItems);
     }
 
-    if (energy.electricity) {
-      total += parseFloat(energy.electricity) * 0.92 * 12;
+    if (shopping.secondHandItems) {
+      const secondHand = parseFloat(shopping.secondHandItems);
+      totalItems += secondHand;
+      wasteReduction += secondHand * 2.5;
+      carbonSaved += secondHand * 8;
     }
 
-    if (energy.gas) {
-      total += parseFloat(energy.gas) * 5.3;
+    if (donations.itemsDonated) {
+      const donated = parseFloat(donations.itemsDonated);
+      wasteReduction += donated * 3;
+      carbonSaved += donated * 12;
     }
 
-    if (diet.meatServings) {
-      total += parseFloat(diet.meatServings) * 6.6 * 52;
+    if (recycling.itemsRecycled) {
+      const recycled = parseFloat(recycling.itemsRecycled);
+      wasteReduction += recycled * 1.5;
+      carbonSaved += recycled * 5;
     }
 
-    if (diet.dairyServings) {
-      total += parseFloat(diet.dairyServings) * 1.3 * 52;
-    }
-
-    return Math.round(total);
+    return {
+      totalItems: Math.round(totalItems),
+      wasteReduction: Math.round(wasteReduction),
+      carbonSaved: Math.round(carbonSaved),
+    };
   };
 
-  const emissions = calculateEmissions();
-  const offset = Math.round(emissions * 0.1);
+  const impact = calculateImpact();
 
   const tips = [
-    "Use public transportation or carpool 2 days per week",
-    "Switch to renewable energy sources for your home",
-    "Reduce meat consumption by 2 servings per week",
-    "Plant trees (each tree offsets ~20kg CO₂/year)",
-    "Reduce flying - consider virtual meetings",
-    "Buy local and seasonal produce",
-    "Support carbon offset programs",
-    "Use energy-efficient appliances",
+    "Buy second-hand for gently used items - kids outgrow them quickly",
+    "Donate items your children have outgrown to other families",
+    "Recycle old clothing and worn items responsibly",
+    "Encourage friends to shop together and share purchases",
+    "Keep high-quality items in circulation through the community",
+    "Choose sustainable brands when buying new",
+    "Host clothing swap events with other mum friends",
+    "Teach your kids the value of reusing and sharing",
   ];
 
   return (
@@ -94,182 +85,144 @@ export default function EnvironmentalCalculator() {
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4" data-testid="text-calculator-title">
-            Carbon Footprint Calculator
+            Environmental Impact Calculator
           </h1>
           <p className="text-lg text-muted-foreground" data-testid="text-calculator-description">
-            Estimate your environmental impact and discover actionable ways to reduce it.
+            See how your shopping and sharing choices reduce waste and carbon emissions for future generations.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
-            <Tabs defaultValue="transportation" className="w-full">
+            <Tabs defaultValue="shopping" className="w-full">
               <TabsList className="grid w-full grid-cols-3">
-                <TabsTrigger value="transportation" data-testid="tab-transportation">
-                  Transportation
+                <TabsTrigger value="shopping" data-testid="tab-shopping">
+                  Shopping
                 </TabsTrigger>
-                <TabsTrigger value="energy" data-testid="tab-energy">
-                  Energy
+                <TabsTrigger value="donations" data-testid="tab-donations">
+                  Donations
                 </TabsTrigger>
-                <TabsTrigger value="diet" data-testid="tab-diet">
-                  Diet
+                <TabsTrigger value="recycling" data-testid="tab-recycling">
+                  Recycling
                 </TabsTrigger>
               </TabsList>
 
-              <TabsContent value="transportation" className="space-y-4 mt-6">
+              <TabsContent value="shopping" className="space-y-4 mt-6">
                 <Card className="p-6">
                   <div className="space-y-4">
                     <div>
-                      <Label htmlFor="transport-mode" data-testid="label-transport-mode">
-                        Transportation Mode
-                      </Label>
-                      <Select
-                        value={transportation.mode}
-                        onValueChange={(value) =>
-                          setTransportation({ ...transportation, mode: value })
-                        }
-                      >
-                        <SelectTrigger id="transport-mode" data-testid="select-transport-mode">
-                          <SelectValue />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="car">Personal Car</SelectItem>
-                          <SelectItem value="bus">Bus</SelectItem>
-                          <SelectItem value="bike">Bike/Walk</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-
-                    <div>
-                      <Label htmlFor="distance" data-testid="label-distance">
-                        Average Distance (km)
+                      <Label htmlFor="new-items" data-testid="label-new-items">
+                        New Items Purchased This Month
                       </Label>
                       <Input
-                        id="distance"
-                        type="number"
-                        placeholder="e.g., 50"
-                        value={transportation.distance}
-                        onChange={(e) =>
-                          setTransportation({
-                            ...transportation,
-                            distance: e.target.value,
-                          })
-                        }
-                        data-testid="input-distance"
-                      />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="frequency" data-testid="label-frequency">
-                        Frequency
-                      </Label>
-                      <Select
-                        value={transportation.frequency}
-                        onValueChange={(value) =>
-                          setTransportation({ ...transportation, frequency: value })
-                        }
-                      >
-                        <SelectTrigger id="frequency" data-testid="select-frequency">
-                          <SelectValue />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="daily">Daily</SelectItem>
-                          <SelectItem value="weekly">Weekly</SelectItem>
-                          <SelectItem value="monthly">Monthly</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  </div>
-                </Card>
-              </TabsContent>
-
-              <TabsContent value="energy" className="space-y-4 mt-6">
-                <Card className="p-6">
-                  <div className="space-y-4">
-                    <div>
-                      <Label htmlFor="electricity" data-testid="label-electricity">
-                        Monthly Electricity (kWh)
-                      </Label>
-                      <Input
-                        id="electricity"
-                        type="number"
-                        placeholder="e.g., 300"
-                        value={energy.electricity}
-                        onChange={(e) =>
-                          setEnergy({ ...energy, electricity: e.target.value })
-                        }
-                        data-testid="input-electricity"
-                      />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="gas" data-testid="label-gas">
-                        Monthly Gas Usage (therms)
-                      </Label>
-                      <Input
-                        id="gas"
-                        type="number"
-                        placeholder="e.g., 40"
-                        value={energy.gas}
-                        onChange={(e) => setEnergy({ ...energy, gas: e.target.value })}
-                        data-testid="input-gas"
-                      />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="renewable" data-testid="label-renewable">
-                        Renewable Energy (%)
-                      </Label>
-                      <Input
-                        id="renewable"
-                        type="number"
-                        min="0"
-                        max="100"
-                        placeholder="0"
-                        value={energy.renewable}
-                        onChange={(e) =>
-                          setEnergy({ ...energy, renewable: e.target.value })
-                        }
-                        data-testid="input-renewable"
-                      />
-                    </div>
-                  </div>
-                </Card>
-              </TabsContent>
-
-              <TabsContent value="diet" className="space-y-4 mt-6">
-                <Card className="p-6">
-                  <div className="space-y-4">
-                    <div>
-                      <Label htmlFor="meat" data-testid="label-meat">
-                        Meat Servings per Week
-                      </Label>
-                      <Input
-                        id="meat"
+                        id="new-items"
                         type="number"
                         placeholder="e.g., 5"
-                        value={diet.meatServings}
+                        value={shopping.newItems}
                         onChange={(e) =>
-                          setDiet({ ...diet, meatServings: e.target.value })
+                          setShopping({ ...shopping, newItems: e.target.value })
                         }
-                        data-testid="input-meat"
+                        data-testid="input-new-items"
                       />
+                      <p className="text-xs text-muted-foreground mt-2">
+                        Toys, clothing, books, furniture, etc.
+                      </p>
                     </div>
 
                     <div>
-                      <Label htmlFor="dairy" data-testid="label-dairy">
-                        Dairy Servings per Week
+                      <Label htmlFor="secondhand-items" data-testid="label-secondhand">
+                        Second-Hand Items Purchased This Month
                       </Label>
                       <Input
-                        id="dairy"
+                        id="secondhand-items"
                         type="number"
-                        placeholder="e.g., 10"
-                        value={diet.dairyServings}
+                        placeholder="e.g., 8"
+                        value={shopping.secondHandItems}
                         onChange={(e) =>
-                          setDiet({ ...diet, dairyServings: e.target.value })
+                          setShopping({
+                            ...shopping,
+                            secondHandItems: e.target.value,
+                          })
                         }
-                        data-testid="input-dairy"
+                        data-testid="input-secondhand-items"
                       />
+                      <p className="text-xs text-muted-foreground mt-2">
+                        Gently used items from other families
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
+
+              <TabsContent value="donations" className="space-y-4 mt-6">
+                <Card className="p-6">
+                  <div className="space-y-4">
+                    <div>
+                      <Label htmlFor="donated-items" data-testid="label-donated">
+                        Items Donated This Month
+                      </Label>
+                      <Input
+                        id="donated-items"
+                        type="number"
+                        placeholder="e.g., 12"
+                        value={donations.itemsDonated}
+                        onChange={(e) =>
+                          setDonations({ itemsDonated: e.target.value })
+                        }
+                        data-testid="input-donated-items"
+                      />
+                      <p className="text-xs text-muted-foreground mt-2">
+                        Items shared with other families or donated
+                      </p>
+                    </div>
+
+                    <div className="p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
+                      <h4 className="font-semibold text-sm mb-2 text-green-900 dark:text-green-100">
+                        Impact of Donations
+                      </h4>
+                      <ul className="text-xs text-green-800 dark:text-green-200 space-y-1">
+                        <li>✓ Keeps items out of landfills</li>
+                        <li>✓ Helps other families save money</li>
+                        <li>✓ Reduces manufacturing demand</li>
+                        <li>✓ Builds community connections</li>
+                      </ul>
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
+
+              <TabsContent value="recycling" className="space-y-4 mt-6">
+                <Card className="p-6">
+                  <div className="space-y-4">
+                    <div>
+                      <Label htmlFor="recycled-items" data-testid="label-recycled">
+                        Items Recycled This Month
+                      </Label>
+                      <Input
+                        id="recycled-items"
+                        type="number"
+                        placeholder="e.g., 6"
+                        value={recycling.itemsRecycled}
+                        onChange={(e) =>
+                          setRecycling({ itemsRecycled: e.target.value })
+                        }
+                        data-testid="input-recycled-items"
+                      />
+                      <p className="text-xs text-muted-foreground mt-2">
+                        Worn out or damaged items properly recycled
+                      </p>
+                    </div>
+
+                    <div className="p-4 bg-blue-50 dark:bg-blue-950/20 rounded-lg">
+                      <h4 className="font-semibold text-sm mb-2 text-blue-900 dark:text-blue-100">
+                        Recycling Tips
+                      </h4>
+                      <ul className="text-xs text-blue-800 dark:text-blue-200 space-y-1">
+                        <li>• Check local textile recycling programs</li>
+                        <li>• Break down items by material type</li>
+                        <li>• Remove non-recyclable parts first</li>
+                        <li>• Ask friends if they can reuse items first</li>
+                      </ul>
                     </div>
                   </div>
                 </Card>
@@ -283,43 +236,64 @@ export default function EnvironmentalCalculator() {
                 <Leaf className="w-5 h-5 text-green-600" data-testid="icon-leaf" />
                 <h3
                   className="font-bold text-lg"
-                  data-testid="text-annual-emissions-label"
+                  data-testid="text-total-items-label"
                 >
-                  Annual Emissions
+                  Total Items
                 </h3>
               </div>
-              <div className="text-3xl font-bold text-primary" data-testid="text-emissions-value">
-                {emissions}
+              <div className="text-3xl font-bold text-primary" data-testid="text-total-items-value">
+                {impact.totalItems}
               </div>
-              <p className="text-sm text-muted-foreground" data-testid="text-emissions-unit">
-                kg CO₂e per year
+              <p className="text-sm text-muted-foreground" data-testid="text-total-items-unit">
+                items in circulation this month
               </p>
             </Card>
 
             <Card className="p-6 bg-green-50 dark:bg-green-950/20 border-2 border-green-200 dark:border-green-800">
               <div className="flex items-center gap-2 mb-4">
-                <TrendingDown className="w-5 h-5 text-green-600" data-testid="icon-trending" />
+                <TrendingDown className="w-5 h-5 text-green-600" data-testid="icon-waste-reduction" />
                 <h3
                   className="font-bold text-lg text-green-900 dark:text-green-100"
-                  data-testid="text-reduction-label"
+                  data-testid="text-waste-reduction-label"
                 >
-                  Potential Reduction
+                  Waste Reduced
                 </h3>
               </div>
               <div
                 className="text-2xl font-bold text-green-600 dark:text-green-400"
-                data-testid="text-reduction-value"
+                data-testid="text-waste-reduction-value"
               >
-                {offset} kg
+                {impact.wasteReduction} kg
               </div>
-              <p className="text-sm text-green-700 dark:text-green-300" data-testid="text-reduction-description">
-                by implementing recommendations
+              <p className="text-sm text-green-700 dark:text-green-300" data-testid="text-waste-reduction-description">
+                of waste kept from landfills
+              </p>
+            </Card>
+
+            <Card className="p-6 bg-blue-50 dark:bg-blue-950/20 border-2 border-blue-200 dark:border-blue-800">
+              <div className="flex items-center gap-2 mb-4">
+                <Leaf className="w-5 h-5 text-blue-600" />
+                <h3
+                  className="font-bold text-lg text-blue-900 dark:text-blue-100"
+                  data-testid="text-carbon-saved-label"
+                >
+                  Carbon Saved
+                </h3>
+              </div>
+              <div
+                className="text-2xl font-bold text-blue-600 dark:text-blue-400"
+                data-testid="text-carbon-saved-value"
+              >
+                {impact.carbonSaved} kg
+              </div>
+              <p className="text-sm text-blue-700 dark:text-blue-300" data-testid="text-carbon-saved-description">
+                equivalent CO₂ emissions avoided
               </p>
             </Card>
 
             <Card className="p-6">
               <h3 className="font-bold mb-4" data-testid="text-tips-title">
-                Reduction Tips
+                Sustainability Tips
               </h3>
               <ul className="space-y-2">
                 {tips.map((tip, index) => (

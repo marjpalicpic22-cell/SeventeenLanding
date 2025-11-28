@@ -2,73 +2,145 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Calendar, User } from "lucide-react";
+import { ArrowLeft, Heart, MessageCircle, Share2 } from "lucide-react";
 
-export default function Blog() {
+export default function Community() {
   const [selectedPost, setSelectedPost] = useState<string | null>(null);
 
-  const blogPosts = [
+  const communityPosts = [
     {
       id: 1,
-      title: "The Impact of Sustainable Choices",
-      author: "Zero to Seventeen Team",
-      date: "November 20, 2024",
+      title: "Tips for First-Time Mums",
+      author: "Sarah M.",
+      date: "November 25, 2024",
       excerpt:
-        "Discover how small daily choices can lead to significant environmental impact over time.",
-      content: `Every action counts when it comes to environmental sustainability. Young people have the power to drive real change through conscious decision-making. From reducing plastic consumption to supporting eco-friendly brands, the choices we make today shape the world of tomorrow.
+        "Essential tips that helped me navigate the first months of motherhood with confidence and less stress.",
+      content: `Being a first-time mum is overwhelming, but you're not alone! Here are the tips that transformed my early days:
 
-The Zero to Seventeen community has been making incredible strides in sustainable living. By combining education with action, we're creating a generation that understands the urgency of climate change and takes meaningful steps to address it.
+1. **Accept Help**: Don't be shy about asking family and friends for support. Whether it's meal prep, laundry, or just holding the baby while you shower - it all counts.
 
-Join us in learning more about how your choices matter and can inspire others around you.`,
+2. **Sleep When Baby Sleeps**: This isn't just advice - it's survival. Rest is crucial for your mental and physical health during this demanding time.
+
+3. **Join a Mom Community**: Connect with other mums, whether online or in person. Sharing experiences and knowing others are going through the same challenges is incredibly reassuring.
+
+4. **Trust Your Instincts**: You know your baby better than anyone. Don't second-guess yourself constantly. Your gut feeling is usually right.
+
+5. **Be Gentle With Yourself**: You won't be perfect. That's not just okay - it's normal. Focus on being present and doing your best.
+
+6. **Invest in Good Basics**: Quality basics like feeding bottles, napkins, and comfortable clothes make a huge difference. This is where second-hand gems come in handy!
+
+7. **Document the Moments**: Take lots of photos and videos. Time flies, and these memories become priceless.
+
+Remember, every mum's journey is unique. What works for one might not work for another, and that's perfectly fine.`,
       image:
-        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=600&h=400&fit=crop",
+      likes: 234,
+      comments: 45,
     },
     {
       id: 2,
-      title: "Youth Leadership in Climate Action",
-      author: "Environmental Specialist",
-      date: "November 15, 2024",
+      title: "Parenting Pre-Teens: What I Wish I Knew",
+      author: "Emma K.",
+      date: "November 20, 2024",
       excerpt:
-        "How young leaders are pioneering innovative solutions to climate challenges.",
-      content: `Youth leadership has become crucial in addressing global climate challenges. The Zero to Seventeen initiative empowers teenagers to take ownership of environmental issues and develop creative solutions.
+        "Navigating the 8-12 age group is unique. Here's what I learned about keeping communication open and maintaining connection.",
+      content: `My kids are now 9 and 11, and I've discovered that parenting pre-teens is a completely different ballgame than toddler years.
 
-From organizing community cleanups to advocating for renewable energy policies, young people are proving that age is no barrier to making a difference. The wisdom and innovation brought by this generation offers fresh perspectives on long-standing environmental problems.
+**Communication is Everything**: Pre-teens are developing their own opinions and want to be heard. Instead of just telling them what to do, I've learned to have conversations with them about decisions.
 
-This blog explores inspiring stories of youth-led environmental movements around the world.`,
+**Let Them Have Opinions**: Yes, they might disagree with you. That's not defiance - it's healthy development. Listen to their perspective even if you ultimately make the final call.
+
+**Balance Independence and Boundaries**: This age group craves more freedom, but they still need clear boundaries. Finding this balance has been key to keeping them safe while letting them grow.
+
+**Stay Involved in Their Interests**: Whether it's soccer, art, gaming, or books - showing genuine interest in what they love helps keep communication open.
+
+**Model the Behavior You Want**: If you want respect, give respect. If you want honesty, be honest with them about your own challenges (age-appropriately).
+
+**Quality Over Quantity**: Busy schedules are real, but those 15-minute conversations in the car matter more than you think.
+
+**Second-Hand Shopping Together**: We've made browsing the app together a fun activity. The kids get to pick out clothes and items they like, and it's teaching them about sustainability and value.
+
+This stage goes by quickly. Enjoy it.`,
       image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&h=400&fit=crop",
+      likes: 189,
+      comments: 32,
     },
     {
       id: 3,
-      title: "Understanding Your Carbon Footprint",
-      author: "Zero to Seventeen Team",
+      title: "Budget-Friendly Back-to-School Shopping",
+      author: "Jessica P.",
+      date: "November 15, 2024",
+      excerpt:
+        "How I saved 60% on school supplies and clothes by shopping smart and using second-hand options.",
+      content: `Back-to-school season doesn't have to break the bank. Here's my strategy for getting everything the kids need without overspending:
+
+**Start with What You Have**: Before buying anything new, take inventory. Kids often have clothes that fit well or supplies they haven't used.
+
+**Shop Second-Hand First**: Quality school uniforms, sports equipment, and structured clothing items are perfect for buying second-hand. They're built to last and kids grow out of them anyway.
+
+**Mix New and Second-Hand**: Some things like underwear and socks should be new, but most items can be second-hand with no issues.
+
+**Buy Strategic Items**: Shoes and bags that take a beating should be new. But jackets, jumpers, and structured pieces? Great from the second-hand market.
+
+**Group Buys**: Connect with other mums in your community to buy in bulk for things like art supplies. The savings add up!
+
+**Teach the Kids**: My children now understand the value of things. They're excited to "find" items on the app and feel part of the shopping process.
+
+**The Best Part**: Everything works out better for the planet too. Win-win!
+
+This year we spent half what we normally would and the kids have more options to choose from.`,
+      image:
+        "https://images.unsplash.com/photo-1503454537688-e47a0d565b98?w=600&h=400&fit=crop",
+      likes: 342,
+      comments: 67,
+    },
+    {
+      id: 4,
+      title: "Pregnant and Planning: My Nesting Strategy",
+      author: "Lisa T.",
       date: "November 10, 2024",
       excerpt:
-        "A beginner's guide to calculating and reducing your personal carbon footprint.",
-      content: `Your carbon footprint is the total amount of greenhouse gases produced by your activities. Understanding it is the first step toward sustainability.
+        "Smart preparation tips for expectant mums preparing for baby's arrival without the overwhelm.",
+      content: `With my third baby on the way, I've learned that smart preparation beats last-minute panic buying.
 
-Common contributors to your carbon footprint include:
-- Transportation (cars, flights, public transport)
-- Home energy consumption (electricity, heating, water)
-- Diet choices (especially meat and dairy)
-- Shopping and consumption habits
+**Build Your Core Collection**: You don't need everything. Focus on quality basics first:
+- 7-10 bodysuits (mix of sizes)
+- 7-10 sleepsuits
+- 5-7 pairs of socks
+- 3-4 pairs of pants
+- 2-3 cardigans or jumpers
 
-By using our Environmental Calculator, you can get a personalized assessment of your impact and receive tailored recommendations for reduction. Small changes in daily habits can result in significant environmental benefits over time.`,
+**Go Second-Hand for Some Items**: Bassinets, change tables, and larger items are perfect second-hand purchases. Babies use them briefly, so durability and aesthetics don't need to be perfect.
+
+**Test Before You Commit**: Try different feeding bottles, nipple types, and cardigans before buying in bulk. Every baby is different!
+
+**Join Community Groups**: Connect with other expecting mums. We share recommendations, swap items, and support each other through the journey.
+
+**Stock Sensibly**: Get the essentials early, but remember babies change sizes quickly. Don't stockpile sizes they haven't reached yet.
+
+**Embrace What You Have**: Hand-me-downs from friends and family are treasures. Quality items last through multiple children.
+
+**Stay Flexible**: Your plan will change, and that's okay. The best preparation is having a supportive community.
+
+I'm so grateful for resources like this app that make preparation easier and more affordable.`,
       image:
-        "https://images.unsplash.com/photo-1497215842519-e21cc028cb29?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1490990124904-ff493f1812fe?w=600&h=400&fit=crop",
+      likes: 156,
+      comments: 28,
     },
   ];
 
   if (selectedPost) {
-    const post = blogPosts.find((p) => p.id === parseInt(selectedPost));
+    const post = communityPosts.find((p) => p.id === parseInt(selectedPost));
     return (
       <div className="min-h-screen bg-background">
         <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <Link href="/blog">
+            <Link href="/community">
               <Button variant="ghost" className="gap-2" data-testid="button-back">
                 <ArrowLeft className="w-4 h-4" />
-                Back to Blog
+                Back to Community
               </Button>
             </Link>
           </div>
@@ -86,23 +158,38 @@ By using our Environmental Calculator, you can get a personalized assessment of 
               <h1 className="text-4xl font-bold mb-4" data-testid="text-post-title">
                 {post.title}
               </h1>
-              <div className="flex flex-col sm:flex-row gap-4 text-sm text-muted-foreground mb-8">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-sm text-muted-foreground mb-8 pb-8 border-b border-border">
                 <div className="flex items-center gap-2">
-                  <User className="w-4 h-4" />
+                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
+                    <span className="text-xs font-bold" data-testid="avatar-initials">
+                      {post.author.split(" ")[0][0]}
+                    </span>
+                  </div>
                   <span data-testid="text-post-author">{post.author}</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4" />
-                  <span data-testid="text-post-date">{post.date}</span>
-                </div>
+                <span data-testid="text-post-date">{post.date}</span>
               </div>
               <div
-                className="prose prose-sm dark:prose-invert max-w-none space-y-4 text-foreground"
+                className="prose prose-sm dark:prose-invert max-w-none space-y-4 text-foreground mb-8"
                 data-testid="text-post-content"
               >
                 {post.content.split("\n\n").map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>
                 ))}
+              </div>
+              <div className="flex gap-4 border-t border-border pt-6">
+                <Button variant="ghost" className="gap-2" data-testid="button-like">
+                  <Heart className="w-4 h-4" />
+                  {post.likes}
+                </Button>
+                <Button variant="ghost" className="gap-2" data-testid="button-comment">
+                  <MessageCircle className="w-4 h-4" />
+                  {post.comments}
+                </Button>
+                <Button variant="ghost" className="gap-2" data-testid="button-share">
+                  <Share2 className="w-4 h-4" />
+                  Share
+                </Button>
               </div>
             </article>
           )}
@@ -125,22 +212,21 @@ By using our Environmental Calculator, you can get a personalized assessment of 
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-4" data-testid="text-blog-title">
-            Resource Blog
+          <h1 className="text-4xl font-bold mb-4" data-testid="text-community-title">
+            Mum's Community
           </h1>
-          <p className="text-lg text-muted-foreground" data-testid="text-blog-description">
-            Stay informed with insights on sustainability, youth leadership, and
-            environmental action.
+          <p className="text-lg text-muted-foreground" data-testid="text-community-description">
+            Share your tips, insights, and experiences with other mums. From first-time parenting to navigating pre-teens, find support and wisdom from our community.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {blogPosts.map((post) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {communityPosts.map((post) => (
             <Card
               key={post.id}
               className="hover-elevate overflow-hidden cursor-pointer transition-all"
               onClick={() => setSelectedPost(post.id.toString())}
-              data-testid={`card-blog-post-${post.id}`}
+              data-testid={`card-community-post-${post.id}`}
             >
               <div className="aspect-video overflow-hidden bg-muted">
                 <img
@@ -157,16 +243,37 @@ By using our Environmental Calculator, you can get a personalized assessment of 
                   {post.title}
                 </h2>
                 <p
-                  className="text-sm text-muted-foreground mb-4 line-clamp-3"
+                  className="text-sm text-muted-foreground mb-4 line-clamp-2"
                   data-testid={`text-post-excerpt-${post.id}`}
                 >
                   {post.excerpt}
                 </p>
-                <div className="flex items-center justify-between text-xs text-muted-foreground">
-                  <span data-testid={`text-post-author-${post.id}`}>
-                    {post.author}
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
+                      <span className="text-xs font-bold">
+                        {post.author.split(" ")[0][0]}
+                      </span>
+                    </div>
+                    <div className="text-xs">
+                      <div className="font-medium" data-testid={`text-post-author-${post.id}`}>
+                        {post.author}
+                      </div>
+                      <div className="text-muted-foreground" data-testid={`text-post-date-${post.id}`}>
+                        {post.date}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-2 text-xs text-muted-foreground">
+                  <span className="flex items-center gap-1">
+                    <Heart className="w-3 h-3" />
+                    {post.likes}
                   </span>
-                  <span data-testid={`text-post-date-${post.id}`}>{post.date}</span>
+                  <span className="flex items-center gap-1">
+                    <MessageCircle className="w-3 h-3" />
+                    {post.comments}
+                  </span>
                 </div>
               </div>
             </Card>
