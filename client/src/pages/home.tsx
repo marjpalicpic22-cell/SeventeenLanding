@@ -4,6 +4,7 @@ import { Mission } from "@/components/landing/mission";
 import { CoreValues } from "@/components/landing/core-values";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { CommunityImpact } from "@/components/landing/community-impact";
+import { Testimonials } from "@/components/landing/testimonials";
 import { Newsletter } from "@/components/landing/newsletter";
 import { FinalCTA } from "@/components/landing/final-cta";
 import { Footer } from "@/components/landing/footer";
@@ -20,6 +21,7 @@ export default function Home() {
         <CoreValues />
         <HowItWorks />
         <CommunityImpact />
+        <Testimonials />
         <Newsletter />
         <FinalCTA />
       </main>
