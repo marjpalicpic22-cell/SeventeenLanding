@@ -21,7 +21,7 @@ export function Testimonials() {
       content:
         "Zero to Seventeen has been a game-changer for our family! We've saved so much money buying quality second-hand items and the community is so supportive. Highly recommend!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export function Testimonials() {
       content:
         "Finding a safe, trustworthy place to buy pre-loved items was exactly what I needed. The app is so easy to use and I've already made some wonderful mum friends through the community!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ export function Testimonials() {
       content:
         "I love knowing that when my kids outgrow their things, other families get to use them too. It's sustainable, affordable, and the community support has been incredible during my pregnancy.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      image: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
     },
     {
       id: 4,
@@ -51,7 +51,7 @@ export function Testimonials() {
       content:
         "From toys to clothes to furniture, I've found everything we needed at a fraction of the price. But more than that, the community tips and advice have been invaluable. This is what motherhood should feel like!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
     },
     {
       id: 5,
@@ -61,7 +61,7 @@ export function Testimonials() {
       content:
         "Preparing for my third baby felt less overwhelming with Zero to Seventeen. The marketplace is amazing, but the real value is the community of mums who genuinely understand what you're going through.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
     },
     {
       id: 6,
@@ -71,7 +71,7 @@ export function Testimonials() {
       content:
         "The Zero to Seventeen community has made such a difference in my motherhood journey. Being able to connect with other Australian mums and find quality items for my daughter has been transformative.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
     },
   ];
 
