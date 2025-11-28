@@ -1,5 +1,5 @@
 import { Leaf } from "lucide-react";
-import storyImage from "@assets/stock_images/pregnant_woman_with__2dc76ba4.jpg";
+import storyImage from "@assets/stock_images/full_body_pregnant_w_aeb8fe6a.jpg";
 
 export function OriginStory() {
   return (
