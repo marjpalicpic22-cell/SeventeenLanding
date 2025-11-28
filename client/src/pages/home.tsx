@@ -5,6 +5,7 @@ import { CoreValues } from "@/components/landing/core-values";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { CommunityImpact } from "@/components/landing/community-impact";
 import { Testimonials } from "@/components/landing/testimonials";
+import { DidYouKnow } from "@/components/landing/did-you-know";
 import { Newsletter } from "@/components/landing/newsletter";
 import { FinalCTA } from "@/components/landing/final-cta";
 import { Footer } from "@/components/landing/footer";
@@ -22,6 +23,7 @@ export default function Home() {
         <HowItWorks />
         <CommunityImpact />
         <Testimonials />
+        <DidYouKnow />
         <Newsletter />
         <FinalCTA />
       </main>
