@@ -31,7 +31,7 @@ export function Testimonials() {
       content:
         "Finding a safe, trustworthy place to buy pre-loved items was exactly what I needed. The app is so easy to use and I've already made some wonderful mum friends through the community!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
     },
     {
       id: 3,
@@ -71,7 +71,7 @@ export function Testimonials() {
       content:
         "The Zero to Seventeen community has made such a difference in my motherhood journey. Being able to connect with other Australian mums and find quality items for my daughter has been transformative.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
+      image: "https://images.unsplash.com/photo-1517841905240-472988babebb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
     },
   ];
 
