@@ -8,18 +8,36 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Leaf, TrendingDown } from "lucide-react";
 
+const PRODUCT_CATEGORIES = [
+  "Toys",
+  "Apparel",
+  "Kitchenware",
+  "Kids Toys",
+  "Toddler Shirt",
+  "Clothing",
+  "Books",
+  "Furniture",
+  "Shoes",
+  "Bedding",
+  "Other",
+];
+
 export default function EnvironmentalCalculator() {
   const [shopping, setShopping] = useState({
     newItems: "",
+    newItemsCategory: "",
     secondHandItems: "",
+    secondHandCategory: "",
   });
 
   const [donations, setDonations] = useState({
     itemsDonated: "",
+    donationCategory: "",
   });
 
   const [recycling, setRecycling] = useState({
     itemsRecycled: "",
+    recyclingCategory: "",
   });
 
   const calculateImpact = () => {
@@ -111,6 +129,24 @@ export default function EnvironmentalCalculator() {
                 <Card className="p-6">
                   <div className="space-y-4">
                     <div>
+                      <Label htmlFor="new-items-category" data-testid="label-new-items-category">
+                        New Items Category
+                      </Label>
+                      <Select value={shopping.newItemsCategory} onValueChange={(value) => setShopping({ ...shopping, newItemsCategory: value })}>
+                        <SelectTrigger id="new-items-category" data-testid="select-new-items-category">
+                          <SelectValue placeholder="Select product type" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {PRODUCT_CATEGORIES.map((category) => (
+                            <SelectItem key={category} value={category} data-testid={`option-category-${category}`}>
+                              {category}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    <div>
                       <Label htmlFor="new-items" data-testid="label-new-items">
                         New Items Purchased This Month
                       </Label>
@@ -127,6 +163,24 @@ export default function EnvironmentalCalculator() {
                       <p className="text-xs text-muted-foreground mt-2">
                         Toys, clothing, books, furniture, etc.
                       </p>
+                    </div>
+
+                    <div>
+                      <Label htmlFor="secondhand-category" data-testid="label-secondhand-category">
+                        Second-Hand Items Category
+                      </Label>
+                      <Select value={shopping.secondHandCategory} onValueChange={(value) => setShopping({ ...shopping, secondHandCategory: value })}>
+                        <SelectTrigger id="secondhand-category" data-testid="select-secondhand-category">
+                          <SelectValue placeholder="Select product type" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {PRODUCT_CATEGORIES.map((category) => (
+                            <SelectItem key={category} value={category} data-testid={`option-secondhand-category-${category}`}>
+                              {category}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     <div>
@@ -158,6 +212,24 @@ export default function EnvironmentalCalculator() {
                 <Card className="p-6">
                   <div className="space-y-4">
                     <div>
+                      <Label htmlFor="donation-category" data-testid="label-donation-category">
+                        Items Category
+                      </Label>
+                      <Select value={donations.donationCategory} onValueChange={(value) => setDonations({ ...donations, donationCategory: value })}>
+                        <SelectTrigger id="donation-category" data-testid="select-donation-category">
+                          <SelectValue placeholder="Select product type" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {PRODUCT_CATEGORIES.map((category) => (
+                            <SelectItem key={category} value={category} data-testid={`option-donation-category-${category}`}>
+                              {category}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    <div>
                       <Label htmlFor="donated-items" data-testid="label-donated">
                         Items Donated This Month
                       </Label>
@@ -167,7 +239,7 @@ export default function EnvironmentalCalculator() {
                         placeholder="e.g., 12"
                         value={donations.itemsDonated}
                         onChange={(e) =>
-                          setDonations({ itemsDonated: e.target.value })
+                          setDonations({ ...donations, itemsDonated: e.target.value })
                         }
                         data-testid="input-donated-items"
                       />
@@ -195,6 +267,24 @@ export default function EnvironmentalCalculator() {
                 <Card className="p-6">
                   <div className="space-y-4">
                     <div>
+                      <Label htmlFor="recycling-category" data-testid="label-recycling-category">
+                        Items Category
+                      </Label>
+                      <Select value={recycling.recyclingCategory} onValueChange={(value) => setRecycling({ ...recycling, recyclingCategory: value })}>
+                        <SelectTrigger id="recycling-category" data-testid="select-recycling-category">
+                          <SelectValue placeholder="Select product type" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {PRODUCT_CATEGORIES.map((category) => (
+                            <SelectItem key={category} value={category} data-testid={`option-recycling-category-${category}`}>
+                              {category}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    <div>
                       <Label htmlFor="recycled-items" data-testid="label-recycled">
                         Items Recycled This Month
                       </Label>
@@ -204,7 +294,7 @@ export default function EnvironmentalCalculator() {
                         placeholder="e.g., 6"
                         value={recycling.itemsRecycled}
                         onChange={(e) =>
-                          setRecycling({ itemsRecycled: e.target.value })
+                          setRecycling({ ...recycling, itemsRecycled: e.target.value })
                         }
                         data-testid="input-recycled-items"
                       />
