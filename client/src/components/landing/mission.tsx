@@ -11,11 +11,11 @@ export function Mission() {
           </div>
 
           <blockquote className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground leading-relaxed" data-testid="mission-quote">
-            "Our mission is to build a global circular economy for children's items — one that keeps good things in use, lightens the load on families, and protects the world our children will inherit."
+            "We're building a community where parents feel understood, supported, and connected — a place to share the ups and downs of raising children, and pass on quality items to families who need them."
           </blockquote>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto pt-4" data-testid="mission-description">
-            We want every family, everywhere, to have access to quality items without financial strain, without waste, and without difficulty.
+            Zero to Seventeen isn't just about buying and selling. It's a safe haven for mums and parents to connect with others who truly understand the joys and challenges of raising little ones — from Australia to the United States and beyond.
           </p>
         </div>
       </div>

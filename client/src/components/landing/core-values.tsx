@@ -1,36 +1,36 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Leaf, Heart, Users, Gift, BookOpen } from "lucide-react";
+import { Heart, Users, ShieldCheck, HandHeart, Sparkles } from "lucide-react";
 
 const values = [
   {
-    icon: Leaf,
-    title: "Sustainability",
-    description: "We give every item a longer life. By keeping children's goods in circulation, we reduce waste and lighten our footprint on the earth.",
-    testId: "value-sustainability"
-  },
-  {
     icon: Heart,
-    title: "Family",
-    description: "Everything we create begins with the question: 'Would we feel good about this for our own family?' If not, we don't do it.",
-    testId: "value-family"
+    title: "Warmth & Understanding",
+    description: "We know parenthood can be challenging. Our community is a safe space where you'll always find understanding, encouragement, and genuine support from people who get it.",
+    testId: "value-warmth"
   },
   {
     icon: Users,
-    title: "Community",
-    description: "Families thrive when they support one another. Our platform makes that connection simple, safe, and natural.",
+    title: "Parent Community First",
+    description: "This isn't just a marketplace — it's a community. Connect with other mums and parents, share your experiences, and know you're never alone on this journey.",
     testId: "value-community"
   },
   {
-    icon: Gift,
-    title: "Giving Back",
-    description: "Selling helps your household. Donating helps someone else's. Recycling helps the planet. Every action matters.",
-    testId: "value-giving-back"
+    icon: ShieldCheck,
+    title: "Safety & Trust",
+    description: "All transactions happen securely inside the app. We've built a trusted environment where parents feel confident buying, selling, and connecting with each other.",
+    testId: "value-safety"
   },
   {
-    icon: BookOpen,
-    title: "Education",
-    description: "We're raising a generation that understands reuse, responsibility, and the importance of caring for the world they'll grow up in.",
-    testId: "value-education"
+    icon: HandHeart,
+    title: "Supporting Each Other",
+    description: "When you pass on items your children have outgrown, you're helping another family. Every exchange strengthens our community and makes parenthood a little easier for everyone.",
+    testId: "value-support"
+  },
+  {
+    icon: Sparkles,
+    title: "Growing Together",
+    description: "Starting in Australia and soon expanding to the United States, we're building a global community where families everywhere can connect and support one another.",
+    testId: "value-growing"
   }
 ];
 
@@ -46,13 +46,13 @@ export function CoreValues() {
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground font-heading mb-4"
             data-testid="values-headline"
           >
-            Our Core Values
+            What Makes Us Different
           </h2>
           <p
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
             data-testid="values-description"
           >
-            The principles that guide everything we do
+            Built around the values that matter most to parents
           </p>
         </div>
 

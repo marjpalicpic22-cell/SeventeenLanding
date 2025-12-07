@@ -1,36 +1,49 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Upload, MessageCircle, ShoppingBag, Heart } from "lucide-react";
+import { Download, UserPlus, Package, Users, ShieldCheck } from "lucide-react";
+import screenshot1 from "@assets/app_screenshots/screenshot1.png";
+import screenshot2 from "@assets/app_screenshots/screenshot2.png";
+import screenshot3 from "@assets/app_screenshots/screenshot3.png";
+import screenshot4 from "@assets/app_screenshots/screenshot4.png";
 
 const steps = [
   {
     number: "01",
-    icon: Upload,
-    title: "List Your Items",
-    description: "Upload photos, describe your item, and set a price. It takes just minutes to create a listing families can trust.",
-    testId: "step-list-items"
+    icon: Download,
+    title: "Download the App",
+    description: "Get started in seconds. Download Zero to Seventeen from the App Store or Google Play and join our community of caring parents.",
+    testId: "step-download-app"
   },
   {
     number: "02",
-    icon: MessageCircle,
-    title: "Connect Safely",
-    description: "Chat directly with verified families through our secure in-app messaging. Build trust before you meet.",
-    testId: "step-connect-safely"
+    icon: UserPlus,
+    title: "Create Your Profile",
+    description: "Set up your profile and become part of a warm, welcoming community. Connect with other mums and parents who understand your journey.",
+    testId: "step-create-profile"
   },
   {
     number: "03",
-    icon: ShoppingBag,
-    title: "Complete Transaction",
-    description: "Buy what you need, sell what you've outgrown, or donate to families who need it most — all in one place.",
-    testId: "step-complete-transaction"
+    icon: Package,
+    title: "List Your Items",
+    description: "Share the items your little ones have outgrown. Upload photos, add details, and give quality items a second life with families who need them.",
+    testId: "step-list-items"
   },
   {
     number: "04",
-    icon: Heart,
-    title: "Make a Difference",
-    description: "Every item you pass on helps another family save money and keeps perfectly good things out of landfill.",
-    testId: "step-make-difference"
+    icon: Users,
+    title: "Connect with Parents",
+    description: "Chat with other mums and parents, share experiences, exchange advice, and build genuine connections with people who truly understand.",
+    testId: "step-connect-parents"
+  },
+  {
+    number: "05",
+    icon: ShieldCheck,
+    title: "Safe In-App Transactions",
+    description: "Every conversation and transaction happens securely inside the app. Buy and sell with confidence knowing you're protected every step of the way.",
+    testId: "step-safe-transactions"
   }
 ];
+
+const screenshots = [screenshot1, screenshot2, screenshot3, screenshot4];
 
 export function HowItWorks() {
   return (
@@ -51,11 +64,11 @@ export function HowItWorks() {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
             data-testid="how-it-works-description"
           >
-            Four simple steps to help families and reduce waste
+            Five simple steps to join a community that supports you
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
@@ -67,7 +80,7 @@ export function HowItWorks() {
                   <CardContent className="p-6 space-y-4">
                     <div className="space-y-3">
                       <span
-                        className="text-5xl font-bold text-primary/20"
+                        className="text-4xl font-bold text-primary/20"
                         data-testid={`${step.testId}-number`}
                       >
                         {step.number}
@@ -80,7 +93,7 @@ export function HowItWorks() {
                       </div>
                     </div>
                     <h3
-                      className="text-xl font-semibold text-foreground"
+                      className="text-lg font-semibold text-foreground"
                       data-testid={`${step.testId}-title`}
                     >
                       {step.title}
@@ -96,6 +109,24 @@ export function HowItWorks() {
               </div>
             );
           })}
+        </div>
+
+        <div className="bg-card rounded-2xl p-8 shadow-lg border border-card-border">
+          <h3 className="text-2xl font-bold text-foreground text-center mb-8 font-heading">
+            See the App in Action
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {screenshots.map((screenshot, index) => (
+              <div key={index} className="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <img
+                  src={screenshot}
+                  alt={`Zero to Seventeen app screenshot ${index + 1}`}
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

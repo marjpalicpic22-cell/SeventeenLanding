@@ -14,7 +14,7 @@ export function Footer() {
               data-testid="footer-logo"
             />
             <p className="text-sm text-muted-foreground max-w-xs" data-testid="footer-tagline">
-              Where families help families. Second-hand made simple.
+              A warm community where parents connect, share experiences, and find quality second-hand items for their little ones.
             </p>
             <div className="flex items-center gap-4" data-testid="footer-social">
               <a
@@ -132,7 +132,7 @@ export function Footer() {
             © 2024 Zero2Seventeen. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground text-center sm:text-right" data-testid="footer-expansion">
-            Australia & USA • Expanding to UK
+            Currently in Australia — Expanding to the United States
           </p>
         </div>
       </div>

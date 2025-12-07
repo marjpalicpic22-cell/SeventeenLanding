@@ -20,28 +20,28 @@ export function OriginStory() {
               className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground font-heading"
               data-testid="story-headline"
             >
-              Where Our Story Begins
+              Built by Parents, for Parents
             </h2>
 
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
               <p data-testid="story-paragraph-1">
-                Zero to Seventeen started the same way so many family ideas begin — in the middle of real life.
+                Zero to Seventeen started the same way so many parent ideas begin — in the middle of real, everyday life.
               </p>
 
               <p data-testid="story-paragraph-2">
-                Madelon was searching for a highchair for little Liliana. Something safe. Something affordable. Something that made sense for a baby who'd outgrow it in no time.
+                Madelon was searching for a highchair for little Liliana. Something safe. Something affordable. Something that made sense for a baby who'd outgrow it in no time. But more than that, she wished she had other mums to ask — people who understood what she was going through.
               </p>
 
               <p data-testid="story-paragraph-3">
-                But every option came with frustration: overpriced new items, unreliable second-hand sellers, confusing listings, no-shows, and experiences that just didn't feel safe.
+                Every option came with frustration: overpriced new items, unreliable sellers, confusing listings, and experiences that just didn't feel safe or supportive.
               </p>
 
               <p className="text-foreground font-medium italic" data-testid="story-quote">
-                One afternoon, after yet another failed attempt, she said, "There has to be an easier way."
+                One afternoon, she said, "Parents shouldn't have to do this alone. We need a community."
               </p>
 
               <p data-testid="story-paragraph-4">
-                And that moment sparked everything. What started with one highchair has grown into a movement built around connection, kindness, and shared values.
+                And that moment sparked everything. What started with one highchair has grown into a warm, welcoming community where parents support each other — sharing stories, advice, and quality items their children have outgrown.
               </p>
             </div>
           </div>
