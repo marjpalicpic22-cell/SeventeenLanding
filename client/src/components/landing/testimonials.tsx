@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import elyzaImage from "@assets/stock_images/young_mother_woman_p_dbfd9e88.jpg";
 
 export function Testimonials() {
   const [api, setApi] = useState<any>(null);
@@ -71,7 +72,7 @@ export function Testimonials() {
       content:
         "The Zero to Seventeen community has made such a difference in my motherhood journey. Being able to connect with other Australian mums and find quality items for my daughter has been transformative.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1517841905240-472988babebb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
+      image: elyzaImage,
     },
   ];
 

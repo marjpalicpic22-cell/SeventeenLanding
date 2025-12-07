@@ -11,7 +11,7 @@ const values = [
   {
     icon: Users,
     title: "Parent Community First",
-    description: "This isn't just a marketplace — it's a community. Connect with other mums and parents, share your experiences, and know you're never alone on this journey.",
+    description: "This isn't just a marketplace, it's a community. Connect with other mums and parents, share your experiences, and know you're never alone on this journey.",
     testId: "value-community"
   },
   {

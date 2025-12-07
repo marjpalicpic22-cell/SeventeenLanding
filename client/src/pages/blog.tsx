@@ -3,6 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, Heart, MessageCircle, Share2 } from "lucide-react";
+import schoolImage from "@assets/stock_images/mother_helping_child_3290cfd8.jpg";
+import pregnantImage from "@assets/stock_images/pregnant_woman_plann_2a6c6d7b.jpg";
 
 export default function Community() {
   const [selectedPost, setSelectedPost] = useState<string | null>(null);
@@ -17,15 +19,15 @@ export default function Community() {
         "Essential tips that helped me navigate the first months of motherhood with confidence and less stress.",
       content: `Being a first-time mum is overwhelming, but you're not alone! Here are the tips that transformed my early days:
 
-1. **Accept Help**: Don't be shy about asking family and friends for support. Whether it's meal prep, laundry, or just holding the baby while you shower - it all counts.
+1. **Accept Help**: Don't be shy about asking family and friends for support. Whether it's meal prep, laundry, or just holding the baby while you shower, it all counts.
 
-2. **Sleep When Baby Sleeps**: This isn't just advice - it's survival. Rest is crucial for your mental and physical health during this demanding time.
+2. **Sleep When Baby Sleeps**: This isn't just advice, it's survival. Rest is crucial for your mental and physical health during this demanding time.
 
 3. **Join a Mom Community**: Connect with other mums, whether online or in person. Sharing experiences and knowing others are going through the same challenges is incredibly reassuring.
 
 4. **Trust Your Instincts**: You know your baby better than anyone. Don't second-guess yourself constantly. Your gut feeling is usually right.
 
-5. **Be Gentle With Yourself**: You won't be perfect. That's not just okay - it's normal. Focus on being present and doing your best.
+5. **Be Gentle With Yourself**: You won't be perfect. That's not just okay, it's normal. Focus on being present and doing your best.
 
 6. **Invest in Good Basics**: Quality basics like feeding bottles, napkins, and comfortable clothes make a huge difference. This is where second-hand gems come in handy!
 
@@ -48,11 +50,11 @@ Remember, every mum's journey is unique. What works for one might not work for a
 
 **Communication is Everything**: Pre-teens are developing their own opinions and want to be heard. Instead of just telling them what to do, I've learned to have conversations with them about decisions.
 
-**Let Them Have Opinions**: Yes, they might disagree with you. That's not defiance - it's healthy development. Listen to their perspective even if you ultimately make the final call.
+**Let Them Have Opinions**: Yes, they might disagree with you. That's not defiance, it's healthy development. Listen to their perspective even if you ultimately make the final call.
 
 **Balance Independence and Boundaries**: This age group craves more freedom, but they still need clear boundaries. Finding this balance has been key to keeping them safe while letting them grow.
 
-**Stay Involved in Their Interests**: Whether it's soccer, art, gaming, or books - showing genuine interest in what they love helps keep communication open.
+**Stay Involved in Their Interests**: Whether it's soccer, art, gaming, or books, showing genuine interest in what they love helps keep communication open.
 
 **Model the Behavior You Want**: If you want respect, give respect. If you want honesty, be honest with them about your own challenges (age-appropriately).
 
@@ -90,8 +92,7 @@ This stage goes by quickly. Enjoy it.`,
 **The Best Part**: Everything works out better for the planet too. Win-win!
 
 This year we spent half what we normally would and the kids have more options to choose from.`,
-      image:
-        "https://images.unsplash.com/photo-1503454537688-e47a0d565b98?w=600&h=400&fit=crop",
+      image: schoolImage,
       likes: 342,
       comments: 67,
     },
@@ -124,8 +125,7 @@ This year we spent half what we normally would and the kids have more options to
 **Stay Flexible**: Your plan will change, and that's okay. The best preparation is having a supportive community.
 
 I'm so grateful for resources like this app that make preparation easier and more affordable.`,
-      image:
-        "https://images.unsplash.com/photo-1490990124904-ff493f1812fe?w=600&h=400&fit=crop",
+      image: pregnantImage,
       likes: 156,
       comments: 28,
     },

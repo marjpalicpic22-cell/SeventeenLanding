@@ -101,7 +101,7 @@ export function CommunityImpact() {
 
         <div className="mt-12 text-center">
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Our community started in Australia and is growing every day. As more parents join, we're expanding to the United States — because every family deserves a supportive community and access to quality second-hand items.
+            Our community started in Australia and is growing every day. As more parents join, we're expanding to the United States because every family deserves a supportive community and access to quality second-hand items.
           </p>
         </div>
       </div>

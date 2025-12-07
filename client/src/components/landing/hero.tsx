@@ -22,14 +22,14 @@ export function Hero() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight font-heading"
             data-testid="hero-headline"
           >
-            A Community Where Parents Belong
+            The App Where Parents Connect and Kids' Items Find New Homes
           </h1>
 
           <p
             className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-light"
             data-testid="hero-subheadline"
           >
-            More than an app — a safe space for mums and parents to connect, share experiences, and find quality second-hand items for their little ones
+            Join a supportive community of mums and parents. Buy, sell, and share quality second-hand items for your little ones, all in one trusted place.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
@@ -65,7 +65,7 @@ export function Hero() {
             className="text-sm sm:text-base text-white/75 pt-6"
             data-testid="hero-trust-indicator"
           >
-            Join our growing community of parents in Australia — expanding to the United States soon
+            Join our growing community of parents in Australia, expanding to the United States soon
           </p>
         </div>
       </div>

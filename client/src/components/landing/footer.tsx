@@ -132,7 +132,7 @@ export function Footer() {
             © 2024 Zero2Seventeen. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground text-center sm:text-right" data-testid="footer-expansion">
-            Currently in Australia — Expanding to the United States
+            Currently in Australia, Expanding to the United States
           </p>
         </div>
       </div>

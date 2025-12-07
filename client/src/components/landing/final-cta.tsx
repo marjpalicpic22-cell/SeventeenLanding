@@ -31,7 +31,7 @@ export function FinalCTA() {
               className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-xl"
               data-testid="cta-subheadline"
             >
-              Connect with mums and parents who understand. Share experiences, find support, and discover quality items for your little ones — all in one safe, welcoming place.
+              Connect with mums and parents who understand. Share experiences, find support, and discover quality items for your little ones, all in one safe, welcoming place.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 pt-4">
@@ -67,7 +67,7 @@ export function FinalCTA() {
               className="text-sm sm:text-base text-white/75 pt-4"
               data-testid="cta-availability"
             >
-              Currently available in Australia — expanding to the United States soon
+              Currently available in Australia, expanding to the United States soon
             </p>
           </div>
 
