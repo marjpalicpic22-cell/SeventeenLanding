@@ -65,10 +65,16 @@ export function Hero() {
             className="text-sm sm:text-base text-white/75 pt-6"
             data-testid="hero-trust-indicator"
           >
-            Join our growing community of parents in Australia, expanding to the United States soon
+            <a
+              href="https://discord.gg/dgAQdHnNC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join our growing community of parents on Discord for support, conversations, and updates.
+            </a>
           </p>
-        </div>
-      </div>
+          </div>
+          </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent"></div>
     </section>
