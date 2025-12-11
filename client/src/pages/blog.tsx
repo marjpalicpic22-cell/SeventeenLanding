@@ -202,12 +202,15 @@ I'm so grateful for resources like this app that make preparation easier and mor
       <div className="min-h-screen bg-background">
         <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <Link href="/community">
-              <Button variant="ghost" className="gap-2" data-testid="button-back">
-                <ArrowLeft className="w-4 h-4" />
-                Back to Community
-              </Button>
-            </Link>
+            <Button 
+              variant="ghost" 
+              className="gap-2" 
+              data-testid="button-back"
+              onClick={handleBackToHome}
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Home
+            </Button>
           </div>
         </header>
 
