@@ -7,12 +7,15 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           <div className="space-y-4" data-testid="footer-brand">
-            <img
-              src="https://www.zero2seventeen.com/_nuxt/logo.189acc67.svg"
-              alt="Zero to Seventeen"
-              className="h-12"
-              data-testid="footer-logo"
-            />
+            <div className="flex items-center gap-3">
+              <img
+                src="https://play-lh.googleusercontent.com/USgufPy9bs7A8ZWDvJFpAEZOR84YCCL1DwpIjie4WxN80CbpkGXivU2b5wgl4VCbEZ4=w240-h480-rw"
+                alt="Zero to Seventeen"
+                className="h-12 rounded-lg"
+                data-testid="footer-logo"
+              />
+              <span className="font-semibold text-foreground">Zero to Seventeen</span>
+            </div>
             <p className="text-sm text-muted-foreground max-w-xs" data-testid="footer-tagline">
               A warm community where parents connect, share experiences, and find quality second-hand items for their little ones.
             </p>
