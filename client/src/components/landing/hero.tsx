@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { SiDiscord } from "react-icons/si";
 import heroImage from "@assets/stock_images/australian_white_cau_b6ef0bb1.jpg";
 
 export function Hero() {
@@ -59,6 +60,16 @@ export function Hero() {
                 className="h-14 w-auto mx-auto sm:mx-0"
               />
             </a>
+            <a
+              href="https://discord.gg/4xVyA9STF5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 h-14 px-6 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-lg transition-colors"
+              data-testid="button-hero-discord"
+            >
+              <SiDiscord className="w-6 h-6" />
+              <span className="font-medium">Join Discord</span>
+            </a>
           </div>
 
           <p
@@ -66,7 +77,7 @@ export function Hero() {
             data-testid="hero-trust-indicator"
           >
             <a
-              href="https://discord.gg/dgAQdHnNC"
+              href="https://discord.gg/4xVyA9STF5"
               target="_blank"
               rel="noopener noreferrer"
             >

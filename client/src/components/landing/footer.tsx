@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { SiInstagram, SiFacebook, SiTiktok } from "react-icons/si";
+import { SiInstagram, SiFacebook, SiTiktok, SiDiscord } from "react-icons/si";
 
 export function Footer() {
   return (
@@ -46,6 +46,16 @@ export function Footer() {
                 data-testid="link-tiktok"
               >
                 <SiTiktok className="w-5 h-5" style={{ color: "#000000" }} />
+              </a>
+              <a
+                href="https://discord.gg/4xVyA9STF5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-110"
+                aria-label="Discord"
+                data-testid="link-discord"
+              >
+                <SiDiscord className="w-5 h-5" style={{ color: "#5865F2" }} />
               </a>
             </div>
           </div>

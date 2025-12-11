@@ -1,13 +1,78 @@
 import { useState } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Heart, MessageCircle, Share2 } from "lucide-react";
+import { ArrowLeft, Heart, MessageCircle, Share2, Copy, Check } from "lucide-react";
+import { SiDiscord } from "react-icons/si";
+import { useToast } from "@/hooks/use-toast";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import schoolImage from "@assets/stock_images/mother_helping_child_3290cfd8.jpg";
 import pregnantImage from "@assets/stock_images/pregnant_woman_plann_2a6c6d7b.jpg";
 
 export default function Community() {
   const [selectedPost, setSelectedPost] = useState<string | null>(null);
+  const [likedPosts, setLikedPosts] = useState<Set<number>>(new Set());
+  const [copiedLink, setCopiedLink] = useState(false);
+  const { toast } = useToast();
+  const [, setLocation] = useLocation();
+
+  const handleLike = (postId: number, e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setLikedPosts(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(postId)) {
+        newSet.delete(postId);
+      } else {
+        newSet.add(postId);
+      }
+      return newSet;
+    });
+    toast({
+      title: likedPosts.has(postId) ? "Removed like" : "Liked!",
+      description: likedPosts.has(postId) ? "You unliked this post" : "Thanks for showing your appreciation!",
+    });
+  };
+
+  const handleComment = () => {
+    window.open("https://discord.gg/4xVyA9STF5", "_blank");
+  };
+
+  const handleShare = async (postTitle: string) => {
+    const shareUrl = window.location.href;
+    const shareText = `Check out "${postTitle}" on Zero2Seventeen Community`;
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: postTitle,
+          text: shareText,
+          url: shareUrl,
+        });
+      } catch (err) {
+        console.log("Share cancelled");
+      }
+    }
+  };
+
+  const handleCopyLink = async () => {
+    const url = window.location.href;
+    await navigator.clipboard.writeText(url);
+    setCopiedLink(true);
+    toast({
+      title: "Link copied!",
+      description: "The blog link has been copied to your clipboard.",
+    });
+    setTimeout(() => setCopiedLink(false), 2000);
+  };
+
+  const handleBackToHome = () => {
+    setLocation("/");
+  };
 
   const communityPosts = [
     {
@@ -177,19 +242,44 @@ I'm so grateful for resources like this app that make preparation easier and mor
                   <p key={i}>{paragraph}</p>
                 ))}
               </div>
-              <div className="flex gap-4 border-t border-border pt-6">
-                <Button variant="ghost" className="gap-2" data-testid="button-like">
-                  <Heart className="w-4 h-4" />
-                  {post.likes}
+              <div className="flex flex-wrap gap-4 border-t border-border pt-6">
+                <Button 
+                  variant="ghost" 
+                  className="gap-2" 
+                  data-testid="button-like"
+                  onClick={() => handleLike(post.id)}
+                >
+                  <Heart className={`w-4 h-4 ${likedPosts.has(post.id) ? "fill-red-500 text-red-500" : ""}`} />
+                  {post.likes + (likedPosts.has(post.id) ? 1 : 0)}
                 </Button>
-                <Button variant="ghost" className="gap-2" data-testid="button-comment">
+                <Button 
+                  variant="ghost" 
+                  className="gap-2" 
+                  data-testid="button-comment"
+                  onClick={handleComment}
+                >
                   <MessageCircle className="w-4 h-4" />
                   {post.comments}
+                  <SiDiscord className="w-4 h-4 ml-1" style={{ color: "#5865F2" }} />
                 </Button>
-                <Button variant="ghost" className="gap-2" data-testid="button-share">
-                  <Share2 className="w-4 h-4" />
-                  Share
-                </Button>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" className="gap-2" data-testid="button-share">
+                      <Share2 className="w-4 h-4" />
+                      Share
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuItem onClick={handleCopyLink} data-testid="button-copy-link">
+                      {copiedLink ? <Check className="w-4 h-4 mr-2" /> : <Copy className="w-4 h-4 mr-2" />}
+                      {copiedLink ? "Copied!" : "Copy Link"}
+                    </DropdownMenuItem>
+                    <DropdownMenuItem onClick={() => handleShare(post.title)} data-testid="button-share-native">
+                      <Share2 className="w-4 h-4 mr-2" />
+                      Share via...
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
             </article>
           )}
@@ -202,11 +292,15 @@ I'm so grateful for resources like this app that make preparation easier and mor
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link href="/">
-            <Button variant="ghost" data-testid="button-home">
-              ← Home
-            </Button>
-          </Link>
+          <Button 
+            variant="ghost" 
+            data-testid="button-home"
+            onClick={handleBackToHome}
+            className="gap-2"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Home
+          </Button>
         </div>
       </header>
 
