@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Download, UserPlus, Package, Users, ShieldCheck } from "lucide-react";
+import { motion } from "framer-motion";
 import screenshot1 from "@assets/app_screenshots/screenshot1.png";
 import screenshot2 from "@assets/app_screenshots/screenshot2.png";
 import screenshot3 from "@assets/app_screenshots/screenshot3.png";
@@ -111,21 +112,41 @@ export function HowItWorks() {
           })}
         </div>
 
-        <div className="bg-card rounded-2xl p-8 shadow-lg border border-card-border">
+        <div className="bg-card rounded-2xl p-8 shadow-lg border border-card-border overflow-hidden">
           <h3 className="text-2xl font-bold text-foreground text-center mb-8 font-heading">
             See the App in Action
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {screenshots.map((screenshot, index) => (
-              <div key={index} className="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                <img
-                  src={screenshot}
-                  alt={`Zero to Seventeen app screenshot ${index + 1}`}
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
-              </div>
-            ))}
+          <div className="relative">
+            <motion.div 
+              className="flex gap-6"
+              animate={{
+                x: [0, -50 * screenshots.length * 2 + "%"],
+              }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 20,
+                  ease: "linear",
+                },
+              }}
+            >
+              {[...screenshots, ...screenshots, ...screenshots, ...screenshots].map((screenshot, index) => (
+                <motion.div 
+                  key={index} 
+                  className="flex-shrink-0 w-48 md:w-56 lg:w-64 overflow-hidden rounded-xl shadow-md"
+                  whileHover={{ scale: 1.05, y: -5 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <img
+                    src={screenshot}
+                    alt={`Zero to Seventeen app screenshot ${(index % 4) + 1}`}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </div>
