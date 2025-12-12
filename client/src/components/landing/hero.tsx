@@ -67,7 +67,7 @@ export function Hero() {
               className="w-full sm:w-auto flex items-center justify-center gap-2 h-14 px-6 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-lg transition-colors"
               data-testid="button-hero-discord"
             >
-              <SiDiscord className="w-5 h-5" />
+              <SiDiscord className="w-4 h-4" />
               <span className="font-medium">Join Discord</span>
             </a>
           </div>
