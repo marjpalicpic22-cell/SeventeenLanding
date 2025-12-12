@@ -103,6 +103,7 @@ export function Testimonials() {
           opts={{
             align: "center",
             loop: true,
+            containScroll: false,
           }}
           className="w-full"
           data-testid="carousel-testimonials"
