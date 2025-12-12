@@ -64,11 +64,11 @@ export function Hero() {
               href="https://discord.gg/4xVyA9STF5"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 h-10 sm:h-14 px-4 sm:px-6 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-lg transition-colors"
+              className="w-[135px] sm:w-auto flex items-center justify-center gap-1.5 sm:gap-2 h-10 sm:h-14 px-3 sm:px-6 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-md sm:rounded-lg transition-colors"
               data-testid="button-hero-discord"
             >
-              <SiDiscord className="w-4 h-4" />
-              <span className="font-medium text-sm sm:text-base">Join Discord</span>
+              <SiDiscord className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span className="font-medium text-xs sm:text-base">Join Discord</span>
             </a>
           </div>
 
