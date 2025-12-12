@@ -44,7 +44,7 @@ export function Hero() {
               <img
                 src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                 alt="Download on the App Store"
-                className="h-14 w-auto mx-auto sm:mx-0"
+                className="h-10 sm:h-14 w-auto mx-auto sm:mx-0"
               />
             </a>
             <a
@@ -57,18 +57,18 @@ export function Hero() {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                 alt="Get it on Google Play"
-                className="h-14 w-auto mx-auto sm:mx-0"
+                className="h-10 sm:h-14 w-auto mx-auto sm:mx-0"
               />
             </a>
             <a
               href="https://discord.gg/4xVyA9STF5"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 h-14 px-6 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-lg transition-colors"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 h-10 sm:h-14 px-4 sm:px-6 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-lg transition-colors"
               data-testid="button-hero-discord"
             >
               <SiDiscord className="w-4 h-4" />
-              <span className="font-medium">Join Discord</span>
+              <span className="font-medium text-sm sm:text-base">Join Discord</span>
             </a>
           </div>
 
