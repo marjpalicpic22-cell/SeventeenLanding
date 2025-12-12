@@ -116,11 +116,11 @@ export function HowItWorks() {
           <h3 className="text-2xl font-bold text-foreground text-center mb-8 font-heading">
             See the App in Action
           </h3>
-          <div className="relative">
+          <div className="relative overflow-hidden">
             <motion.div 
               className="flex gap-6"
               animate={{
-                x: [0, -50 * screenshots.length * 2 + "%"],
+                x: ["0%", "-50%"],
               }}
               transition={{
                 x: {
@@ -131,7 +131,7 @@ export function HowItWorks() {
                 },
               }}
             >
-              {[...screenshots, ...screenshots, ...screenshots, ...screenshots].map((screenshot, index) => (
+              {[...screenshots, ...screenshots].map((screenshot, index) => (
                 <motion.div 
                   key={index} 
                   className="flex-shrink-0 w-48 md:w-56 lg:w-64 overflow-hidden rounded-xl shadow-md"
