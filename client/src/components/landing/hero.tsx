@@ -20,17 +20,17 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
         <div className="space-y-6 md:space-y-8">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight font-heading"
+            className="text-4xl sm:text-5xl md:text-[3.5rem] lg:text-6xl font-bold text-white tracking-tight font-heading"
             data-testid="hero-headline"
           >
-            The App Where Parents Connect and Kids' Items Find New Homes
+            A Trusted Marketplace for Parents
           </h1>
 
           <p
             className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-light"
             data-testid="hero-subheadline"
           >
-            Join a supportive community of mums and parents. Buy, sell, and share quality second-hand items for your little ones, all in one trusted place.
+            Buy, sell, and share quality kids' items through a trusted, community-powered marketplace designed for parents.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
