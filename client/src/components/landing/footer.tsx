@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { SiInstagram, SiFacebook, SiTiktok, SiDiscord } from "react-icons/si";
+import logoPng from "@assets/generated_images/minimalist_logo_\"zero_2_seventeen\"_green_text.png";
 
 export function Footer() {
   return (
@@ -9,12 +10,11 @@ export function Footer() {
           <div className="space-y-4" data-testid="footer-brand">
             <div className="flex items-center gap-3">
               <img
-                src="https://play-lh.googleusercontent.com/USgufPy9bs7A8ZWDvJFpAEZOR84YCCL1DwpIjie4WxN80CbpkGXivU2b5wgl4VCbEZ4=w240-h480-rw"
-                alt="Zero to Seventeen"
-                className="h-12 rounded-lg"
+                src={logoPng}
+                alt="Zero 2 Seventeen"
+                className="h-12 object-contain"
                 data-testid="footer-logo"
               />
-              <span className="font-semibold text-foreground">Zero to Seventeen</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs" data-testid="footer-tagline">
               A warm community where parents connect, share experiences, and find quality second-hand items for their little ones.

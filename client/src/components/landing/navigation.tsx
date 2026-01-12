@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logoPng from "@assets/generated_images/minimalist_logo_\"zero_2_seventeen\"_green_text.png";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,12 +28,11 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="/" className="flex items-center gap-3" data-testid="logo-container">
             <img
-              src="https://play-lh.googleusercontent.com/USgufPy9bs7A8ZWDvJFpAEZOR84YCCL1DwpIjie4WxN80CbpkGXivU2b5wgl4VCbEZ4=w240-h480-rw"
-              alt="Zero to Seventeen"
-              className="h-10 md:h-12 rounded-lg"
+              src={logoPng}
+              alt="Zero 2 Seventeen"
+              className="h-10 md:h-12 object-contain"
               data-testid="logo-image"
             />
-            <span className="font-semibold text-foreground hidden sm:inline">Zero to Seventeen</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
