@@ -105,9 +105,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://www.zero2seventeen.com/terms-and-conditions"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/terms-and-conditions"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   data-testid="link-footer-terms"
                 >
@@ -116,9 +114,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.zero2seventeen.com/privacy-policy"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/privacy-policy"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   data-testid="link-footer-privacy"
                 >
