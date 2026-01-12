@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { SiInstagram, SiFacebook, SiTiktok, SiDiscord } from "react-icons/si";
-import logoPng from "@assets/generated_images/minimalist_logo_\"zero_2_seventeen\"_green_text.png";
+import logoPng from "@assets/Zero_2_Seventeen_logo_1768196238804.png";
 
 export function Footer() {
   return (
