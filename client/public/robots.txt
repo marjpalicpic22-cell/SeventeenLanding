@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.zero2seventeen.com/sitemap.xml
