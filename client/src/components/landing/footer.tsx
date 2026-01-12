@@ -106,6 +106,8 @@ export function Footer() {
               <li>
                 <a
                   href="/terms-and-conditions"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   data-testid="link-footer-terms"
                 >
@@ -115,6 +117,8 @@ export function Footer() {
               <li>
                 <a
                   href="/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   data-testid="link-footer-privacy"
                 >
