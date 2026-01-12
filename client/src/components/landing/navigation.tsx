@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logoPng from "@assets/Zero_2_Seventeen_logo_1768196238804.png";
@@ -6,6 +7,7 @@ import logoPng from "@assets/Zero_2_Seventeen_logo_1768196238804.png";
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +16,8 @@ export function Navigation() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const isHome = location === "/";
 
   return (
     <nav
@@ -26,46 +30,46 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <a href="/" className="flex items-center gap-3" data-testid="logo-container">
+          <Link href="/" className="flex items-center gap-3" data-testid="logo-container">
             <img
               src={logoPng}
               alt="Zero 2 Seventeen"
-              className="h-10 md:h-12 object-contain"
+              className="h-10 md:h-12 object-contain cursor-pointer"
               data-testid="logo-image"
             />
-          </a>
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
             <a
-              href="#how-it-works"
+              href={isHome ? "#how-it-works" : "/#how-it-works"}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-how-it-works"
             >
               How It Works
             </a>
             <a
-              href="#our-story"
+              href={isHome ? "#our-story" : "/#our-story"}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-our-story"
             >
               Our Story
             </a>
-            <a
+            <Link
               href="/community"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-community"
             >
               Community
-            </a>
-            <a
+            </Link>
+            <Link
               href="/calculator"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-calculator"
             >
               Calculator
-            </a>
+            </Link>
             <a
-              href="#download"
+              href={isHome ? "#download" : "/#download"}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-download"
             >
@@ -127,7 +131,7 @@ export function Navigation() {
         >
           <div className="px-4 py-4 space-y-3">
             <a
-              href="#how-it-works"
+              href={isHome ? "#how-it-works" : "/#how-it-works"}
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-mobile-how-it-works"
@@ -135,31 +139,31 @@ export function Navigation() {
               How It Works
             </a>
             <a
-              href="#our-story"
+              href={isHome ? "#our-story" : "/#our-story"}
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-mobile-our-story"
             >
               Our Story
             </a>
-            <a
+            <Link
               href="/community"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-mobile-community"
             >
               Community
-            </a>
-            <a
+            </Link>
+            <Link
               href="/calculator"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-mobile-calculator"
             >
               Calculator
-            </a>
+            </Link>
             <a
-              href="#download"
+              href={isHome ? "#download" : "/#download"}
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-mobile-download"
