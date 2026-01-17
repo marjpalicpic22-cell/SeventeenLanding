@@ -36,7 +36,7 @@ export function FinalCTA() {
 
             <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 pt-4">
               <a
-                href="https://apps.apple.com/us/app/zero2seventeen/id6739604370"
+                href="https://apps.apple.com/au/app/zero2seventeen/id6739604370"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"

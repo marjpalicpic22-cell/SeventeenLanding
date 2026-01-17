@@ -92,7 +92,7 @@ export function Navigation() {
               </Button>
             </a>
             <a
-              href="https://apps.apple.com/us/app/zero2seventeen/id6739604370"
+              href="https://apps.apple.com/au/app/zero2seventeen/id6739604370"
               target="_blank"
               rel="noopener noreferrer"
               data-testid="button-app-store-nav"
@@ -186,7 +186,7 @@ export function Navigation() {
                 </Button>
               </a>
               <a
-                href="https://apps.apple.com/us/app/zero2seventeen/id6739604370"
+                href="https://apps.apple.com/au/app/zero2seventeen/id6739604370"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
