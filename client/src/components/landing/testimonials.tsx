@@ -9,6 +9,7 @@ import {
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
 import elyzaImage from "@assets/stock_images/young_mother_woman_p_dbfd9e88.jpg";
+import donnaImage from "@assets/first_time_mum_1771458706179.png";
 
 export function Testimonials() {
   const [api, setApi] = useState<any>(null);
@@ -27,17 +28,17 @@ export function Testimonials() {
     {
       id: 2,
       name: "Donna",
-      location: "Melbourne, VIC",
+      location: "South Yarra, VIC",
       role: "First-Time Mum",
       content:
         "Finding a safe, trustworthy place to buy pre-loved items was exactly what I needed. The app is so easy to use and I've already made some wonderful mum friends through the community!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOiIxMjM0NTYifQ&w=100&h=100&fit=crop&q=80&crop=faces",
+      image: donnaImage,
     },
     {
       id: 3,
       name: "Emma T.",
-      location: "Brisbane, QLD",
+      location: "Camberwell, VIC",
       role: "Mum of 2",
       content:
         "I love knowing that when my kids outgrow their things, other families get to use them too. It's sustainable, affordable, and the community support has been incredible during my pregnancy.",
