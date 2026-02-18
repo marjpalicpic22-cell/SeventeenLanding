@@ -18,7 +18,7 @@ export function Testimonials() {
     {
       id: 1,
       name: "Sarah M.",
-      location: "Sydney, NSW",
+      location: "Brighton, VIC",
       role: "Mum of 3",
       content:
         "Zero to Seventeen has been a game-changer for our family! We've saved so much money buying quality second-hand items and the community is so supportive. Highly recommend!",
@@ -48,7 +48,7 @@ export function Testimonials() {
     {
       id: 4,
       name: "Catherine",
-      location: "Perth, WA",
+      location: "Toorak, VIC",
       role: "Mum of 4",
       content:
         "From toys to clothes to furniture, I've found everything we needed at a fraction of the price. But more than that, the community tips and advice have been invaluable. This is what motherhood should feel like!",
@@ -58,7 +58,7 @@ export function Testimonials() {
     {
       id: 5,
       name: "Adrianna",
-      location: "Adelaide, SA",
+      location: "Malvern, VIC",
       role: "Pregnant Mum",
       content:
         "Preparing for my third baby felt less overwhelming with Zero to Seventeen. The marketplace is amazing, but the real value is the community of mums who genuinely understand what you're going through.",
@@ -68,7 +68,7 @@ export function Testimonials() {
     {
       id: 6,
       name: "Elyza",
-      location: "Hobart, TAS",
+      location: "Hawthorn, VIC",
       role: "Mum of 1",
       content:
         "The Zero to Seventeen community has made such a difference in my motherhood journey. Being able to connect with other Australian mums and find quality items for my daughter has been transformative.",
