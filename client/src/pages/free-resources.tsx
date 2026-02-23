@@ -2,8 +2,8 @@ import { Navigation } from "@/components/landing/navigation";
 import { Footer } from "@/components/landing/footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Download, Printer, Clock } from "lucide-react";
-import bundleMockup from "@assets/mock_up_1771809564508.png";
+import { ArrowRight, Download, Printer, Clock, CheckCircle2 } from "lucide-react";
+import bundleMockup from "@assets/zero2seventeenmockup_2_1771837614940.png";
 
 export default function FreeResources() {
   const MAILCHIMP_LANDING_PAGE_URL = "https://mailchi.mp/zero2seventeen/landing-page-for-freebies";
@@ -19,10 +19,14 @@ export default function FreeResources() {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground font-heading mb-6" data-testid="text-free-resources-title">
               Free Resources
             </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-free-resources-intro">
-              A small library of free printables and tools for Aussie families. 
-              Download our current bundle and check back as we add more.
-            </p>
+            <div className="space-y-4">
+              <p className="text-xl font-medium text-foreground" data-testid="text-free-resources-question">
+                Need something helpful today without adding more to your mental load?
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-free-resources-intro">
+                Our free resources are made for real life Australian families calm practical and easy to use. Everything is a digital download of printable PDFs so you can grab it in minutes and start right away.
+              </p>
+            </div>
           </div>
 
           {/* Current Freebie Section */}
@@ -33,11 +37,25 @@ export default function FreeResources() {
                 <div className="flex-1 space-y-6">
                   <div>
                     <h3 className="text-2xl font-bold text-foreground mb-3" data-testid="text-freebie-name">
-                      School & Kids Activity Bundle
+                      The School and Kids Reset Bundle Free
                     </h3>
-                    <p className="text-muted-foreground text-lg" data-testid="text-freebie-description">
-                      Term planner, kids activity pack, screen-free ideas, plus a bonus 20-page activity book.
+                    <p className="text-muted-foreground text-lg mb-6" data-testid="text-freebie-description">
+                      A parent friendly bundle of printables to help you feel more organised and keep little hands busy without screens.
                     </p>
+                    
+                    <ul className="space-y-3 mb-8">
+                      {[
+                        "2026 School Term Planner Australian dates",
+                        "Kids Activity Pack ages 2 to 8",
+                        "Screen Free Idea Reset Pack for overwhelmed days",
+                        "Bonus 20 page Australian Kids Activity Book"
+                      ].map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3 text-foreground/80">
+                          <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
 
                   <div className="space-y-4">
@@ -49,32 +67,42 @@ export default function FreeResources() {
                       data-testid="link-get-freebie"
                     >
                       <Button size="lg" className="gap-2 text-lg px-8">
-                        Get the free bundle
+                        Get the free digital bundle
                         <ArrowRight className="w-5 h-5" />
                       </Button>
                     </a>
-                    <p className="text-sm text-muted-foreground italic" data-testid="text-spam-note">
-                      * After signing up, check Spam or Promotions if you don't see the email.
-                    </p>
+                    <div className="space-y-1">
+                      <p className="text-sm font-medium text-foreground" data-testid="text-cta-helper">
+                        Enter your email and we will send your instant download link.
+                      </p>
+                      <p className="text-sm text-muted-foreground" data-testid="text-spam-note">
+                        If you do not see it within a few minutes please check Spam or Promotions.
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                    <div className="flex gap-3 items-start text-sm text-muted-foreground">
-                      <Download className="w-4 h-4 mt-0.5 text-primary" />
-                      <p>Digital download only. Print at home (A4 or any size) for personal use.</p>
-                    </div>
-                    <div className="flex gap-3 items-start text-sm text-muted-foreground">
-                      <Printer className="w-4 h-4 mt-0.5 text-primary" />
-                      <p>Printed copies are available on request. Printing charges and shipping costs apply.</p>
+                  <div className="pt-6 border-t border-border/50">
+                    <div className="space-y-4">
+                      <div className="space-y-1">
+                        <p className="font-semibold text-foreground">Digital download only. Nothing is shipped.</p>
+                        <p className="text-sm text-muted-foreground">
+                          You will receive printable PDF files to download instantly and print at home. A4 and printer friendly sizing.
+                        </p>
+                        <p className="text-sm text-muted-foreground">Personal use only.</p>
+                      </div>
+                      
+                      <p className="text-sm text-muted-foreground italic border-l-2 border-primary/20 pl-4">
+                        Want it professionally printed? Printed copies are available on request. Printing charges and shipping apply.
+                      </p>
                     </div>
                   </div>
                 </div>
                 
-                <div className="w-full md:w-72 aspect-[3/4] rounded-lg overflow-hidden border border-border shadow-sm">
+                <div className="w-full md:w-80 aspect-[3/4.5] rounded-lg overflow-hidden border border-border shadow-md bg-white">
                   <img 
                     src={bundleMockup} 
-                    alt="School & Kids Activity Bundle Preview" 
-                    className="w-full h-full object-cover"
+                    alt="The School and Kids Reset Bundle digital printable PDF download" 
+                    className="w-full h-full object-contain"
                     data-testid="img-bundle-preview"
                   />
                 </div>
