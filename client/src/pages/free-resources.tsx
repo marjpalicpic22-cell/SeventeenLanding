@@ -3,6 +3,7 @@ import { Footer } from "@/components/landing/footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Download, Printer, Clock } from "lucide-react";
+import bundleMockup from "@assets/mock_up_1771809564508.png";
 
 export default function FreeResources() {
   const MAILCHIMP_LANDING_PAGE_URL = "https://mailchi.mp/zero2seventeen/landing-page-for-freebies";
@@ -69,12 +70,13 @@ export default function FreeResources() {
                   </div>
                 </div>
                 
-                {/* Optional Placeholder for Image if needed in future */}
-                <div className="w-full md:w-72 aspect-square bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/20">
-                  <div className="text-center p-6">
-                    <Download className="w-12 h-12 mx-auto mb-3 text-muted-foreground/40" />
-                    <p className="text-sm font-medium text-muted-foreground/60">Bundle Preview Coming Soon</p>
-                  </div>
+                <div className="w-full md:w-72 aspect-[3/4] rounded-lg overflow-hidden border border-border shadow-sm">
+                  <img 
+                    src={bundleMockup} 
+                    alt="School & Kids Activity Bundle Preview" 
+                    className="w-full h-full object-cover"
+                    data-testid="img-bundle-preview"
+                  />
                 </div>
               </div>
             </Card>
