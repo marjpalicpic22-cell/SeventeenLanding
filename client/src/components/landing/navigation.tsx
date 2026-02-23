@@ -68,6 +68,13 @@ export function Navigation() {
             >
               Calculator
             </Link>
+            <Link
+              href="/free-resources"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              data-testid="link-free-resources"
+            >
+              Free Resources
+            </Link>
             <a
               href={isHome ? "#download" : "/#download"}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
@@ -161,6 +168,14 @@ export function Navigation() {
               data-testid="link-mobile-calculator"
             >
               Calculator
+            </Link>
+            <Link
+              href="/free-resources"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
+              data-testid="link-mobile-free-resources"
+            >
+              Free Resources
             </Link>
             <a
               href={isHome ? "#download" : "/#download"}

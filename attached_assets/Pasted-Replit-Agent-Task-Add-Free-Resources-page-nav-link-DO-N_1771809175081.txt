@@ -1,0 +1,62 @@
+Replit Agent Task: Add “Free Resources” page + nav link (DO NOT TOUCH anything else)
+
+IMPORTANT RULES
+- Do not change, refactor, restyle, or move any existing sections/components/pages.
+- Do not edit the homepage content, the Download page, or any current routes/components except what is strictly necessary to add ONE new nav link and ONE new page.
+- Only add:
+  1) A new navigation link labeled “Free Resources” placed next to “Download”
+  2) A new page route: /free-resources
+- Keep all existing styling, layout, and behavior unchanged.
+
+CONTEXT
+- We already have a Mailchimp landing page for the freebie signup (I will upload the landing page screenshot/file so you can align tone and messaging).
+- This new /free-resources page is a dedicated hub for freebies now and in the future.
+- The page should not repeat the Mailchimp landing page copy. Keep it short and non-redundant.
+- The main CTA on /free-resources should link out to the Mailchimp landing page (use a placeholder URL for now if you don’t have it yet, I will provide it).
+
+DELIVERABLES
+1) Add nav item:
+   - Label: “Free Resources”
+   - Placement: in the top navigation next to “Download”
+   - Links to: /free-resources
+
+2) Create new page:
+   - Route: /free-resources
+   - Title/H1: “Free Resources”
+   - Purpose: quick overview + link to current freebie + space for future freebies
+
+PAGE CONTENT (short, non-redundant)
+Above the fold:
+- H1: Free Resources
+- Short intro paragraph (2–3 lines max):
+  “A small library of free printables and tools for Aussie families. Download our current bundle and check back as we add more.”
+
+Current freebie section:
+- Section title: “Current Freebie”
+- Name: “School & Kids Activity Bundle”
+- 1–2 sentence description:
+  “Term planner, kids activity pack, screen-free ideas, plus a bonus 20-page activity book.”
+- CTA button: “Get the free bundle”
+- Button link: MAILCHIMP_LANDING_PAGE_URL (use placeholder if missing)
+
+Important note (small text under CTA):
+- “After signing up, check Spam or Promotions if you don’t see the email.”
+
+Digital disclaimer (small, not heavy):
+- “Digital download only. Print at home (A4 or any size) for personal use.”
+- “Printed copies are available on request. Printing charges and shipping costs apply.”
+
+Future freebies (simple placeholder section):
+- Section title: “More coming soon”
+- Copy:
+  “We’ll add new freebies here over time. Check back soon.”
+
+IMPLEMENTATION NOTES
+- Reuse existing site components/styles (buttons, headings, spacing) so it looks native.
+- Do not add new global CSS or change theme variables.
+- Only add the minimal code needed: a new page component + a single new nav link.
+- Provide a brief summary of files changed and where the new route is registered.
+
+After implementing, confirm:
+- Existing pages look identical as before
+- Only change visible to users is the new “Free Resources” nav link and the new /free-resources page
