@@ -23,14 +23,14 @@ export function Hero() {
             className="text-4xl sm:text-5xl md:text-[3.5rem] lg:text-6xl font-bold text-white tracking-tight font-heading"
             data-testid="hero-headline"
           >
-            A Trusted Marketplace for Parents
+            A Trusted Kids Marketplace App
           </h1>
 
           <p
             className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-light"
             data-testid="hero-subheadline"
           >
-            Buy, sell, and share quality kids' items through a trusted, community-powered marketplace designed for parents.
+            Buy, sell, share, and donate quality kids’ items through a trusted, community-powered app for parents.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
@@ -81,13 +81,12 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Join our growing community of parents on Discord for support, conversations, and updates.
+              Most parents start by downloading the app, then join Discord for support, conversations, and updates.
             </a>
           </p>
           </div>
           </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent"></div>
-    </section>
+          </section>
   );
 }
