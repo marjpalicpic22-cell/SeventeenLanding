@@ -1,0 +1,156 @@
+You are working on the existing Zero2Seventeen website.
+
+IMPORTANT RULES
+Do NOT redesign the website.
+Do NOT change colors, layout, styling, fonts, or components.
+Do NOT modify any existing pages except the navigation label.
+Only implement the tasks listed below.
+
+------------------------------------------------
+
+TASK 1 — Rename Navigation Label
+
+Find the navigation menu item currently labeled:
+
+Download
+
+Change ONLY the label text to:
+
+Insights
+
+Keep the same navigation styling and placement.
+
+The link should point to:
+
+/insights
+
+Do not change any other navigation items.
+
+------------------------------------------------
+
+TASK 2 — Create Insights Page
+
+Create a new page at:
+
+/insights
+
+This will be the blog section for Zero2Seventeen.
+
+Requirements:
+
+• Use the existing site layout (same header and footer)
+• Do not redesign anything
+• Display blog posts in a simple vertical list or card layout
+• Each blog item should include:
+  - Featured image
+  - Blog title
+  - Short excerpt
+  - "Read More" link
+
+------------------------------------------------
+
+TASK 3 — Create One Blog Post
+
+Create the following blog page:
+
+URL:
+/insights/sell-kids-clothes-online
+
+------------------------------------------------
+
+SEO META TAGS
+
+Meta Title:
+Sell Kids Clothes Online: The Smart Way Parents Save Money
+
+Meta Description:
+Learn how parents sell kids clothes online, declutter faster, and save money using secondhand kids marketplaces like Zero2Seventeen.
+
+Meta Keywords:
+sell kids clothes online, declutter kids clothes, secondhand kids marketplace, used kids clothes, kids resale marketplace
+
+Also include Open Graph tags for social sharing.
+
+------------------------------------------------
+
+FEATURED IMAGE
+
+Select one high quality royalty-free stock photo related to:
+
+children’s clothing, kids toys, or parents decluttering kids items.
+
+Optimize the image for web performance.
+
+Image alt text:
+
+"Parents sorting kids clothes to sell online"
+
+------------------------------------------------
+
+BLOG TITLE
+
+How to Sell Kids Clothes Online and Declutter Your Home Faster
+
+------------------------------------------------
+
+BLOG CONTENT
+
+Hook
+
+Most parents are surprised when they realise how many kids clothes are sitting unused in their homes.
+
+Children grow quickly, and clothes that were bought just a few months ago can suddenly become too small. Before long, closets and drawers fill up with items that are still in great condition but no longer get worn.
+
+Instead of letting those clothes pile up, many families are now choosing to sell kids clothes online and turn clutter into extra money.
+
+Why kids clothes accumulate so quickly
+
+Kids grow through sizes faster than almost anything else in a household.
+
+One season a jacket fits perfectly, and the next it’s already too small. Special outfits, school clothes, and everyday wear often only get used for a short time before they’re replaced.
+
+Because of this, most families end up with bags of clothing their children have already outgrown.
+
+Why selling kids clothes makes more sense than throwing them away
+
+Throwing away kids clothes often feels wasteful. Many of the items are still in excellent condition and could easily be used by another family.
+
+Selling them online allows parents to:
+
+• Recover some of the money they spent  
+• Declutter closets and storage spaces  
+• Help other families find affordable clothes  
+• Reduce unnecessary waste  
+
+Instead of sitting unused, those items continue to be useful.
+
+How parents are selling kids clothes today
+
+Online marketplaces have made it much easier for families to buy and sell children’s items.
+
+Parents can list clothes their kids have outgrown and connect with other families who are looking for affordable options.
+
+Many parents choose to sell items as bundles by size, which makes it easier for buyers and helps listings sell faster.
+
+A simple way to start decluttering kids clothes
+
+If you want to start clearing space at home, try this simple method:
+
+1. Choose one drawer or closet section  
+2. Pull out anything your child has already outgrown  
+3. Separate items into keep, sell, or donate piles  
+4. List a few items online to begin
+
+Starting small helps make the process manageable and builds momentum.
+
+How platforms like Zero2Seventeen help families
+
+Platforms like Zero2Seventeen make it easy for parents to buy and sell kids items in one place.
+
+Instead of storing unused clothes or throwing them away, families can pass them on to another household that needs them.
+
+This creates a cycle where children’s items continue to be used while helping parents save money.
+
+CTA
+
+If you have kids clothes your family no longer needs, explore Zero2Seventeen and see how other parents are buying and selling children’s items in one simple marketplace.
