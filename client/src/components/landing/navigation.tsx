@@ -75,13 +75,13 @@ export function Navigation() {
             >
               Free Resources
             </Link>
-            <a
-              href={isHome ? "#download" : "/#download"}
+            <Link
+              href="/insights"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-download"
+              data-testid="link-insights"
             >
-              Download
-            </a>
+              Insights
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center gap-3">
@@ -177,14 +177,14 @@ export function Navigation() {
             >
               Free Resources
             </Link>
-            <a
-              href={isHome ? "#download" : "/#download"}
+            <Link
+              href="/insights"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-mobile-download"
+              data-testid="link-mobile-insights"
             >
-              Download
-            </a>
+              Insights
+            </Link>
             <div className="pt-3 space-y-2">
               <a
                 href="https://play.google.com/store/apps/details?id=com.appetiser.zerotwoseventeen"
