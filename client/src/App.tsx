@@ -9,6 +9,7 @@ import Calculator from "@/pages/calculator";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsAndConditions from "@/pages/terms-and-conditions";
 import FreeResources from "@/pages/free-resources";
+import Insights from "@/pages/insights";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/community" component={Community} />
       <Route path="/calculator" component={Calculator} />
+      <Route path="/insights" component={Insights} />
       <Route path="/free-resources" component={FreeResources} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms-and-conditions" component={TermsAndConditions} />
