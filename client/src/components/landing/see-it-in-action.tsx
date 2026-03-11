@@ -1,5 +1,6 @@
 import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import maddieVideoThumbnail from "@assets/image_1773222209864.png";
 
 export function SeeItInAction() {
   const handlePlayVideo = () => {
@@ -27,9 +28,14 @@ export function SeeItInAction() {
           <div
             className="relative w-full aspect-video flex items-center justify-center group cursor-pointer"
             onClick={handlePlayVideo}
+            style={{
+              backgroundImage: `url(${maddieVideoThumbnail})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
-            {/* Thumbnail Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-green-600 via-slate-700 to-slate-900 opacity-90"></div>
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-black/30"></div>
 
             {/* Play Button */}
             <div className="relative z-10 flex flex-col items-center gap-6">
