@@ -19,9 +19,9 @@ export default function Home() {
       <main>
         <Hero />
         <OriginStory />
+        <SeeItInAction />
         <CoreValues />
         <HowItWorks />
-        <SeeItInAction />
         <Testimonials />
         <DidYouKnow />
         <CommunityImpact />
