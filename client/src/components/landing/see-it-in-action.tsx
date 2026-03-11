@@ -1,13 +1,9 @@
-import { Play } from "lucide-react";
+import { useState } from "react";
+import { Play, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function SeeItInAction() {
-  const handlePlayVideo = () => {
-    window.open(
-      "https://drive.google.com/file/d/1x1MK37sgw3WZu4WDNnDCVChlHknWZgPW/view?usp=sharing",
-      "_blank"
-    );
-  };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <section className="relative w-full py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950">
@@ -26,7 +22,7 @@ export function SeeItInAction() {
         <div className="relative w-full rounded-xl overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 shadow-lg">
           <div
             className="relative w-full bg-black aspect-video flex items-center justify-center group cursor-pointer"
-            onClick={handlePlayVideo}
+            onClick={() => setIsOpen(true)}
           >
             {/* Dark overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/80 to-slate-900/80"></div>
@@ -37,7 +33,7 @@ export function SeeItInAction() {
                 <Play className="w-12 h-12 text-white fill-white" />
               </div>
               <Button
-                onClick={handlePlayVideo}
+                onClick={() => setIsOpen(true)}
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold text-lg"
               >
                 Watch Maddie's Story
@@ -56,6 +52,33 @@ export function SeeItInAction() {
           </p>
         </div>
       </div>
+
+      {/* Video Modal */}
+      {isOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+          {/* Modal Container */}
+          <div className="relative w-full max-w-4xl rounded-lg overflow-hidden bg-black shadow-2xl">
+            {/* Close Button */}
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-4 right-4 z-10 p-2 bg-black/50 hover:bg-black/70 rounded-full transition-all duration-200"
+              aria-label="Close video"
+            >
+              <X className="w-6 h-6 text-white" />
+            </button>
+
+            {/* Video Container */}
+            <div className="relative w-full aspect-video">
+              <iframe
+                src="https://drive.google.com/file/d/1x1MK37sgw3WZu4WDNnDCVChlHknWZgPW/preview?autoplay=1"
+                className="w-full h-full"
+                allow="autoplay"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
