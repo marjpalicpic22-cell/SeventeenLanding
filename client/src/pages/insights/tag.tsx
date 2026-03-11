@@ -16,7 +16,7 @@ export default function InsightsTag() {
   const tagName = params?.tagName || "";
   const displayTagName = tagName.replace(/-/g, " ");
 
-  // Blog posts for this tag - currently only one blog post
+  // Blog posts for this tag
   const allPosts = [
     {
       id: 1,
@@ -27,6 +27,16 @@ export default function InsightsTag() {
       date: "March 2026",
       readTime: "5 min read",
       tags: ["declutter-kids-items", "secondhand-kids-marketplace", "sell-kids-clothes-online", "kids-resale-marketplace", "eco-friendly-kids-shopping"],
+    },
+    {
+      id: 2,
+      slug: "secondhand-kids-marketplace-melbourne",
+      title: "Melbourne Parents Are Quietly Using This Secondhand Kids' Marketplace to Stop Overpaying",
+      excerpt: "Explore Zero2Seventeen, a secondhand kids' marketplace Melbourne parents use to save money on kids costs, buy kids toys secondhand, and enjoy eco friendly kids shopping locally.",
+      image: "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&h=400&fit=crop",
+      date: "March 2026",
+      readTime: "4 min read",
+      tags: ["secondhand-kids-marketplace", "buy-kids-toys-secondhand", "eco-friendly-kids-shopping", "save-money-kids-costs"],
     },
   ];
 
