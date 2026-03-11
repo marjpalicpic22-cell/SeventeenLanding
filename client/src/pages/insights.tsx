@@ -3,6 +3,7 @@ import { Navigation } from "@/components/landing/navigation";
 import { Footer } from "@/components/landing/footer";
 import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
+import blogImage from "@assets/stz_blogs_1773214194233.png";
 
 export default function Insights() {
   const blogPosts = [
@@ -11,7 +12,7 @@ export default function Insights() {
       slug: "declutter-kids-items",
       title: "The Fastest Way to Declutter Kids Stuff Without the Guilt or the Waste",
       excerpt: "Learn how Melbourne parents clear clutter, save money on kids costs, and use a secondhand marketplace to give items a second life.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+      image: blogImage,
       date: "March 2026",
       readTime: "5 min read",
       tags: ["Decluttering", "Kids Items", "Secondhand"],

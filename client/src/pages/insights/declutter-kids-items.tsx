@@ -4,6 +4,7 @@ import { Footer } from "@/components/landing/footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
+import blogImage from "@assets/stz_blogs_1773214194233.png";
 
 export default function DeclutterKidsItemsBlog() {
   const [, setLocation] = useLocation();
@@ -63,8 +64,8 @@ export default function DeclutterKidsItemsBlog() {
           {/* Featured Image */}
           <div className="mb-12 rounded-lg overflow-hidden bg-muted aspect-video">
             <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop"
-              alt="Parents sorting and organizing kids clothes to declutter"
+              src={blogImage}
+              alt="Woman sorting and organizing clothes to declutter"
               className="w-full h-full object-cover"
               data-testid="image-blog-featured"
             />
