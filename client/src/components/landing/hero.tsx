@@ -14,7 +14,7 @@ export function Hero() {
         style={{ backgroundImage: `url(${heroImage})` }}
         data-testid="hero-background"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/35 to-black/45"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
