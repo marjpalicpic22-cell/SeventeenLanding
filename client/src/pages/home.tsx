@@ -18,12 +18,12 @@ export default function Home() {
       <main>
         <Hero />
         <OriginStory />
-        <Mission />
         <CoreValues />
         <HowItWorks />
-        <CommunityImpact />
         <Testimonials />
         <DidYouKnow />
+        <CommunityImpact />
+        <Mission />
         <Newsletter />
         <FinalCTA />
       </main>
