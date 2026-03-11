@@ -38,6 +38,16 @@ export default function InsightsTag() {
       readTime: "4 min read",
       tags: ["secondhand-kids-marketplace", "buy-kids-toys-secondhand", "eco-friendly-kids-shopping", "save-money-kids-costs"],
     },
+    {
+      id: 3,
+      slug: "save-money-kids-stuff",
+      title: "Saving Money on Kids Stuff Is Easy When You Stop Buying New Every Time",
+      excerpt: "Save money kids costs with Zero2Seventeen, a secondhand kids' marketplace Melbourne families use to buy kids toys secondhand, shop eco friendly kids items, and support local parents.",
+      image: "https://images.unsplash.com/photo-1446409750018-6c1d9f4a6de7?w=600&h=400&fit=crop",
+      date: "March 2026",
+      readTime: "5 min read",
+      tags: ["save-money-kids-costs", "secondhand-kids-marketplace", "buy-kids-toys-secondhand", "eco-friendly-kids-shopping"],
+    },
   ];
 
   const postsForTag = allPosts.filter((post) => post.tags.includes(tagName));

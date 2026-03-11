@@ -6,6 +6,16 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import blogImage from "@assets/stz_blogs_1773214194233.png";
 
+/**
+ * SEO METADATA
+ * Focus Keyword: declutter kids items
+ * Secondary Keywords: declutter kids clothes, secondhand kids marketplace, sell kids clothes online, kids resale marketplace, eco friendly kids shopping
+ * URL Slug: declutter-kids-items
+ * Title Tag: Declutter Kids Items Melbourne: Sell Secondhand and Clear Space Fast
+ * Meta Description: Decluttering kids items is emotional. Learn how Melbourne parents clear clutter, save money on kids costs, and use a secondhand kids' marketplace to give items a second life.
+ * Internal Links: Zero2Seventeen (homepage), Insights (blog listing)
+ */
+
 export default function DeclutterKidsItemsBlog() {
   const [, setLocation] = useLocation();
 

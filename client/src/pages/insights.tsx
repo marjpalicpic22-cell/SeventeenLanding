@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import blogImage from "@assets/stz_blogs_1773214194233.png";
 import blogImage2 from "@assets/stz_blogs_(1)_1773216300240.png";
+import blogImage3 from "@assets/stz_blogs_(2)_1773216772265.png";
 
 export default function Insights() {
   const blogPosts = [
@@ -27,6 +28,16 @@ export default function Insights() {
       date: "March 2026",
       readTime: "4 min read",
       tags: ["Secondhand", "Save Money", "Eco-Friendly"],
+    },
+    {
+      id: 3,
+      slug: "save-money-kids-stuff",
+      title: "Saving Money on Kids Stuff Is Easy When You Stop Buying New Every Time",
+      excerpt: "Save money kids costs with Zero2Seventeen, a secondhand kids' marketplace Melbourne families use to buy kids toys secondhand, shop eco friendly kids items, and support local parents.",
+      image: blogImage3,
+      date: "March 2026",
+      readTime: "5 min read",
+      tags: ["Save Money", "Secondhand", "Family"],
     },
   ];
 

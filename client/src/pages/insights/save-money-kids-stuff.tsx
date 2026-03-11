@@ -4,19 +4,18 @@ import { Footer } from "@/components/landing/footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import blogImage from "@assets/stz_blogs_(1)_1773216300240.png";
+import blogImage from "@assets/stz_blogs_(2)_1773216772265.png";
 
 /**
  * SEO METADATA
- * Focus Keyword: secondhand kids marketplace
- * Secondary Keywords: buy kids toys secondhand, secondhand kids clothes, kids resale marketplace, eco friendly kids shopping, save money kids
- * URL Slug: secondhand-kids-marketplace-melbourne
- * Title Tag: Secondhand Kids' Marketplace Melbourne: Explore Zero2Seventeen
- * Meta Description: Explore Zero2Seventeen, a secondhand kids' marketplace Melbourne parents use to save money on kids costs, buy kids toys secondhand, and enjoy eco friendly kids shopping locally.
- * Internal Links: Zero2Seventeen (homepage), Insights (blog listing)
+ * Focus Keyword: save money kids
+ * Secondary Keywords: secondhand toys, kids clothes secondhand, eco friendly shopping, kids expenses, secondhand kids marketplace
+ * URL Slug: save-money-kids-stuff
+ * Title Tag: Save Money Kids Melbourne: Secondhand Toys, Clothes, and Eco Friendly Shopping
+ * Meta Description: Save money kids costs with Zero2Seventeen, a secondhand kids' marketplace Melbourne families use to buy kids toys secondhand, shop eco friendly kids items, and support local parents.
  */
 
-export default function SecondhandKidsMarketplaceMelbourneBlog() {
+export default function SaveMoneyKidsStuffBlog() {
   const [, setLocation] = useLocation();
 
   const handleBackToInsights = () => {
@@ -48,26 +47,26 @@ export default function SecondhandKidsMarketplaceMelbourneBlog() {
           {/* Meta Information */}
           <div className="mb-8">
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full" data-testid="tag-secondhand">
-                Secondhand
-              </span>
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full" data-testid="tag-save-money">
                 Save Money
               </span>
-              <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full" data-testid="tag-eco-friendly">
-                Eco-Friendly
+              <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full" data-testid="tag-secondhand">
+                Secondhand
+              </span>
+              <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full" data-testid="tag-family">
+                Family
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4" data-testid="text-blog-title">
-              Melbourne Parents Are Quietly Using This Secondhand Kids' Marketplace to Stop Overpaying
+              Saving Money on Kids Stuff Is Easy When You Stop Buying New Every Time
             </h1>
             <p className="text-xl text-muted-foreground mb-6" data-testid="text-blog-excerpt">
-              Explore Zero2Seventeen, a secondhand kids' marketplace Melbourne parents use to save money on kids costs, buy kids toys secondhand, and enjoy eco friendly kids shopping locally.
+              Save money kids costs with Zero2Seventeen, a secondhand kids' marketplace Melbourne families use to buy kids toys secondhand, shop eco friendly kids items, and support local parents.
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-sm text-muted-foreground border-b border-border pb-6" data-testid="blog-meta">
               <span data-testid="text-publish-date">Published: March 2026</span>
               <span>•</span>
-              <span data-testid="text-read-time">4 min read</span>
+              <span data-testid="text-read-time">5 min read</span>
             </div>
           </div>
 
@@ -75,7 +74,7 @@ export default function SecondhandKidsMarketplaceMelbourneBlog() {
           <div className="mb-12 rounded-lg overflow-hidden bg-muted aspect-video">
             <img
               src={blogImage}
-              alt="Mother organizing kids toys and clothes for secondhand marketplace"
+              alt="Child saving money in piggy bank while shopping secondhand"
               className="w-full h-full object-cover"
               data-testid="image-blog-featured"
             />
@@ -86,132 +85,154 @@ export default function SecondhandKidsMarketplaceMelbourneBlog() {
             {/* Hook */}
             <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg my-8">
               <p className="text-lg italic text-foreground font-medium">
-                Most parents don't realise how much money is sitting in their house right now, in the form of barely used kids stuff. Zero2Seventeen makes it easy to turn that chaos into savings, and you'll probably spot something you need within the first five minutes.
+                If your kid uses something for two months, buying it brand new is like renting it at the highest possible price. Zero2Seventeen is the secondhand kids' marketplace Melbourne parents use to save money, help other families, and make eco friendly kids shopping feel effortless.
               </p>
             </div>
 
             {/* Section 1 */}
             <section>
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">The Problem Nobody Warns You About When You Become a Parent</h2>
-              <p className="text-lg">It's not just nappies and daycare. It's the constant upgrades:</p>
+              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">Why Secondhand Is the Smartest Way to Shop for Kids 0 to 17</h2>
+              <p className="text-lg">Kids move fast: sizes, stages, hobbies, interests. Secondhand matches the pace.</p>
+              <p className="text-lg">Buying kids toys secondhand and kids clothes secondhand works because:</p>
               <ul className="space-y-2 ml-4 text-muted-foreground">
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>Clothes that fit for five minutes</span>
+                  <span>Kids outgrow things quickly</span>
                 </li>
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>Toys that get played with once then ignored</span>
+                  <span>Parents want value without sacrificing quality</span>
                 </li>
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>Gear you needed urgently for a stage you already passed</span>
+                  <span>Bundles make it simple</span>
+                </li>
+                <li className="flex items-start gap-3 text-lg">
+                  <span className="text-primary font-bold">•</span>
+                  <span>You can buy, use, and pass it on</span>
                 </li>
               </ul>
-              <p className="mt-4 text-lg">And if you're buying new every time, you're paying premium prices for temporary phases.</p>
-              <p className="text-lg">That's why a secondhand kids' marketplace Melbourne parents actually use matters.</p>
             </section>
 
             {/* Section 2 */}
             <section>
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">What is Zero2Seventeen</h2>
-              <p className="text-lg">
-                <Link href="/" className="text-primary hover:text-primary/80 underline font-medium">
-                  Zero2Seventeen
-                </Link>
-                {" "}is a secondhand kids' marketplace Melbourne families use to buy and sell kids items in one place. It's built around the way parents shop: quickly, locally, and with a focus on value.
-              </p>
-              <p className="text-lg">Think of it like the shortcut between:</p>
+              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">The Money Saving Loop Parents Love</h2>
+              <p className="text-lg">Secondhand is a cycle:</p>
               <ul className="space-y-2 ml-4 text-muted-foreground">
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>I need this</span>
+                  <span>You buy what you need for less</span>
                 </li>
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>I found it without paying full price.</span>
+                  <span>Your kid uses it</span>
+                </li>
+                <li className="flex items-start gap-3 text-lg">
+                  <span className="text-primary font-bold">•</span>
+                  <span>You resell it when you're done</span>
+                </li>
+                <li className="flex items-start gap-3 text-lg">
+                  <span className="text-primary font-bold">•</span>
+                  <span>You put that money into the next stage</span>
                 </li>
               </ul>
+              <p className="mt-4 text-lg">This is how you save money on kids expenses without feeling like you're cutting corners.</p>
             </section>
 
             {/* Section 3 */}
             <section>
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">What You'll Find That Makes You Go "Wait, People Sell That"</h2>
-              <p className="text-lg">Parents list the stuff they didn't think would matter, and it adds up fast:</p>
+              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">What You Can Find on Zero2Seventeen</h2>
+              <p className="text-lg">Parents are often shocked by how much is available locally:</p>
               <ul className="space-y-2 ml-4 text-muted-foreground">
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>Kids toys secondhand in bundles that cost less than one new toy</span>
+                  <span>Clothing bundles by size and season</span>
                 </li>
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>Clothes lots by size and season</span>
+                  <span>Books and learning sets</span>
                 </li>
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>Activity kits and learning sets for weekend sanity</span>
+                  <span>Toys for every age</span>
                 </li>
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>Big ticket items that don't make sense to buy new</span>
+                  <span>Sports gear and hobby items</span>
+                </li>
+                <li className="flex items-start gap-3 text-lg">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Family essentials that stretch a budget</span>
                 </li>
               </ul>
-              <p className="mt-4 text-lg">The best part is you're not competing with big retailers. You're shopping locally from parents who want the space back.</p>
             </section>
 
             {/* Section 4 */}
             <section>
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">Why Melbourne Parents Are Switching to Eco Friendly Kids Shopping</h2>
-              <p className="text-lg">Most parents don't start secondhand because they're trying to be perfect. They start because they want relief.</p>
-              <p className="text-lg">Then they realise:</p>
+              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">Eco Friendly Kids Shopping Without the Pressure</h2>
+              <p className="text-lg">Secondhand is one of the simplest environmental wins available to parents.</p>
+              <p className="text-lg">It reduces:</p>
               <ul className="space-y-2 ml-4 text-muted-foreground">
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>They're saving money kids costs keep eating into</span>
+                  <span>Landfill waste</span>
                 </li>
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>They're reducing the pile of waste</span>
+                  <span>Packaging</span>
                 </li>
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>They're keeping good items in use, not in landfill</span>
+                  <span>New production demand</span>
+                </li>
+                <li className="flex items-start gap-3 text-lg">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Shipping emissions</span>
                 </li>
               </ul>
-              <p className="mt-4 text-lg">Eco friendly kids shopping is easier when it's built into what you already need to do.</p>
+              <p className="mt-4 text-lg">And it builds something better: community.</p>
             </section>
 
             {/* Section 5 */}
             <section>
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">The Simple Reason You Should Check Today, Not Later</h2>
-              <p className="text-lg">The best listings don't last. Good bundles go fast because parents know what things cost new, and they're quick to grab a deal.</p>
-              <p className="text-lg">If you're curious, do this:</p>
+              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">How It Helps Other Families in Melbourne</h2>
+              <p className="text-lg">When you buy from a parent nearby, the impact is real:</p>
               <ul className="space-y-2 ml-4 text-muted-foreground">
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>Open Zero2Seventeen</span>
+                  <span>One family gets cash back</span>
                 </li>
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>Search one thing you know you'll buy soon anyway</span>
+                  <span>One family gets what they need for less</span>
                 </li>
                 <li className="flex items-start gap-3 text-lg">
                   <span className="text-primary font-bold">•</span>
-                  <span>Compare the prices and bundles</span>
+                  <span>Kids get quality items without the full price</span>
+                </li>
+                <li className="flex items-start gap-3 text-lg">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Your local community strengthens</span>
                 </li>
               </ul>
-              <p className="mt-4 text-lg">That tiny moment usually becomes the habit.</p>
+            </section>
+
+            {/* Section 6 */}
+            <section>
+              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">The FOMO Factor</h2>
+              <p className="text-lg">Parents list the good stuff and it goes quickly. If you only check when you urgently need something, you'll miss the best bundles.</p>
+              <p className="text-lg">The easiest way to win is to browse before you're desperate.</p>
             </section>
 
             {/* CTA Section */}
             <div className="bg-primary/10 border border-primary/20 p-8 rounded-lg my-12">
               <h3 className="text-2xl font-bold text-foreground mb-4">Start Saving Today</h3>
               <p className="text-lg text-foreground mb-6">
-                If you want the easiest way to save money on kids stuff in Melbourne, explore{" "}
+                Explore{" "}
                 <Link href="/" className="text-primary hover:text-primary/80 underline font-medium">
                   Zero2Seventeen
                 </Link>
-                {" "}and see what parents near you are listing right now. Start with toys, clothes, or gear and notice how quickly the savings show up.
+                {" "}today and search for one item you know you'll need in the next month. Compare new prices versus secondhand. Once you see the difference, it's hard to go back.
               </p>
               <a href="https://apps.apple.com/au/app/zero2seventeen/id6739604370" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="gap-2" data-testid="button-app-store-cta">
@@ -224,6 +245,9 @@ export default function SecondhandKidsMarketplaceMelbourneBlog() {
             <div className="mt-12 pt-8 border-t border-border">
               <h4 className="text-sm font-medium text-muted-foreground mb-4">Tags:</h4>
               <div className="flex flex-wrap gap-2">
+                <Link href="/insights/tag/save-money-kids-costs" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-save">
+                  Save Money Kids Costs
+                </Link>
                 <Link href="/insights/tag/secondhand-kids-marketplace" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-secondhand">
                   Secondhand Kids Marketplace
                 </Link>
@@ -232,9 +256,6 @@ export default function SecondhandKidsMarketplaceMelbourneBlog() {
                 </Link>
                 <Link href="/insights/tag/eco-friendly-kids-shopping" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-eco">
                   Eco-Friendly Kids Shopping
-                </Link>
-                <Link href="/insights/tag/save-money-kids-costs" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-save">
-                  Save Money Kids Costs
                 </Link>
               </div>
             </div>
