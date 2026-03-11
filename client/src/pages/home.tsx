@@ -3,6 +3,7 @@ import { OriginStory } from "@/components/landing/origin-story";
 import { Mission } from "@/components/landing/mission";
 import { CoreValues } from "@/components/landing/core-values";
 import { HowItWorks } from "@/components/landing/how-it-works";
+import { SeeItInAction } from "@/components/landing/see-it-in-action";
 import { CommunityImpact } from "@/components/landing/community-impact";
 import { Testimonials } from "@/components/landing/testimonials";
 import { DidYouKnow } from "@/components/landing/did-you-know";
@@ -20,6 +21,7 @@ export default function Home() {
         <OriginStory />
         <CoreValues />
         <HowItWorks />
+        <SeeItInAction />
         <Testimonials />
         <DidYouKnow />
         <CommunityImpact />
