@@ -74,8 +74,14 @@ export default function TermsAndConditions() {
             <p>Buyers agree to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Review listings carefully before purchase</li>
-              <li>Communicate with sellers where necessary</li>
-              <li>Ensure items meet their requirements before completing a transaction</li>
+              <li>Communicate with sellers to clarify item details where necessary</li>
+              <li>Independently assess the condition, safety, and suitability of items before completing a transaction</li>
+            </ul>
+            <p>Buyers acknowledge that:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Items are sold by individual users, not by the Platform</li>
+              <li>The Platform does not verify, inspect, or guarantee any listings</li>
+              <li>Any purchase decision is made at the buyer's own discretion</li>
             </ul>
           </section>
 
@@ -125,13 +131,13 @@ export default function TermsAndConditions() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">12A. No Warranties</h2>
             <p>The Platform is provided on an "as is" and "as available" basis.</p>
-            <p>We make no warranties or representations about:</p>
+            <p>To the maximum extent permitted by law, we make no warranties or representations about:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>The availability, reliability, or performance of the Platform</li>
-              <li>The accuracy or completeness of listings</li>
-              <li>The safety, quality, or suitability of items</li>
+              <li>The availability, reliability, or performance of the Platform;</li>
+              <li>The accuracy, completeness, or reliability of listings;</li>
+              <li>The safety, quality, legality, or suitability of items listed on the Platform.</li>
             </ul>
-            <p>To the extent permitted by law, all implied warranties are excluded.</p>
+            <p>Nothing in these Terms excludes, restricts, or modifies any rights or remedies available under applicable law, including the Australian Consumer Law.</p>
           </section>
 
           <section className="mb-8">
