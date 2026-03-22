@@ -7,7 +7,7 @@ export default function TermsAndConditions() {
       <Navigation />
       <main className="max-w-4xl mx-auto px-4 pt-32 pb-16">
         <h1 className="text-4xl font-bold mb-8">Terms and Conditions</h1>
-        <div className="prose prose-lg prose-green dark:prose-invert max-w-none leading-relaxed">
+        <div className="prose prose-green dark:prose-invert max-w-none leading-relaxed text-[17px]">
           <p className="text-sm text-muted-foreground mb-8">Last Updated: 12 January 2025</p>
 
           <section className="mb-8">
