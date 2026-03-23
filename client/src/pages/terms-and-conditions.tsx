@@ -45,6 +45,7 @@ export default function TermsAndConditions() {
             </ul>
             <p>You must not share your account with others outside your household or allow unauthorised access.</p>
             <p>We reserve the right to suspend or terminate accounts for misuse or breach of these Terms.</p>
+            <p>By creating an account and continuing to use the Platform, you consent to receive SMS messages related to our website or app, including account updates, transaction notifications, and community communications. You may opt out at any time by contacting us.</p>
           </section>
 
           <section className="mb-8">
