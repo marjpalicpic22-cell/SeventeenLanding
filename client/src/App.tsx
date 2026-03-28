@@ -14,6 +14,7 @@ import DeclutterKidsItems from "@/pages/insights/declutter-kids-items";
 import SecondhandKidsMarketplaceMelbourne from "@/pages/insights/secondhand-kids-marketplace-melbourne";
 import SaveMoneyKidsStuff from "@/pages/insights/save-money-kids-stuff";
 import InsightsTag from "@/pages/insights/tag";
+import FAQ from "@/pages/faq";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/community" component={Community} />
       <Route path="/calculator" component={Calculator} />
+      <Route path="/faq" component={FAQ} />
       <Route path="/insights" component={Insights} />
       <Route path="/insights/declutter-kids-items" component={DeclutterKidsItems} />
       <Route path="/insights/secondhand-kids-marketplace-melbourne" component={SecondhandKidsMarketplaceMelbourne} />

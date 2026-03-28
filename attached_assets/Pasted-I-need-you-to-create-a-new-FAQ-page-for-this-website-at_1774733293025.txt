@@ -1,0 +1,131 @@
+I need you to create a new FAQ page for this website at /faq
+
+Do not change anything else on the website except ths.
+ 
+Here's what I need:
+ 
+1. PAGE STRUCTURE
+- Create a dedicated FAQ page at /faq
+- Add a page title: "Frequently Asked Questions"
+- Add a subtitle: "Everything you need to know about buying and selling kids items on Zero 2 Seventeen"
+- Organise questions into 6 sections with section headings
+- Use accordion/expandable format for each question (click to expand answer)
+- Make it mobile responsive
+- Match the existing website styling
+ 
+2. LINK THE PAGE
+- Add "FAQ" link in the footer
+- Add "FAQ" or "Help" link in the navigation menu
+ 
+3. ADD FAQ SCHEMA MARKUP
+Add FAQ Schema markup (JSON-LD) in the <head> or before </body> so Google and AI assistants can read it as structured data. Every single question/answer pair must be included in the schema. Format:
+ 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Question text here",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Answer text here"
+      }
+    }
+  ]
+}
+</script>
+ 
+Include ALL 19 questions in the schema, not just a few.
+ 
+---
+ 
+HERE IS THE FAQ CONTENT TO USE:
+ 
+===================
+SECTION 1: GENERAL QUESTIONS
+===================
+ 
+Q: What is Zero 2 Seventeen?
+A: Zero 2 Seventeen is Australia's trusted marketplace app where parents buy, sell, donate, and recycle quality kids items within their local community. Unlike generic marketplaces, Zero 2 Seventeen is built specifically for families who want a safer, more trusted way to pass on children's items from baby gear to teenage clothing.
+ 
+Q: Where can I sell my baby's old clothes in Melbourne?
+A: You can sell your baby's old clothes on Zero 2 Seventeen, a local marketplace app designed for Melbourne parents. Simply download the app, create a listing with photos, and connect with local mums and families looking for quality second-hand kids clothes. It's free to list and you can arrange local pickup in your suburb.
+ 
+Q: What's the safest app for buying second-hand kids stuff in Australia?
+A: Zero 2 Seventeen is designed to be the safest marketplace for buying second-hand kids items in Australia. The app is community-powered, meaning you're buying from other local parents who understand the importance of quality and safety when it comes to children's products. The platform focuses exclusively on kids items, so you're dealing with families, not anonymous sellers.
+ 
+Q: Is there an alternative to Facebook Marketplace for selling baby items?
+A: Yes! Zero 2 Seventeen is a dedicated alternative to Facebook Marketplace specifically for parents selling baby and kids items. Unlike Facebook Marketplace where your listings compete with furniture, cars, and everything else, Zero 2 Seventeen focuses only on children's products. This means your baby clothes, prams, toys, and gear are seen by parents who are actually looking for those items.
+ 
+Q: How do I find local mums selling baby gear near me?
+A: Download the Zero 2 Seventeen app and browse listings from local parents in your area. The app shows you baby gear, prams, cots, toys, and clothing from families in your suburb and nearby areas. You can search by category, brand, or keyword to find exactly what you need from mums in your local community.
+ 
+===================
+SECTION 2: BUYING ON ZERO TO SEVENTEEN
+===================
+ 
+Q: What can I buy on Zero 2 Seventeen?
+A: You can buy quality second-hand children's items including baby clothes, kids clothing (ages 0-17), prams and strollers, cots and nursery furniture, toys and games, baby carriers, car seats, school supplies, sporting equipment, and maternity wear. Everything on the platform is focused on kids and families.
+ 
+Q: Is it safe to buy second-hand baby items online?
+A: Buying second-hand baby items can be safe when you use a trusted platform like Zero 2 Seventeen. The app connects you with local parents in your community, so you can ask questions, see more photos, and arrange to inspect items before purchasing. Always check items like car seats and cots meet current Australian safety standards.
+ 
+Q: How much can I save buying second-hand kids items?
+A: Parents typically save 50-80% buying quality second-hand kids items compared to retail prices. Children outgrow clothes and toys quickly, so many items are barely used. On Zero 2 Seventeen, you'll find gently used branded items, sometimes still with tags, at a fraction of the original price.
+ 
+===================
+SECTION 3: SELLING ON ZERO TO SEVENTEEN
+===================
+ 
+Q: How do I sell baby items on Zero 2 Seventeen?
+A: Selling on Zero 2 Seventeen is simple. Download the app, create a free account, take photos of your items, add a description and price, then publish your listing. Local parents will see your items and can message you directly. You arrange pickup or delivery that works for both of you.
+ 
+Q: Is it free to list items on Zero 2 Seventeen?
+A: Yes, listing items on Zero 2 Seventeen is free. There are no listing fees or commissions. Simply download the app, create your listing, and start selling to local families in your community.
+ 
+Q: What sells best on Zero 2 Seventeen?
+A: Popular items include prams and strollers, baby carriers, quality branded clothing, toys and games, nursery furniture, and bundles of kids clothes by size. Items from popular brands and well-photographed listings tend to sell faster. Bundles (like 'size 0 winter bundle') are particularly popular with parents.
+ 
+Q: How do I price second-hand kids items?
+A: A good rule is to price items at 30-50% of the original retail price depending on condition. Brand name items in excellent condition can go higher. Check similar listings on Zero 2 Seventeen to see what other parents are charging. Be honest about wear and include clear photos.
+ 
+===================
+SECTION 4: LOCAL COMMUNITY
+===================
+ 
+Q: Is Zero 2 Seventeen available in Melbourne?
+A: Yes! Zero 2 Seventeen is available throughout Melbourne and Victoria. The app connects you with local parents in your suburb and surrounding areas. Whether you're in Cranbourne, the CBD, or outer suburbs, you can buy and sell kids items locally.
+ 
+Q: Where can I find second-hand baby stuff in Cranbourne?
+A: Cranbourne parents use Zero 2 Seventeen to buy and sell second-hand baby items locally. The app shows you listings from other Cranbourne mums and families in nearby suburbs like Narre Warren, Berwick, and Clyde. Download the app to see what's available in your area.
+ 
+Q: Does Zero 2 Seventeen work in the USA?
+A: Yes, Zero 2 Seventeen is expanding to the United States. The app connects local families wherever they are, making it easy for American parents to buy and sell quality kids items within their communities.
+ 
+===================
+SECTION 5: DONATING AND SUSTAINABILITY
+===================
+ 
+Q: Can I donate kids items on Zero 2 Seventeen?
+A: Yes! Zero 2 Seventeen supports donating items to families who need them. You can list items as free or donate directly to families in your community. The app promotes conscious consumption and helps reduce waste by keeping quality kids items in use rather than going to landfill.
+ 
+Q: How does Zero 2 Seventeen help the environment?
+A: Zero 2 Seventeen promotes sustainable parenting by encouraging families to buy and sell second-hand instead of always buying new. Children outgrow items quickly, and keeping quality kids clothes, toys, and gear in circulation reduces waste and the environmental impact of producing new items. It's better for your wallet and the planet.
+ 
+===================
+SECTION 6: COMPARISONS
+===================
+ 
+Q: Zero 2 Seventeen vs Facebook Marketplace: Which is better for baby items?
+A: Zero 2 Seventeen is purpose-built for parents selling baby and kids items, while Facebook Marketplace is a general marketplace for everything. On Zero 2 Seventeen, every listing is kids-related, every buyer is a parent, and the community understands what families need. Your baby clothes won't compete with used furniture or car listings.
+ 
+Q: Is Zero 2 Seventeen better than Gumtree for selling kids stuff?
+A: If you're selling kids items specifically, Zero 2 Seventeen offers a more targeted audience than Gumtree. While Gumtree has everything from jobs to cars to furniture, Zero 2 Seventeen focuses only on children's products. This means more relevant buyers and a community of parents who understand the value of quality kids items.
+ 
+---
+ 
+END OF FAQ CONTENT
+ 
+Please create the page with all the above content, proper accordion functionality, and complete FAQ schema markup including all 19 questions.

@@ -82,6 +82,13 @@ export function Navigation() {
             >
               Insights
             </Link>
+            <Link
+              href="/faq"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              data-testid="link-faq"
+            >
+              FAQ
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center gap-3">
@@ -184,6 +191,14 @@ export function Navigation() {
               data-testid="link-mobile-insights"
             >
               Insights
+            </Link>
+            <Link
+              href="/faq"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
+              data-testid="link-mobile-faq"
+            >
+              FAQ
             </Link>
             <div className="pt-3 space-y-2">
               <a
