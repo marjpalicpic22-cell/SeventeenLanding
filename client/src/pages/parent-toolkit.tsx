@@ -214,7 +214,7 @@ export default function ParentToolkit() {
           <section id="my-green-impact" data-testid="section-green-impact">
             <div className="mb-10">
               <h2 className="text-3xl font-bold text-foreground mb-3" data-testid="text-calculator-title">
-                My Green Impact
+                My Green Impact Calculator
               </h2>
               <p className="text-lg text-muted-foreground" data-testid="text-calculator-description">
                 See how your shopping and sharing choices reduce waste and carbon emissions for future generations.
