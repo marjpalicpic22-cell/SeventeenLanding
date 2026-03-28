@@ -1,4 +1,5 @@
 import { Hero } from "@/components/landing/hero";
+import { WhatIsZero2Seventeen } from "@/components/landing/what-is-zero2seventeen";
 import { OriginStory } from "@/components/landing/origin-story";
 import { Mission } from "@/components/landing/mission";
 import { CoreValues } from "@/components/landing/core-values";
@@ -18,6 +19,7 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
+        <WhatIsZero2Seventeen />
         <OriginStory />
         <SeeItInAction />
         <CoreValues />

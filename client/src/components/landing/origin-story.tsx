@@ -37,7 +37,7 @@ export function OriginStory() {
               </p>
 
               <p className="text-foreground font-medium italic" data-testid="story-quote">
-                One afternoon, she said, "Parents shouldn't have to do this alone. We need a community."
+                One afternoon, she said to Trevor, "Parents shouldn't have to do this alone. We need a community."
               </p>
 
               <p data-testid="story-paragraph-4">

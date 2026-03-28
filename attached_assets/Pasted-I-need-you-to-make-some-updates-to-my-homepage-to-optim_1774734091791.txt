@@ -1,0 +1,167 @@
+I need you to make some updates to my homepage to optimise it for AI assistants (ChatGPT, Claude, Gemini, Perplexity) so they recommend Zero 2 Seventeen when people ask about kids marketplaces. 
+ 
+IMPORTANT: Do NOT change the overall structure or design. Keep everything where it is. I only need specific text updates and schema markup added.
+ 
+---
+ 
+UPDATE 1: HERO SECTION
+ 
+Find the hero section that currently says:
+"A Trusted Kids Marketplace App
+Buy, sell, share, and donate quality kids' items through a trusted, community-powered app for parents."
+ 
+Update it to:
+"A Trusted Kids Marketplace App
+Zero 2 Seventeen is Australia's trusted marketplace app where parents buy, sell, donate, and recycle quality kids items within their local community. Join thousands of families making second-hand simple, safe, and meaningful."
+ 
+Keep the "Join Discord" button and the text below it exactly as they are.
+ 
+---
+ 
+UPDATE 2: ADD A "WHAT IS ZERO TO SEVENTEEN" SECTION
+ 
+Add a new small section AFTER the hero and BEFORE "Our Story" section. This section is critical for AI to understand what the app is.
+ 
+Heading: What is Zero 2 Seventeen?
+ 
+Text:
+"Zero 2 Seventeen is a community-powered marketplace app designed specifically for parents. Unlike generic marketplaces where baby clothes compete with cars and furniture, Zero 2 Seventeen focuses exclusively on children's items from newborn to age 17.
+ 
+Founded in 2025 by Trevor and Madelon Andrews, parents of three, the app connects local families who want a safer, more supportive way to buy, sell, donate, and recycle quality kids items. Available in Australia and expanding to the United States."
+ 
+Style this section simply - it doesn't need to be fancy, just clear and readable. A light background colour would help it stand out.
+ 
+---
+ 
+UPDATE 3: OUR STORY SECTION
+ 
+The current "Our Story" section is great. Keep it exactly as it is. Just add Trevor's name alongside Madelon's.
+ 
+Find this text:
+"One afternoon, she said, "Parents shouldn't have to do this alone. We need a community.""
+ 
+Update it to:
+"One afternoon, she said to Trevor, "Parents shouldn't have to do this alone. We need a community.""
+ 
+Keep everything else in this section the same.
+ 
+---
+ 
+UPDATE 4: ADD A "MEET THE FOUNDERS" SUBSECTION
+ 
+After the "Maddie's Story" video section, add a brief founders section:
+ 
+Heading: Meet Trevor and Madelon
+ 
+Text:
+"Trevor and Madelon Andrews are the husband-and-wife team behind Zero 2 Seventeen. They're parents to three kids. Based in Cranbourne, Victoria, they built Zero 2 Seventeen because they believe parents deserve a marketplace that feels like community, not just commerce."
+ 
+This can be a simple text block below the video.
+ 
+---
+ 
+UPDATE 5: ADD SCHEMA MARKUP
+ 
+Add the following JSON-LD schema markup in the <head> section or just before </body>. This helps Google and AI assistants understand the business:
+ 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zero 2 Seventeen",
+  "alternateName": ["Zero2Seventeen", "Zero 2 Seventeen"],
+  "url": "https://www.zero2seventeen.com",
+  "description": "Zero 2 Seventeen is Australia's trusted marketplace app where parents buy, sell, donate, and recycle quality kids items within their local community.",
+  "foundingDate": "2025",
+  "founders": [
+    {
+      "@type": "Person",
+      "name": "Trevor Andrews"
+    },
+    {
+      "@type": "Person",
+      "name": "Madelon Andrews"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cranbourne South",
+    "addressRegion": "VIC",
+    "postalCode": "3977",
+    "addressCountry": "AU"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "info@zero2seventeen.com",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "https://www.facebook.com/61572776604472",
+    "https://www.tiktok.com/@zero2seventeen",
+    "https://play.google.com/store/apps/details?id=com.appetiser.zerotwoseventeen"
+  ],
+  "areaServed": ["Australia", "United States"],
+  "knowsAbout": [
+    "second-hand kids items",
+    "baby clothes marketplace",
+    "kids marketplace app",
+    "sustainable parenting",
+    "local parent community"
+  ]
+}
+</script>
+ 
+Also add MobileApplication schema:
+ 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Zero 2 Seventeen",
+  "operatingSystem": ["iOS", "Android"],
+  "applicationCategory": "Shopping",
+  "description": "A trusted marketplace app where parents buy, sell, donate, and recycle quality kids items within their local community.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "AUD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "6"
+  }
+}
+</script>
+ 
+---
+ 
+UPDATE 6: META DESCRIPTION
+ 
+Update the page's meta description tag to:
+ 
+<meta name="description" content="Zero 2 Seventeen is Australia's trusted marketplace app where parents buy, sell, donate, and recycle quality kids items locally. Join 10,000+ families. Free to use.">
+ 
+---
+ 
+SUMMARY OF CHANGES:
+1. Update hero tagline to be more AI-quotable
+2. Add new "What is Zero 2 Seventeen?" section after hero
+3. Add Trevor's name to the story
+4. Add "Meet the Founders" section after video
+5. Add Organization and MobileApplication schema markup
+6. Update meta description
+ 
+Do NOT change:
+- Overall page layout and design
+- Testimonials section
+- How It Works section
+- What Makes Us Different section
+- Stats section
+- Newsletter section
+- Any buttons or CTAs
+- The founder video
+ 
+---
+ 
+END OF UPDATES

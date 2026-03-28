@@ -61,6 +61,16 @@ export function SeeItInAction() {
             A 2-minute video where Maddie shares her journey of building a trusted marketplace that brings families together and reduces childhood waste.
           </p>
         </div>
+
+        {/* Meet the Founders */}
+        <div className="mt-12 text-center" data-testid="section-founders">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-4">
+            Meet Trevor and Madelon
+          </h2>
+          <p className="text-base md:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed" data-testid="founders-text">
+            Trevor and Madelon Andrews are the husband-and-wife team behind Zero 2 Seventeen. They're parents to three kids. Based in Cranbourne, Victoria, they built Zero 2 Seventeen because they believe parents deserve a marketplace that feels like community, not just commerce.
+          </p>
+        </div>
       </div>
     </section>
   );
