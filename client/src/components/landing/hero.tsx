@@ -30,7 +30,7 @@ export function Hero() {
             className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-light"
             data-testid="hero-subheadline"
           >
-            Zero 2 Seventeen is Australia's trusted marketplace app where parents buy, sell, donate, and recycle quality kids items within their local community. Join thousands of families making second-hand simple, safe, and meaningful.
+            Zero 2 Seventeen is Australia's trusted marketplace app where parents buy, sell, donate, and recycle quality kids items within their local community.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
