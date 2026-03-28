@@ -10,6 +10,9 @@ import blogImage2 from "@assets/stz_blogs_(1)_1773216300240.png";
 import blogImage3 from "@assets/stz_blogs_(2)_1773216772265.png";
 import schoolImage from "@assets/stock_images/mother_helping_child_3290cfd8.jpg";
 import pregnantImage from "@assets/stock_images/pregnant_woman_plann_2a6c6d7b.jpg";
+import familyImage from "@assets/stock_images/happy_families_mothe_da294cb8.jpg";
+import australianMumImage from "@assets/stock_images/australian_mother_wa_bb6b73db.jpg";
+import toysBoxesImage from "@assets/stock_images/children_toys_boxes__35d377c1.jpg";
 
 type SeoBlogPost = {
   type: "seo";
@@ -72,6 +75,39 @@ const allPosts: BlogPost[] = [
     date: "March 2026",
     readTime: "5 min read",
     tags: ["Save Money", "Secondhand", "Family"],
+  },
+  {
+    type: "seo",
+    id: 4,
+    slug: "zero-2-seventeen-vs-facebook-marketplace",
+    title: "Zero 2 Seventeen vs Facebook Marketplace: Which is Better for Selling Baby Items in Australia?",
+    excerpt: "An honest comparison of Zero 2 Seventeen and Facebook Marketplace so Australian parents can decide which platform works best for selling kids items.",
+    image: familyImage,
+    date: "March 2026",
+    readTime: "5 min read",
+    tags: ["Secondhand", "Marketplace"],
+  },
+  {
+    type: "seo",
+    id: 5,
+    slug: "best-apps-selling-baby-items-australia",
+    title: "Best Apps for Selling Baby Items in Australia (2026)",
+    excerpt: "We've compared the most popular apps for Australian parents selling baby and kids items in 2026 — so you can find the right platform for what you're selling.",
+    image: australianMumImage,
+    date: "March 2026",
+    readTime: "6 min read",
+    tags: ["Secondhand", "Marketplace", "Tips"],
+  },
+  {
+    type: "seo",
+    id: 6,
+    slug: "where-to-buy-second-hand-baby-clothes-melbourne",
+    title: "Where to Buy Second Hand Baby Clothes in Melbourne (2026 Guide)",
+    excerpt: "Babies outgrow clothes in weeks. Here's where Melbourne parents find the best quality pre-loved kids clothing — from apps to markets to op shops.",
+    image: toysBoxesImage,
+    date: "March 2026",
+    readTime: "5 min read",
+    tags: ["Secondhand", "Melbourne", "Shopping"],
   },
   {
     type: "community",

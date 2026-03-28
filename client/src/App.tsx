@@ -13,6 +13,9 @@ import FAQ from "@/pages/faq";
 import DeclutterKidsItems from "@/pages/insights/declutter-kids-items";
 import SecondhandKidsMarketplaceMelbourne from "@/pages/insights/secondhand-kids-marketplace-melbourne";
 import SaveMoneyKidsStuff from "@/pages/insights/save-money-kids-stuff";
+import Zero2SeventeenVsFacebookMarketplace from "@/pages/insights/zero-2-seventeen-vs-facebook-marketplace";
+import BestAppsSellingBabyItemsAustralia from "@/pages/insights/best-apps-selling-baby-items-australia";
+import WhereToBuySecondHandBabyClothes from "@/pages/insights/where-to-buy-second-hand-baby-clothes-melbourne";
 import InsightsTag from "@/pages/insights/tag";
 import NotFound from "@/pages/not-found";
 
@@ -47,6 +50,9 @@ function Router() {
       <Route path="/blog/declutter-kids-items" component={DeclutterKidsItems} />
       <Route path="/blog/secondhand-kids-marketplace-melbourne" component={SecondhandKidsMarketplaceMelbourne} />
       <Route path="/blog/save-money-kids-stuff" component={SaveMoneyKidsStuff} />
+      <Route path="/blog/zero-2-seventeen-vs-facebook-marketplace" component={Zero2SeventeenVsFacebookMarketplace} />
+      <Route path="/blog/best-apps-selling-baby-items-australia" component={BestAppsSellingBabyItemsAustralia} />
+      <Route path="/blog/where-to-buy-second-hand-baby-clothes-melbourne" component={WhereToBuySecondHandBabyClothes} />
       <Route path="/blog/tag/:tagName" component={InsightsTag} />
 
       {/* Parent Toolkit (was Free Resources + Calculator) */}
