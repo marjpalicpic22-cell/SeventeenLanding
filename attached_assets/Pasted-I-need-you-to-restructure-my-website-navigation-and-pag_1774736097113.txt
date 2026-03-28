@@ -1,0 +1,89 @@
+I need you to restructure my website navigation and pages. Do NOT add new content yet - just reorganise what exists.
+ 
+---
+ 
+TASK 1: RENAME "INSIGHTS" TO "BLOG"
+ 
+- Change the page name from "Insights" to "Blog"
+- Update the URL from /insights to /blog
+- Set up redirect: /insights → /blog
+- Set up redirect: /insights/* → /blog/*
+- Keep all existing blog posts exactly as they are
+ 
+---
+ 
+TASK 2: MERGE "COMMUNITY" CONTENT INTO "BLOG"
+ 
+- Move all posts from "Mum's Community" page into the Blog page
+- Posts to move:
+  - "Tips for First-Time Mums" by Sarah M.
+  - "Parenting Pre-Teens: What I Wish I Knew" by Emma K.
+  - Any other community posts
+- Add a category/tag called "Mum Stories" to these moved posts
+- After moving content, delete the Community page
+- Set up redirect: /community → /blog
+ 
+---
+ 
+TASK 3: RENAME "FREE RESOURCES" TO "PARENT TOOLKIT"
+ 
+- Change the page name from "Free Resources" to "Parent Toolkit"
+- Update the URL from /free-resources to /parent-toolkit
+- Set up redirect: /free-resources → /parent-toolkit
+- Keep all existing content (The School and Kids Reset Bundle, etc.)
+ 
+---
+ 
+TASK 4: MOVE "CALCULATOR" INTO "PARENT TOOLKIT"
+ 
+- The Environmental Impact Calculator should become a section within Parent Toolkit, not a separate page
+- Rename it to "My Green Impact"
+- On the Parent Toolkit page, add a section with:
+  - Heading: "My Green Impact"
+  - Subheading: "See how your shopping and sharing choices reduce waste and carbon emissions for future generations."
+  - The calculator functionality below
+- Remove "Calculator" from the main navigation
+- Set up redirect: /calculator → /parent-toolkit#my-green-impact
+ 
+---
+ 
+TASK 5: UPDATE MAIN NAVIGATION
+ 
+Change from:
+How It Works | Our Story | Community | Calculator | Free Resources | Insights | FAQ
+ 
+To:
+How It Works | Our Story | Blog | Parent Toolkit | FAQ
+ 
+That's 5 items total.
+ 
+---
+ 
+TASK 6: UPDATE FOOTER LINKS
+ 
+Update footer to match new structure:
+- Blog (not Insights)
+- Parent Toolkit (not Free Resources)
+- Remove Community link
+- Remove Calculator link
+ 
+---
+ 
+SUMMARY OF CHANGES:
+ 
+| Old | New |
+|-----|-----|
+| Insights | Blog |
+| Community | Merged into Blog |
+| Free Resources | Parent Toolkit |
+| Calculator | Inside Parent Toolkit as "My Green Impact" |
+ 
+Redirects needed:
+- /insights → /blog
+- /community → /blog
+- /free-resources → /parent-toolkit
+- /calculator → /parent-toolkit#my-green-impact
+ 
+---
+ 
+After completing this, confirm all pages load correctly and navigation works. Then I'll give you the next prompt to add new blog content.

@@ -20,7 +20,7 @@ export default function DeclutterKidsItemsBlog() {
   const [, setLocation] = useLocation();
 
   const handleBackToInsights = () => {
-    setLocation("/insights");
+    setLocation("/blog");
   };
 
   return (
@@ -38,7 +38,7 @@ export default function DeclutterKidsItemsBlog() {
               data-testid="button-back-to-insights"
             >
               <ArrowLeft className="w-4 h-4" />
-              Back to Insights
+              Back to Blog
             </Button>
           </div>
         </div>
@@ -248,19 +248,19 @@ export default function DeclutterKidsItemsBlog() {
             <div className="mt-12 pt-8 border-t border-border">
               <h4 className="text-sm font-medium text-muted-foreground mb-4">Tags:</h4>
               <div className="flex flex-wrap gap-2">
-                <Link href="/insights/tag/declutter-kids-items" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-declutter">
+                <Link href="/blog/tag/declutter-kids-items" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-declutter">
                   Declutter Kids Items
                 </Link>
-                <Link href="/insights/tag/secondhand-kids-marketplace" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-secondhand">
+                <Link href="/blog/tag/secondhand-kids-marketplace" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-secondhand">
                   Secondhand Kids Marketplace
                 </Link>
-                <Link href="/insights/tag/sell-kids-clothes-online" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-sell-clothes">
+                <Link href="/blog/tag/sell-kids-clothes-online" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-sell-clothes">
                   Sell Kids Clothes Online
                 </Link>
-                <Link href="/insights/tag/kids-resale-marketplace" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-resale">
+                <Link href="/blog/tag/kids-resale-marketplace" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-resale">
                   Kids Resale Marketplace
                 </Link>
-                <Link href="/insights/tag/eco-friendly-kids-shopping" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-eco">
+                <Link href="/blog/tag/eco-friendly-kids-shopping" className="inline-block px-3 py-1 bg-muted hover:bg-muted/80 text-foreground text-sm rounded-full transition-colors" data-testid="tag-link-eco">
                   Eco-Friendly Kids Shopping
                 </Link>
               </div>

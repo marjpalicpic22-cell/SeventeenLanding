@@ -88,6 +88,24 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href="/blog"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  data-testid="link-footer-blog"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/parent-toolkit"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  data-testid="link-footer-parent-toolkit"
+                >
+                  Parent Toolkit
+                </a>
+              </li>
+              <li>
+                <a
                   href="/faq"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   data-testid="link-footer-faq"

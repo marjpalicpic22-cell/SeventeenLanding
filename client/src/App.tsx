@@ -1,37 +1,79 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, useLocation } from "wouter";
+import { useEffect } from "react";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
-import Community from "@/pages/blog";
-import Calculator from "@/pages/calculator";
+import Blog from "@/pages/blog";
+import ParentToolkit from "@/pages/parent-toolkit";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsAndConditions from "@/pages/terms-and-conditions";
-import FreeResources from "@/pages/free-resources";
-import Insights from "@/pages/insights";
+import FAQ from "@/pages/faq";
 import DeclutterKidsItems from "@/pages/insights/declutter-kids-items";
 import SecondhandKidsMarketplaceMelbourne from "@/pages/insights/secondhand-kids-marketplace-melbourne";
 import SaveMoneyKidsStuff from "@/pages/insights/save-money-kids-stuff";
 import InsightsTag from "@/pages/insights/tag";
-import FAQ from "@/pages/faq";
 import NotFound from "@/pages/not-found";
+
+function RedirectTo({ to }: { to: string }) {
+  const [, navigate] = useLocation();
+  useEffect(() => {
+    navigate(to, { replace: true });
+  }, []);
+  return null;
+}
+
+function InsightsSlugRedirect() {
+  const [location, navigate] = useLocation();
+  useEffect(() => {
+    const slug = location.replace("/insights/", "").replace(/^tag\//, "tag/");
+    if (slug.startsWith("tag/")) {
+      navigate(`/blog/tag/${slug.replace("tag/", "")}`, { replace: true });
+    } else {
+      navigate(`/blog/${slug}`, { replace: true });
+    }
+  }, []);
+  return null;
+}
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/community" component={Community} />
-      <Route path="/calculator" component={Calculator} />
+
+      {/* Blog (was Insights + Community) */}
+      <Route path="/blog" component={Blog} />
+      <Route path="/blog/declutter-kids-items" component={DeclutterKidsItems} />
+      <Route path="/blog/secondhand-kids-marketplace-melbourne" component={SecondhandKidsMarketplaceMelbourne} />
+      <Route path="/blog/save-money-kids-stuff" component={SaveMoneyKidsStuff} />
+      <Route path="/blog/tag/:tagName" component={InsightsTag} />
+
+      {/* Parent Toolkit (was Free Resources + Calculator) */}
+      <Route path="/parent-toolkit" component={ParentToolkit} />
+
+      {/* Legal & Help */}
       <Route path="/faq" component={FAQ} />
-      <Route path="/insights" component={Insights} />
-      <Route path="/insights/declutter-kids-items" component={DeclutterKidsItems} />
-      <Route path="/insights/secondhand-kids-marketplace-melbourne" component={SecondhandKidsMarketplaceMelbourne} />
-      <Route path="/insights/save-money-kids-stuff" component={SaveMoneyKidsStuff} />
-      <Route path="/insights/tag/:tagName" component={InsightsTag} />
-      <Route path="/free-resources" component={FreeResources} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms-and-conditions" component={TermsAndConditions} />
+
+      {/* Redirects — old URLs */}
+      <Route path="/insights">
+        <RedirectTo to="/blog" />
+      </Route>
+      <Route path="/insights/:slug">
+        <InsightsSlugRedirect />
+      </Route>
+      <Route path="/community">
+        <RedirectTo to="/blog" />
+      </Route>
+      <Route path="/free-resources">
+        <RedirectTo to="/parent-toolkit" />
+      </Route>
+      <Route path="/calculator">
+        <RedirectTo to="/parent-toolkit#my-green-impact" />
+      </Route>
+
       <Route component={NotFound} />
     </Switch>
   );

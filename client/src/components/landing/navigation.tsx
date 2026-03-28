@@ -55,32 +55,18 @@ export function Navigation() {
               Our Story
             </a>
             <Link
-              href="/community"
+              href="/blog"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-community"
+              data-testid="link-blog"
             >
-              Community
+              Blog
             </Link>
             <Link
-              href="/calculator"
+              href="/parent-toolkit"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-calculator"
+              data-testid="link-parent-toolkit"
             >
-              Calculator
-            </Link>
-            <Link
-              href="/free-resources"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-free-resources"
-            >
-              Free Resources
-            </Link>
-            <Link
-              href="/insights"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-insights"
-            >
-              Insights
+              Parent Toolkit
             </Link>
             <Link
               href="/faq"
@@ -161,36 +147,20 @@ export function Navigation() {
               Our Story
             </a>
             <Link
-              href="/community"
+              href="/blog"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-mobile-community"
+              data-testid="link-mobile-blog"
             >
-              Community
+              Blog
             </Link>
             <Link
-              href="/calculator"
+              href="/parent-toolkit"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-mobile-calculator"
+              data-testid="link-mobile-parent-toolkit"
             >
-              Calculator
-            </Link>
-            <Link
-              href="/free-resources"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-mobile-free-resources"
-            >
-              Free Resources
-            </Link>
-            <Link
-              href="/insights"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
-              data-testid="link-mobile-insights"
-            >
-              Insights
+              Parent Toolkit
             </Link>
             <Link
               href="/faq"

@@ -7,7 +7,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
 export default function InsightsTag() {
-  const [match, params] = useRoute("/insights/tag/:tagName");
+  const [match, params] = useRoute("/blog/tag/:tagName");
 
   if (!match) {
     return null;
@@ -16,7 +16,6 @@ export default function InsightsTag() {
   const tagName = params?.tagName || "";
   const displayTagName = tagName.replace(/-/g, " ");
 
-  // Blog posts for this tag
   const allPosts = [
     {
       id: 1,
@@ -55,18 +54,16 @@ export default function InsightsTag() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       <main className="pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Back Link */}
-          <Link href="/insights">
-            <Button variant="ghost" className="gap-2 mb-8" data-testid="button-back-to-insights">
+          <Link href="/blog">
+            <Button variant="ghost" className="gap-2 mb-8" data-testid="button-back-to-blog">
               <ArrowLeft className="w-4 h-4" />
-              Back to Insights
+              Back to Blog
             </Button>
           </Link>
 
-          {/* Tag Header */}
           <div className="max-w-3xl mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground font-heading mb-6 capitalize" data-testid="text-tag-title">
               {displayTagName}
@@ -76,7 +73,6 @@ export default function InsightsTag() {
             </p>
           </div>
 
-          {/* Blog Posts Grid */}
           {postsForTag.length > 0 ? (
             <div className="grid grid-cols-1 gap-8" data-testid="section-tag-posts">
               {postsForTag.map((post) => (
@@ -88,7 +84,7 @@ export default function InsightsTag() {
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
                     <div className="md:col-span-2 p-8 flex flex-col justify-between">
                       <div>
-                        <Link href={`/insights/${post.slug}`}>
+                        <Link href={`/blog/${post.slug}`}>
                           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 hover:text-primary transition-colors cursor-pointer" data-testid={`text-post-title-${post.id}`}>
                             {post.title}
                           </h2>
@@ -103,7 +99,7 @@ export default function InsightsTag() {
                           <span>•</span>
                           <span data-testid={`text-post-read-time-${post.id}`}>{post.readTime}</span>
                         </div>
-                        <Link href={`/insights/${post.slug}`}>
+                        <Link href={`/blog/${post.slug}`}>
                           <div className="flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all cursor-pointer" data-testid={`button-read-more-${post.id}`}>
                             Read More
                             <ArrowRight className="w-4 h-4" />
@@ -126,7 +122,7 @@ export default function InsightsTag() {
           ) : (
             <div className="text-center py-16" data-testid="section-no-posts">
               <p className="text-xl text-muted-foreground mb-6">No posts found for this tag yet.</p>
-              <Link href="/insights">
+              <Link href="/blog">
                 <Button data-testid="button-back-to-all-posts">
                   Back to All Posts
                 </Button>
