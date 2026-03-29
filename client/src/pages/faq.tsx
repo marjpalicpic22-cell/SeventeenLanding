@@ -173,11 +173,21 @@ export default function FAQ() {
           </p>
           <a
             href="mailto:support@zero2seventeen.com"
-            className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors cursor-pointer"
             data-testid="link-faq-contact"
           >
             Contact Support
           </a>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Or email us directly at{" "}
+            <a
+              href="mailto:support@zero2seventeen.com"
+              className="text-primary hover:underline cursor-pointer"
+              data-testid="link-faq-email"
+            >
+              support@zero2seventeen.com
+            </a>
+          </p>
         </div>
       </main>
       <Footer />
