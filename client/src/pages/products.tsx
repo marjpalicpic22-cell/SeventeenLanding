@@ -39,7 +39,7 @@ export default function Products() {
               Don't Just Browse. Get the Deal.
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8" data-testid="products-hero-subtitle">
-              Families near you are selling quality kids' gear for a fraction of the price. Download free and grab it before someone else does.
+              Bugaboo pram. $1,200 new. Grab it in extremely good condition for $150 in the app.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
               <a
