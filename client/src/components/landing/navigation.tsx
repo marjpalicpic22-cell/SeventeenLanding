@@ -55,6 +55,13 @@ export function Navigation() {
               Our Story
             </a>
             <Link
+              href="/products"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              data-testid="link-products"
+            >
+              Products
+            </Link>
+            <Link
               href="/blog"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-blog"
@@ -146,6 +153,14 @@ export function Navigation() {
             >
               Our Story
             </a>
+            <Link
+              href="/products"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block w-full text-left py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
+              data-testid="link-mobile-products"
+            >
+              Products
+            </Link>
             <Link
               href="/blog"
               onClick={() => setIsMobileMenuOpen(false)}

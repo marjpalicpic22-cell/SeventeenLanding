@@ -17,6 +17,7 @@ import Zero2SeventeenVsFacebookMarketplace from "@/pages/insights/zero-2-sevente
 import BestAppsSellingBabyItemsAustralia from "@/pages/insights/best-apps-selling-baby-items-australia";
 import WhereToBuySecondHandBabyClothes from "@/pages/insights/where-to-buy-second-hand-baby-clothes-melbourne";
 import InsightsTag from "@/pages/insights/tag";
+import Products from "@/pages/products";
 import NotFound from "@/pages/not-found";
 
 function RedirectTo({ to }: { to: string }) {
@@ -54,6 +55,9 @@ function Router() {
       <Route path="/blog/best-apps-selling-baby-items-australia" component={BestAppsSellingBabyItemsAustralia} />
       <Route path="/blog/where-to-buy-second-hand-baby-clothes-melbourne" component={WhereToBuySecondHandBabyClothes} />
       <Route path="/blog/tag/:tagName" component={InsightsTag} />
+
+      {/* Products Catalogue */}
+      <Route path="/products" component={Products} />
 
       {/* Parent Toolkit (was Free Resources + Calculator) */}
       <Route path="/parent-toolkit" component={ParentToolkit} />
