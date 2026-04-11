@@ -1,4 +1,3 @@
-import { Link } from "wouter";
 import { Navigation } from "@/components/landing/navigation";
 import { Footer } from "@/components/landing/footer";
 
@@ -7,51 +6,67 @@ const categories = [
     id: "prams-strollers",
     name: "Prams and Strollers",
     image: "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&q=80",
-    description: "Browse quality prams, strollers and travel systems",
+    description: "Quality prams and travel systems at prices that make sense.",
   },
   {
     id: "clothing-shoes",
     name: "Clothing and Shoes",
     image: "https://images.unsplash.com/photo-1522771930-78848d9293e8?w=600&q=80",
-    description: "Kids' clothing, shoes and accessories for every age",
+    description: "Preloved kids' clothes in great condition, from newborn to teen.",
   },
   {
     id: "toys-games",
     name: "Toys and Games",
     image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=600&q=80",
-    description: "Fun toys, games and outdoor play equipment",
+    description: "Puzzles, ride-ons, LEGO and more. Give great toys a second home.",
   },
   {
     id: "furniture-nursery",
     name: "Furniture and Nursery",
     image: "https://images.unsplash.com/photo-1586105449897-20b5efeb3233?w=600&q=80",
-    description: "Cots, change tables, wardrobes and nursery decor",
+    description: "Cots, change tables, highchairs and nursery essentials.",
   },
   {
     id: "feeding-bathing",
     name: "Feeding and Bathing",
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80",
-    description: "High chairs, bottles, bath seats and more",
+    description: "Everything baby needs, gently used and locally listed.",
   },
   {
     id: "car-seats",
     name: "Car Seats",
     image: "https://images.unsplash.com/photo-1549497538-303791108f95?w=600&q=80",
-    description: "Safe and certified car seats for all stages",
+    description: "Safety gear from trusted local families at honest prices.",
   },
   {
     id: "books-learning",
     name: "Books and Learning",
     image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&q=80",
-    description: "Children's books, educational toys and learning tools",
+    description: "Kids' books, educational toys and school supplies.",
   },
   {
     id: "other",
     name: "Other",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    description: "Everything else for your growing family",
+    description: "Household items, kitchen gear and everything in between.",
   },
 ];
+
+function GooglePlayIcon() {
+  return (
+    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+    </svg>
+  );
+}
+
+function AppStoreIcon() {
+  return (
+    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" />
+    </svg>
+  );
+}
 
 export default function Products() {
   return (
@@ -59,31 +74,55 @@ export default function Products() {
       <Navigation />
 
       <main>
-        <section className="relative h-[480px] md:h-[560px] flex items-center justify-center overflow-hidden" data-testid="products-hero">
+        {/* Hero */}
+        <section className="relative h-[520px] md:h-[600px] flex items-center justify-center overflow-hidden" data-testid="products-hero">
           <img
             src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=1600&q=80"
             alt="Kids items marketplace"
             className="absolute inset-0 w-full h-full object-cover"
             data-testid="products-hero-image"
           />
-          <div className="absolute inset-0 bg-black/45" />
+          <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight" data-testid="products-hero-title">
-              Products Catalogue
+              Don't Just Browse. Get the Deal.
             </h1>
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto" data-testid="products-hero-subtitle">
-              Discover quality secondhand kids' items across all categories — buy, sell, and recycle within your local community.
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8" data-testid="products-hero-subtitle">
+              See something you like? It's waiting for you inside the app.
             </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.appetiser.zerotwoseventeen"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="button-hero-google-play"
+                className="inline-flex items-center gap-2 bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition-colors"
+              >
+                <GooglePlayIcon />
+                Download on Google Play
+              </a>
+              <a
+                href="https://apps.apple.com/au/app/zero2seventeen/id6739604370"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="button-hero-app-store"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
+              >
+                <AppStoreIcon />
+                Download on App Store
+              </a>
+            </div>
           </div>
         </section>
 
+        {/* Category Grid */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" data-testid="products-categories-section">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3" data-testid="categories-heading">
               Browse by Category
             </h2>
             <p className="text-muted-foreground text-lg" data-testid="categories-subheading">
-              Find exactly what you're looking for
+              Fresh listings from families near you. Every single day.
             </p>
           </div>
 
@@ -112,6 +151,40 @@ export default function Products() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Bottom CTA */}
+        <section className="w-full bg-primary py-20 px-4" data-testid="products-cta-section">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 leading-tight" data-testid="cta-heading">
+              Your Neighbour Is Selling It for Less Than You Think.
+            </h2>
+            <p className="text-primary-foreground/85 text-lg mb-8" data-testid="cta-subtext">
+              Download Zero 2 Seventeen free and grab it before someone else does.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.appetiser.zerotwoseventeen"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="button-cta-google-play"
+                className="inline-flex items-center gap-2 bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition-colors"
+              >
+                <GooglePlayIcon />
+                Download on Google Play
+              </a>
+              <a
+                href="https://apps.apple.com/au/app/zero2seventeen/id6739604370"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="button-cta-app-store"
+                className="inline-flex items-center gap-2 bg-primary-foreground text-primary font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
+              >
+                <AppStoreIcon />
+                Download on App Store
+              </a>
+            </div>
           </div>
         </section>
       </main>
