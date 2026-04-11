@@ -111,7 +111,7 @@ function ProductCard({ product }: { product: Product }) {
               className="text-sm text-muted-foreground line-through block"
               data-testid={`text-product-original-price-${product.id}`}
             >
-              ${product.originalPrice.toLocaleString()} RRP
+              AU${product.originalPrice.toLocaleString()} RRP
             </span>
             <span
               className="text-2xl font-bold text-[#84cc16]"
