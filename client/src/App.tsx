@@ -18,6 +18,7 @@ import BestAppsSellingBabyItemsAustralia from "@/pages/insights/best-apps-sellin
 import WhereToBuySecondHandBabyClothes from "@/pages/insights/where-to-buy-second-hand-baby-clothes-melbourne";
 import InsightsTag from "@/pages/insights/tag";
 import Products from "@/pages/products";
+import ProductCategory from "@/pages/product-category";
 import NotFound from "@/pages/not-found";
 
 function RedirectTo({ to }: { to: string }) {
@@ -58,6 +59,7 @@ function Router() {
 
       {/* Products Catalogue */}
       <Route path="/products" component={Products} />
+      <Route path="/products/:categoryId" component={ProductCategory} />
 
       {/* Parent Toolkit (was Free Resources + Calculator) */}
       <Route path="/parent-toolkit" component={ParentToolkit} />

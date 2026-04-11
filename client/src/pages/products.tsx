@@ -1,62 +1,7 @@
+import { Link } from "wouter";
 import { Navigation } from "@/components/landing/navigation";
 import { Footer } from "@/components/landing/footer";
-import pramsImg from "@assets/image_1775926747411.png";
-import furnitureImg from "@assets/image_1775926828252.png";
-import feedingImg from "@assets/image_1775926890344.png";
-import carSeatsImg from "@assets/image_1775926956131.png";
-import booksImg from "@assets/image_1775927605321.png";
-import otherImg from "@assets/image_1775927675534.png";
-
-const categories = [
-  {
-    id: "prams-strollers",
-    name: "Prams and Strollers",
-    image: pramsImg,
-    description: "Quality prams and travel systems at prices that make sense.",
-  },
-  {
-    id: "clothing-shoes",
-    name: "Clothing and Shoes",
-    image: "https://images.unsplash.com/photo-1522771930-78848d9293e8?w=600&q=80",
-    description: "Preloved kids' clothes in great condition, from newborn to teen.",
-  },
-  {
-    id: "toys-games",
-    name: "Toys and Games",
-    image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=600&q=80",
-    description: "Puzzles, ride-ons, LEGO and more. Give great toys a second home.",
-  },
-  {
-    id: "furniture-nursery",
-    name: "Furniture and Nursery",
-    image: furnitureImg,
-    description: "Cots, change tables, highchairs and nursery essentials.",
-  },
-  {
-    id: "feeding-bathing",
-    name: "Feeding and Bathing",
-    image: feedingImg,
-    description: "Everything baby needs, gently used and locally listed.",
-  },
-  {
-    id: "car-seats",
-    name: "Car Seats",
-    image: carSeatsImg,
-    description: "Safety gear from trusted local families at honest prices.",
-  },
-  {
-    id: "books-learning",
-    name: "Books and Learning",
-    image: booksImg,
-    description: "Kids' books, educational toys and school supplies.",
-  },
-  {
-    id: "other",
-    name: "Other",
-    image: otherImg,
-    description: "Household items, kitchen gear and everything in between.",
-  },
-];
+import { categories } from "@/data/products-data";
 
 function GooglePlayIcon() {
   return (
@@ -94,7 +39,7 @@ export default function Products() {
               Don't Just Browse. Get the Deal.
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8" data-testid="products-hero-subtitle">
-              See something you like? It's waiting for you inside the app.
+              Bugaboo pram. $1,200 new. Grab it in extremely good condition for $150 in the app.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
               <a
@@ -134,10 +79,11 @@ export default function Products() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" data-testid="categories-grid">
             {categories.map((category) => (
-              <div
+              <Link
                 key={category.id}
+                href={`/products/${category.id}`}
                 data-testid={`card-category-${category.id}`}
-                className="group relative rounded-2xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-card border border-border"
+                className="group relative rounded-2xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-card border border-border block"
               >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
@@ -155,7 +101,7 @@ export default function Products() {
                     {category.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
