@@ -1,11 +1,17 @@
 import { Navigation } from "@/components/landing/navigation";
 import { Footer } from "@/components/landing/footer";
+import pramsImg from "@assets/image_1775926747411.png";
+import furnitureImg from "@assets/image_1775926828252.png";
+import feedingImg from "@assets/image_1775926890344.png";
+import carSeatsImg from "@assets/image_1775926956131.png";
+import booksImg from "@assets/image_1775927605321.png";
+import otherImg from "@assets/image_1775927675534.png";
 
 const categories = [
   {
     id: "prams-strollers",
     name: "Prams and Strollers",
-    image: "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&q=80",
+    image: pramsImg,
     description: "Quality prams and travel systems at prices that make sense.",
   },
   {
@@ -23,31 +29,31 @@ const categories = [
   {
     id: "furniture-nursery",
     name: "Furniture and Nursery",
-    image: "https://images.unsplash.com/photo-1586105449897-20b5efeb3233?w=600&q=80",
+    image: furnitureImg,
     description: "Cots, change tables, highchairs and nursery essentials.",
   },
   {
     id: "feeding-bathing",
     name: "Feeding and Bathing",
-    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80",
+    image: feedingImg,
     description: "Everything baby needs, gently used and locally listed.",
   },
   {
     id: "car-seats",
     name: "Car Seats",
-    image: "https://images.unsplash.com/photo-1549497538-303791108f95?w=600&q=80",
+    image: carSeatsImg,
     description: "Safety gear from trusted local families at honest prices.",
   },
   {
     id: "books-learning",
     name: "Books and Learning",
-    image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&q=80",
+    image: booksImg,
     description: "Kids' books, educational toys and school supplies.",
   },
   {
     id: "other",
     name: "Other",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    image: otherImg,
     description: "Household items, kitchen gear and everything in between.",
   },
 ];
