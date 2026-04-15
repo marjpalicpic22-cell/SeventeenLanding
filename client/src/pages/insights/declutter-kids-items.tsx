@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import blogImage from "@assets/stz_blogs_1773214194233.png";
+import { trackAppDownload } from "@/lib/tracking";
 
 /**
  * SEO METADATA
@@ -237,7 +238,7 @@ export default function DeclutterKidsItemsBlog() {
                 </Link>
                 {" "}and look at how other parents list bundles. Then list three items today. You'll feel the difference by tonight.
               </p>
-              <a href="https://apps.apple.com/au/app/zero2seventeen/id6739604370" target="_blank" rel="noopener noreferrer">
+              <a href="https://apps.apple.com/au/app/zero2seventeen/id6739604370" target="_blank" rel="noopener noreferrer" onClick={trackAppDownload}>
                 <Button size="lg" className="gap-2" data-testid="button-app-store-cta">
                   Download Zero2Seventeen
                 </Button>

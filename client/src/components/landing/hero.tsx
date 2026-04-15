@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { SiDiscord } from "react-icons/si";
 import heroImage from "@assets/stock_images/australian_white_cau_b6ef0bb1.jpg";
+import { trackAppDownload } from "@/lib/tracking";
 
 export function Hero() {
   return (
@@ -40,6 +41,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="w-full sm:w-auto"
               data-testid="button-hero-app-store"
+              onClick={trackAppDownload}
             >
               <img
                 src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
@@ -53,6 +55,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="w-full sm:w-auto"
               data-testid="button-hero-google-play"
+              onClick={trackAppDownload}
             >
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"

@@ -1,4 +1,5 @@
 import ctaImage from "@assets/stock_images/joyful_children_play_86eef842.jpg";
+import { trackAppDownload } from "@/lib/tracking";
 import screenshot1 from "@assets/app_screenshots/screenshot1.png";
 import screenshot2 from "@assets/app_screenshots/screenshot2.png";
 
@@ -41,6 +42,7 @@ export function FinalCTA() {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"
                 data-testid="button-cta-app-store"
+                onClick={trackAppDownload}
               >
                 <img
                   src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
@@ -54,6 +56,7 @@ export function FinalCTA() {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"
                 data-testid="button-cta-google-play"
+                onClick={trackAppDownload}
               >
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"

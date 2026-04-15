@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import heroImage from "@assets/stock_images/children_toys_boxes__35d377c1.jpg";
+import { trackAppDownload } from "@/lib/tracking";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -197,12 +198,12 @@ export default function WheToBuySecondHandBabyClothes() {
                 {" "}free on the App Store or Google Play.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <a href="https://apps.apple.com/au/app/zero2seventeen/id6739604370" target="_blank" rel="noopener noreferrer">
+                <a href="https://apps.apple.com/au/app/zero2seventeen/id6739604370" target="_blank" rel="noopener noreferrer" onClick={trackAppDownload}>
                   <Button size="lg" className="gap-2 w-full sm:w-auto" data-testid="button-app-store-cta">
                     App Store
                   </Button>
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.zero2seventeen" target="_blank" rel="noopener noreferrer">
+                <a href="https://play.google.com/store/apps/details?id=com.zero2seventeen" target="_blank" rel="noopener noreferrer" onClick={trackAppDownload}>
                   <Button size="lg" variant="outline" className="gap-2 w-full sm:w-auto" data-testid="button-google-play-cta">
                     Google Play
                   </Button>

@@ -4,6 +4,7 @@ import { ChevronLeft, X } from "lucide-react";
 import { Navigation } from "@/components/landing/navigation";
 import { Footer } from "@/components/landing/footer";
 import { getCategoryById, getProductsByCategory, type Product } from "@/data/products-data";
+import { trackAppDownload } from "@/lib/tracking";
 
 function GooglePlayIcon() {
   return (
@@ -62,6 +63,7 @@ function DownloadModal({ product, onClose }: { product: Product; onClose: () => 
             rel="noopener noreferrer"
             data-testid="button-modal-google-play"
             className="flex items-center justify-center gap-2 w-full bg-foreground text-background font-semibold py-3 px-5 rounded-full hover:opacity-90 transition-opacity"
+            onClick={trackAppDownload}
           >
             <GooglePlayIcon />
             Download on Google Play
@@ -72,6 +74,7 @@ function DownloadModal({ product, onClose }: { product: Product; onClose: () => 
             rel="noopener noreferrer"
             data-testid="button-modal-app-store"
             className="flex items-center justify-center gap-2 w-full bg-primary text-primary-foreground font-semibold py-3 px-5 rounded-full hover:opacity-90 transition-opacity"
+            onClick={trackAppDownload}
           >
             <AppStoreIcon />
             Download on App Store

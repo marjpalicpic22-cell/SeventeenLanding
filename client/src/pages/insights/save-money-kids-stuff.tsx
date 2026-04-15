@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import blogImage from "@assets/stz_blogs_(2)_1773216772265.png";
+import { trackAppDownload } from "@/lib/tracking";
 
 /**
  * SEO METADATA
@@ -234,7 +235,7 @@ export default function SaveMoneyKidsStuffBlog() {
                 </Link>
                 {" "}today and search for one item you know you'll need in the next month. Compare new prices versus secondhand. Once you see the difference, it's hard to go back.
               </p>
-              <a href="https://apps.apple.com/au/app/zero2seventeen/id6739604370" target="_blank" rel="noopener noreferrer">
+              <a href="https://apps.apple.com/au/app/zero2seventeen/id6739604370" target="_blank" rel="noopener noreferrer" onClick={trackAppDownload}>
                 <Button size="lg" className="gap-2" data-testid="button-app-store-cta">
                   Download Zero2Seventeen
                 </Button>

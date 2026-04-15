@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Navigation } from "@/components/landing/navigation";
 import { Footer } from "@/components/landing/footer";
 import { categories } from "@/data/products-data";
+import { trackAppDownload } from "@/lib/tracking";
 
 function GooglePlayIcon() {
   return (
@@ -48,6 +49,7 @@ export default function Products() {
                 rel="noopener noreferrer"
                 data-testid="button-hero-google-play"
                 className="inline-flex items-center gap-2 bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition-colors"
+                onClick={trackAppDownload}
               >
                 <GooglePlayIcon />
                 Download on Google Play
@@ -58,6 +60,7 @@ export default function Products() {
                 rel="noopener noreferrer"
                 data-testid="button-hero-app-store"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
+                onClick={trackAppDownload}
               >
                 <AppStoreIcon />
                 Download on App Store
@@ -122,6 +125,7 @@ export default function Products() {
                 rel="noopener noreferrer"
                 data-testid="button-cta-google-play"
                 className="inline-flex items-center gap-2 bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition-colors"
+                onClick={trackAppDownload}
               >
                 <GooglePlayIcon />
                 Download on Google Play
@@ -132,6 +136,7 @@ export default function Products() {
                 rel="noopener noreferrer"
                 data-testid="button-cta-app-store"
                 className="inline-flex items-center gap-2 bg-primary-foreground text-primary font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
+                onClick={trackAppDownload}
               >
                 <AppStoreIcon />
                 Download on App Store

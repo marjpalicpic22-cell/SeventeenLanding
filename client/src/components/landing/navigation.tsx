@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logoPng from "@assets/Zero_2_Seventeen_logo_1768196238804.png";
+import { trackAppDownload } from "@/lib/tracking";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -90,6 +91,7 @@ export function Navigation() {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="button-google-play-nav"
+              onClick={trackAppDownload}
             >
               <Button variant="outline" size="sm" className="gap-2">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -103,6 +105,7 @@ export function Navigation() {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="button-app-store-nav"
+              onClick={trackAppDownload}
             >
               <Button variant="default" size="sm" className="gap-2">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -192,6 +195,7 @@ export function Navigation() {
                 rel="noopener noreferrer"
                 className="block"
                 data-testid="button-mobile-google-play"
+                onClick={trackAppDownload}
               >
                 <Button variant="outline" className="w-full gap-2">
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -206,6 +210,7 @@ export function Navigation() {
                 rel="noopener noreferrer"
                 className="block"
                 data-testid="button-mobile-app-store"
+                onClick={trackAppDownload}
               >
                 <Button className="w-full gap-2">
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">

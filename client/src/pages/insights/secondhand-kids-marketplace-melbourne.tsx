@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import blogImage from "@assets/stz_blogs_(1)_1773216300240.png";
+import { trackAppDownload } from "@/lib/tracking";
 
 /**
  * SEO METADATA
@@ -213,7 +214,7 @@ export default function SecondhandKidsMarketplaceMelbourneBlog() {
                 </Link>
                 {" "}and see what parents near you are listing right now. Start with toys, clothes, or gear and notice how quickly the savings show up.
               </p>
-              <a href="https://apps.apple.com/au/app/zero2seventeen/id6739604370" target="_blank" rel="noopener noreferrer">
+              <a href="https://apps.apple.com/au/app/zero2seventeen/id6739604370" target="_blank" rel="noopener noreferrer" onClick={trackAppDownload}>
                 <Button size="lg" className="gap-2" data-testid="button-app-store-cta">
                   Download Zero2Seventeen
                 </Button>
