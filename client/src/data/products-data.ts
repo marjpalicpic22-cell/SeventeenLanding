@@ -1,7 +1,7 @@
 import pramsImg from "@assets/image_1775926747411.png";
 import furnitureImg from "@assets/image_1775926828252.png";
 import feedingImg from "@assets/image_1775926890344.png";
-import carSeatsImg from "@assets/image_1775926956131.png";
+import outdoorActivitiesImg from "@assets/image_1775926956131.png";
 import booksImg from "@assets/image_1775927605321.png";
 import otherImg from "@assets/image_1775927675534.png";
 import bugabooPramImg from "@assets/image_1775928859938.png";
@@ -9,6 +9,7 @@ import bugabooPramImg from "@assets/image_1775928859938.png";
 export type Product = {
   id: string;
   categoryId: string;
+  subcategoryId?: string;
   name: string;
   condition: string;
   originalPrice: number;
@@ -21,6 +22,12 @@ export type Category = {
   name: string;
   image: string;
   description: string;
+};
+
+export type Subcategory = {
+  id: string;
+  categoryId: string;
+  name: string;
 };
 
 export const categories: Category[] = [
@@ -55,9 +62,9 @@ export const categories: Category[] = [
     description: "Everything baby needs, gently used and locally listed.",
   },
   {
-    id: "car-seats",
-    name: "Car Seats",
-    image: carSeatsImg,
+    id: "outdoor-activities",
+    name: "Outdoor and Activities",
+    image: outdoorActivitiesImg,
     description: "Safety gear from trusted local families at honest prices.",
   },
   {
@@ -74,10 +81,48 @@ export const categories: Category[] = [
   },
 ];
 
+export const subcategories: Subcategory[] = [
+  // Prams and Strollers
+  { id: "baby-carriers", categoryId: "prams-strollers", name: "Baby Carriers" },
+  { id: "bicycles", categoryId: "prams-strollers", name: "Bicycles" },
+  // Clothing and Shoes
+  { id: "bottoms", categoryId: "clothing-shoes", name: "Bottoms" },
+  { id: "dresses", categoryId: "clothing-shoes", name: "Dresses" },
+  { id: "nursing-dresses", categoryId: "clothing-shoes", name: "Nursing Dresses" },
+  { id: "outerwear", categoryId: "clothing-shoes", name: "Outerwear" },
+  { id: "pants", categoryId: "clothing-shoes", name: "Pants" },
+  { id: "sleepwear", categoryId: "clothing-shoes", name: "Sleepwear" },
+  { id: "swimwear", categoryId: "clothing-shoes", name: "Swimwear" },
+  { id: "tops", categoryId: "clothing-shoes", name: "Tops" },
+  { id: "boots", categoryId: "clothing-shoes", name: "Boots" },
+  { id: "runners", categoryId: "clothing-shoes", name: "Runners" },
+  { id: "shoes", categoryId: "clothing-shoes", name: "Shoes" },
+  // Toys and Games
+  { id: "blocks", categoryId: "toys-games", name: "Blocks" },
+  { id: "educational-toys", categoryId: "toys-games", name: "Educational Toys" },
+  { id: "general-toys", categoryId: "toys-games", name: "General Toys" },
+  { id: "outdoor-toys", categoryId: "toys-games", name: "Outdoor Toys" },
+  // Furniture and Nursery
+  { id: "bedding", categoryId: "furniture-nursery", name: "Bedding" },
+  { id: "chairs", categoryId: "furniture-nursery", name: "Chairs" },
+  { id: "cribs-cots", categoryId: "furniture-nursery", name: "Cribs / Cots" },
+  // Feeding and Bathing
+  { id: "accessories", categoryId: "feeding-bathing", name: "Accessories" },
+  // Outdoor and Activities
+  { id: "outdoor-gear", categoryId: "outdoor-activities", name: "Outdoor Gear" },
+  { id: "water-activities", categoryId: "outdoor-activities", name: "Water Activities" },
+  // Books and Learning
+  { id: "childrens-books", categoryId: "books-learning", name: "Children's Books" },
+  // Other
+  { id: "car-seats", categoryId: "other", name: "Car Seats" },
+  { id: "other-items", categoryId: "other", name: "Other" },
+];
+
 export const products: Product[] = [
   {
     id: "bugaboo-pram",
     categoryId: "prams-strollers",
+    subcategoryId: "baby-carriers",
     name: "Bugaboo Pram",
     condition: "Extremely Good Condition",
     originalPrice: 1200,
@@ -90,6 +135,18 @@ export function getCategoryById(id: string): Category | undefined {
   return categories.find((c) => c.id === id);
 }
 
+export function getSubcategoriesByCategory(categoryId: string): Subcategory[] {
+  return subcategories.filter((s) => s.categoryId === categoryId);
+}
+
+export function getSubcategoryById(categoryId: string, subcategoryId: string): Subcategory | undefined {
+  return subcategories.find((s) => s.categoryId === categoryId && s.id === subcategoryId);
+}
+
 export function getProductsByCategory(categoryId: string): Product[] {
   return products.filter((p) => p.categoryId === categoryId);
+}
+
+export function getProductsBySubcategory(categoryId: string, subcategoryId: string): Product[] {
+  return products.filter((p) => p.categoryId === categoryId && p.subcategoryId === subcategoryId);
 }

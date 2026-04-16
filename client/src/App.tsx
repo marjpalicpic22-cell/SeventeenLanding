@@ -19,6 +19,7 @@ import WhereToBuySecondHandBabyClothes from "@/pages/insights/where-to-buy-secon
 import InsightsTag from "@/pages/insights/tag";
 import Products from "@/pages/products";
 import ProductCategory from "@/pages/product-category";
+import ProductSubcategory from "@/pages/product-subcategory";
 import NotFound from "@/pages/not-found";
 
 function RedirectTo({ to }: { to: string }) {
@@ -59,6 +60,7 @@ function Router() {
 
       {/* Products Catalogue */}
       <Route path="/products" component={Products} />
+      <Route path="/products/:categoryId/:subcategoryId" component={ProductSubcategory} />
       <Route path="/products/:categoryId" component={ProductCategory} />
 
       {/* Parent Toolkit (was Free Resources + Calculator) */}
