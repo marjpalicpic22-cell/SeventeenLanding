@@ -123,7 +123,7 @@ export const products: Product[] = [
     id: "bugaboo-pram",
     categoryId: "prams-strollers",
     subcategoryId: "baby-carriers",
-    name: "Bugaboo Pram",
+    name: "Bugaboo Bee",
     condition: "Extremely Good Condition",
     originalPrice: 1200,
     appPrice: 150,
