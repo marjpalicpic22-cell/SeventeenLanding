@@ -6,6 +6,18 @@ import booksImg from "@assets/image_1775927605321.png";
 import otherImg from "@assets/image_1775927675534.png";
 import bugabooPramImg from "@assets/image_1775928859938.png";
 
+// New product images (clean photos, no text)
+import toysBundleImg from "@assets/image_1776910399677.png";
+import girlsMixedClothesImg from "@assets/image_1776910429325.png";
+import riffRaffBlueLionImg from "@assets/image_1776910458338.png";
+import riffRaffFloralBunnyImg from "@assets/image_1776910482969.png";
+import plushToysBundleImg from "@assets/image_1776910503068.png";
+import denimJacketImg from "@assets/image_1776910519176.png";
+import boysMixedClothingImg from "@assets/image_1776910535592.png";
+import chekohCarrierImg from "@assets/image_1776910553798.png";
+import tennisTacketsImg from "@assets/image_1776910569615.png";
+import origamiArtKitImg from "@assets/image_1776910585638.png";
+
 export type Product = {
   id: string;
   categoryId: string;
@@ -120,7 +132,7 @@ export const subcategories: Subcategory[] = [
 
 export const products: Product[] = [
   {
-    id: "bugaboo-pram",
+    id: "bugaboo-bee",
     categoryId: "prams-strollers",
     subcategoryId: "baby-carriers",
     name: "Bugaboo Bee",
@@ -128,6 +140,106 @@ export const products: Product[] = [
     originalPrice: 1200,
     appPrice: 150,
     image: bugabooPramImg,
+  },
+  {
+    id: "chekoh-clip-carrier",
+    categoryId: "prams-strollers",
+    subcategoryId: "baby-carriers",
+    name: "Chekoh Clip Carrier 2.0",
+    condition: "Good Condition",
+    originalPrice: 250,
+    appPrice: 185,
+    image: chekohCarrierImg,
+  },
+  {
+    id: "toys-bundle",
+    categoryId: "toys-games",
+    subcategoryId: "general-toys",
+    name: "Toys Bundle",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 30,
+    image: toysBundleImg,
+  },
+  {
+    id: "riff-raff-blue-lion",
+    categoryId: "toys-games",
+    subcategoryId: "general-toys",
+    name: "Riff Raff Blue Lion",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 15,
+    image: riffRaffBlueLionImg,
+  },
+  {
+    id: "riff-raff-floral-bunny",
+    categoryId: "toys-games",
+    subcategoryId: "general-toys",
+    name: "Riff Raff Floral Bunny",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 15,
+    image: riffRaffFloralBunnyImg,
+  },
+  {
+    id: "plush-toys-bundle",
+    categoryId: "toys-games",
+    subcategoryId: "general-toys",
+    name: "Plush Toys Bundle",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 15,
+    image: plushToysBundleImg,
+  },
+  {
+    id: "origami-art-kit",
+    categoryId: "toys-games",
+    subcategoryId: "educational-toys",
+    name: "Origami Art Kit",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 10,
+    image: origamiArtKitImg,
+  },
+  {
+    id: "girls-mixed-clothes",
+    categoryId: "clothing-shoes",
+    subcategoryId: "tops",
+    name: "Girls Mixed Clothes Bundle",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 15,
+    image: girlsMixedClothesImg,
+  },
+  {
+    id: "denim-jacket-2t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "outerwear",
+    name: "Denim Jacket",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 30,
+    image: denimJacketImg,
+  },
+  {
+    id: "boys-mixed-clothing",
+    categoryId: "clothing-shoes",
+    subcategoryId: "tops",
+    name: "Boys Mixed Clothing Bundle",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 20,
+    image: boysMixedClothingImg,
+  },
+  {
+    id: "kids-tennis-rackets",
+    categoryId: "outdoor-activities",
+    subcategoryId: "outdoor-gear",
+    name: "Kids Tennis Rackets Bundle",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 20,
+    image: tennisTacketsImg,
   },
 ];
 

@@ -115,17 +115,19 @@ function ProductCard({ product }: { product: Product }) {
             {product.condition}
           </p>
           <div className="mb-4">
-            <span
-              className="text-sm text-muted-foreground line-through block"
-              data-testid={`text-product-original-price-${product.id}`}
-            >
-              AU${product.originalPrice.toLocaleString()} RRP
-            </span>
+            {product.originalPrice > 0 && (
+              <span
+                className="text-sm text-muted-foreground line-through block"
+                data-testid={`text-product-original-price-${product.id}`}
+              >
+                AU${product.originalPrice.toLocaleString()} RRP
+              </span>
+            )}
             <span
               className="text-2xl font-bold text-[#84cc16]"
               data-testid={`text-product-app-price-${product.id}`}
             >
-              ${product.appPrice}
+              AU${product.appPrice}
             </span>
           </div>
           <button
