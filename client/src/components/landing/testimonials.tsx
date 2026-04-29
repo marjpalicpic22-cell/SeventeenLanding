@@ -88,7 +88,7 @@ export function Testimonials() {
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground font-heading"
             data-testid="testimonials-headline"
           >
-            Loved by Australian Families
+            Loved by Families
           </h2>
           <p
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
