@@ -18,6 +18,18 @@ import chekohCarrierImg from "@assets/image_1776910553798.png";
 import tennisTacketsImg from "@assets/image_1776910569615.png";
 import origamiArtKitImg from "@assets/image_1776910585638.png";
 
+// Latest product images (clean photos, no text)
+import activityCubeImg from "@assets/image_1777452448186.png";
+import incyCotImg from "@assets/image_1777452480908.png";
+import nurseryRockingChairImg from "@assets/image_1777452496074.png";
+import rockingHorseWhiteImg from "@assets/image_1777452524136.png";
+import nikeJordansImg from "@assets/image_1777452552256.png";
+import slideImg from "@assets/image_1777452560714.png";
+import rockingHorseBrownImg from "@assets/image_1777452586483.png";
+import ukuleleImg from "@assets/image_1777452603852.png";
+import swanPyjamasImg from "@assets/image_1777452691758.png";
+import bumbleBeeRideToyImg from "@assets/image_1777452772322.png";
+
 export type Product = {
   id: string;
   categoryId: string;
@@ -240,6 +252,106 @@ export const products: Product[] = [
     originalPrice: 0,
     appPrice: 20,
     image: tennisTacketsImg,
+  },
+  {
+    id: "twist-learn-activity-cube",
+    categoryId: "toys-games",
+    subcategoryId: "educational-toys",
+    name: "Twist & Learn Activity Cube",
+    condition: "Good Condition",
+    originalPrice: 50,
+    appPrice: 15,
+    image: activityCubeImg,
+  },
+  {
+    id: "incy-interiors-cot",
+    categoryId: "furniture-nursery",
+    subcategoryId: "cribs-cots",
+    name: "Incy Interiors Cot",
+    condition: "Good Condition",
+    originalPrice: 1100,
+    appPrice: 150,
+    image: incyCotImg,
+  },
+  {
+    id: "nursery-rocking-chair",
+    categoryId: "furniture-nursery",
+    subcategoryId: "chairs",
+    name: "Nursery Rocking Chair",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 50,
+    image: nurseryRockingChairImg,
+  },
+  {
+    id: "rocking-horse-white-timber",
+    categoryId: "toys-games",
+    subcategoryId: "general-toys",
+    name: "Rocking Horse (White + Timber)",
+    condition: "Very Good",
+    originalPrice: 0,
+    appPrice: 50,
+    image: rockingHorseWhiteImg,
+  },
+  {
+    id: "nike-jordans-size-8",
+    categoryId: "clothing-shoes",
+    subcategoryId: "shoes",
+    name: "Nike Jordans (Kids Size 8)",
+    condition: "Very Good",
+    originalPrice: 150,
+    appPrice: 70,
+    image: nikeJordansImg,
+  },
+  {
+    id: "kmart-kids-slide",
+    categoryId: "toys-games",
+    subcategoryId: "outdoor-toys",
+    name: "Kmart Kids Slide",
+    condition: "Good Condition",
+    originalPrice: 50,
+    appPrice: 30,
+    image: slideImg,
+  },
+  {
+    id: "rocking-horse-brown-plush",
+    categoryId: "toys-games",
+    subcategoryId: "general-toys",
+    name: "Plush Rocking Horse",
+    condition: "Good Condition",
+    originalPrice: 50,
+    appPrice: 15,
+    image: rockingHorseBrownImg,
+  },
+  {
+    id: "ukulele",
+    categoryId: "toys-games",
+    subcategoryId: "general-toys",
+    name: "Ukulele",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 15,
+    image: ukuleleImg,
+  },
+  {
+    id: "swan-princess-pyjamas-3t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "sleepwear",
+    name: "Milkshake Swan Princess Summer Pyjamas (Size 3)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 10,
+    image: swanPyjamasImg,
+  },
+  {
+    id: "ride-n-roll-bumble-bee",
+    categoryId: "toys-games",
+    subcategoryId: "outdoor-toys",
+    name: "Ride N Roll Bumble Bee Toy",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 30,
+    image: bumbleBeeRideToyImg,
   },
 ];
 
