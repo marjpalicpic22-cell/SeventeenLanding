@@ -41,6 +41,15 @@ import girlsBundle23Img from "@assets/image_1777453887513.png";
 import floralTutuDressImg from "@assets/image_1777453915500.png";
 import hotPinkTutuSkirtImg from "@assets/image_1777453928433.png";
 
+// Book product images (clean photos, no text)
+import digDumpRollImg from "@assets/image_1777454587878.png";
+import landOfDinosaursImg from "@assets/image_1777454602556.png";
+import blueyHammerbarnImg from "@assets/image_1777454619278.png";
+import spotGrandparentsImg from "@assets/image_1777454634370.png";
+import thelmaUnicornImg from "@assets/image_1777454647287.png";
+import babySensoryBooksImg from "@assets/image_1777454660248.png";
+import windUpBusyCarImg from "@assets/image_1777454673032.png";
+
 export type Product = {
   id: string;
   categoryId: string;
@@ -453,6 +462,76 @@ export const products: Product[] = [
     originalPrice: 0,
     appPrice: 15,
     image: hotPinkTutuSkirtImg,
+  },
+  {
+    id: "dig-dump-roll-book",
+    categoryId: "books-learning",
+    subcategoryId: "childrens-books",
+    name: "Dig, Dump, Roll",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 5,
+    image: digDumpRollImg,
+  },
+  {
+    id: "land-of-the-dinosaurs-book",
+    categoryId: "books-learning",
+    subcategoryId: "childrens-books",
+    name: "Land Of The Dinosaurs (Factivity)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 4,
+    image: landOfDinosaursImg,
+  },
+  {
+    id: "bluey-hammerbarn-book",
+    categoryId: "books-learning",
+    subcategoryId: "childrens-books",
+    name: "Bluey - Hammerbarn",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 8,
+    image: blueyHammerbarnImg,
+  },
+  {
+    id: "spot-visits-grandparents-book",
+    categoryId: "books-learning",
+    subcategoryId: "childrens-books",
+    name: "Spot Visits His Grandparents (Lift-the-Flap)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 5,
+    image: spotGrandparentsImg,
+  },
+  {
+    id: "thelma-the-unicorn-book",
+    categoryId: "books-learning",
+    subcategoryId: "childrens-books",
+    name: "Thelma the Unicorn",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 2,
+    image: thelmaUnicornImg,
+  },
+  {
+    id: "baby-sensory-books",
+    categoryId: "books-learning",
+    subcategoryId: "childrens-books",
+    name: "Baby Sensory Books (Where's Elmo? + Dolphin)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 2,
+    image: babySensoryBooksImg,
+  },
+  {
+    id: "wind-up-busy-car-book",
+    categoryId: "books-learning",
+    subcategoryId: "childrens-books",
+    name: "Usborne Wind-Up Busy Car Book",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 10,
+    image: windUpBusyCarImg,
   },
 ];
 
