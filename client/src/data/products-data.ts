@@ -23,7 +23,7 @@ import activityCubeImg from "@assets/image_1777452448186.png";
 import incyCotImg from "@assets/image_1777452480908.png";
 import nurseryRockingChairImg from "@assets/image_1777452496074.png";
 import rockingHorseWhiteImg from "@assets/image_1777452524136.png";
-import nikeJordansImg from "@assets/image_1777452552256.png";
+import nikeJordansImg from "@assets/image_1777453380250.png";
 import slideImg from "@assets/image_1777452560714.png";
 import rockingHorseBrownImg from "@assets/image_1777452586483.png";
 import ukuleleImg from "@assets/image_1777452603852.png";
