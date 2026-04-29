@@ -30,6 +30,17 @@ import ukuleleImg from "@assets/image_1777452603852.png";
 import swanPyjamasImg from "@assets/image_1777452691758.png";
 import bumbleBeeRideToyImg from "@assets/image_1777452772322.png";
 
+// Newer product images (clean photos, no text)
+import boysBundleImg from "@assets/image_1777453811742.png";
+import chibebeSnugglePodImg from "@assets/image_1777453831416.png";
+import hugABubCarrierImg from "@assets/image_1777453845377.png";
+import babyPlayMatImg from "@assets/image_1777453857572.png";
+import pinkHeartJumperImg from "@assets/image_1777453869389.png";
+import tonkaTrucksImg from "@assets/image_1777453875821.png";
+import girlsBundle23Img from "@assets/image_1777453887513.png";
+import floralTutuDressImg from "@assets/image_1777453915500.png";
+import hotPinkTutuSkirtImg from "@assets/image_1777453928433.png";
+
 export type Product = {
   id: string;
   categoryId: string;
@@ -352,6 +363,96 @@ export const products: Product[] = [
     originalPrice: 0,
     appPrice: 30,
     image: bumbleBeeRideToyImg,
+  },
+  {
+    id: "boys-size-10-bundle",
+    categoryId: "clothing-shoes",
+    subcategoryId: "tops",
+    name: "Boys Size 10 Clothing Bundle",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 15,
+    image: boysBundleImg,
+  },
+  {
+    id: "chibebe-snuggle-pod",
+    categoryId: "furniture-nursery",
+    subcategoryId: "chairs",
+    name: "Chibebe Snuggle Pod",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 30,
+    image: chibebeSnugglePodImg,
+  },
+  {
+    id: "hug-a-bub-wrap-carrier",
+    categoryId: "prams-strollers",
+    subcategoryId: "baby-carriers",
+    name: "Hug a Bub Wrap Carrier",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 15,
+    image: hugABubCarrierImg,
+  },
+  {
+    id: "baby-play-mat",
+    categoryId: "toys-games",
+    subcategoryId: "educational-toys",
+    name: "Baby Play Mat",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 20,
+    image: babyPlayMatImg,
+  },
+  {
+    id: "pink-polka-dot-heart-jumper-3t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "tops",
+    name: "Pink Jumper with Polka Dot Love Heart (Size 3)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 7,
+    image: pinkHeartJumperImg,
+  },
+  {
+    id: "metal-tonka-trucks",
+    categoryId: "toys-games",
+    subcategoryId: "outdoor-toys",
+    name: "Metal Tonka Trucks (Bundle of 3)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 100,
+    image: tonkaTrucksImg,
+  },
+  {
+    id: "girls-2-3-clothes-bundle",
+    categoryId: "clothing-shoes",
+    subcategoryId: "tops",
+    name: "Girls Size 2-3 Clothes Bundle (Bonds, Kmart)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 20,
+    image: girlsBundle23Img,
+  },
+  {
+    id: "rock-your-kid-floral-tutu-dress-3t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "dresses",
+    name: "Rock Your Kid Floral Tutu Circus Dress (Size 3)",
+    condition: "Good Condition",
+    originalPrice: 75,
+    appPrice: 20,
+    image: floralTutuDressImg,
+  },
+  {
+    id: "hot-pink-tulle-tutu-skirt-3-4",
+    categoryId: "clothing-shoes",
+    subcategoryId: "bottoms",
+    name: "Hot Pink Tulle Tutu Skirt (Size 3-4)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 15,
+    image: hotPinkTutuSkirtImg,
   },
 ];
 
