@@ -41,27 +41,27 @@ import girlsBundle23Img from "@assets/image_1777453887513.png";
 import floralTutuDressImg from "@assets/image_1777453915500.png";
 import hotPinkTutuSkirtImg from "@assets/image_1777453928433.png";
 
-// All-in-one screenshot product images (batch 5)
-import pureWesternHatImg from "@assets/image_1778725539410.png";
-import boysShortsBundle12Img from "@assets/image_1778725550338.png";
-import ergopouchSleepSuitImg from "@assets/image_1778725582645.png";
-import boysSuitSize10Img from "@assets/image_1778725590617.png";
-import cottonOnKinksPinkDress2tImg from "@assets/image_1778725599383.png";
-import bondsSummerZippy2tImg from "@assets/image_1778725606330.png";
-import oodieGreySmallImg from "@assets/image_1778725612911.png";
-import girlsHeadbandsBundleImg from "@assets/image_1778725619967.png";
-import kmartPinkPufferVest2tImg from "@assets/image_1778725627228.png";
-import hoodedTowelNewbornImg from "@assets/image_1778725634033.png";
-import hmUnicornPartyDressImg from "@assets/image_1778725640949.png";
-import rainbowTutuSkirtSize6Img from "@assets/image_1778725647524.png";
-import loveToDreamSleepingBagImg from "@assets/image_1778725654262.png";
-import sheinPinkCheckeredJeansImg from "@assets/image_1778725660497.png";
-import versaceTopSize10Img from "@assets/image_1778725668013.png";
-import cottonOnKidsRainbowDressImg from "@assets/image_1778725673664.png";
-import greyLongSleeveTop23Img from "@assets/image_1778725679582.png";
-import skeletonLeggings3tImg from "@assets/image_1778725685628.png";
-import rainbowLeggings3tImg from "@assets/image_1778725691459.png";
-import cottonOnKidsLongSleeveDressImg from "@assets/image_1778725698869.png";
+// All-in-one screenshot product images (batch 5) — cropped to product photo only
+import pureWesternHatImg from "@assets/image_1778725539410_crop.png";
+import boysShortsBundle12Img from "@assets/image_1778725550338_crop.png";
+import ergopouchSleepSuitImg from "@assets/image_1778725582645_crop.png";
+import boysSuitSize10Img from "@assets/image_1778725590617_crop.png";
+import cottonOnKinksPinkDress2tImg from "@assets/image_1778725599383_crop.png";
+import bondsSummerZippy2tImg from "@assets/image_1778725606330_crop.png";
+import oodieGreySmallImg from "@assets/image_1778725612911_crop.png";
+import girlsHeadbandsBundleImg from "@assets/image_1778725619967_crop.png";
+import kmartPinkPufferVest2tImg from "@assets/image_1778725627228_crop.png";
+import hoodedTowelNewbornImg from "@assets/image_1778725634033_crop.png";
+import hmUnicornPartyDressImg from "@assets/image_1778725640949_crop.png";
+import rainbowTutuSkirtSize6Img from "@assets/image_1778725647524_crop.png";
+import loveToDreamSleepingBagImg from "@assets/image_1778725654262_crop.png";
+import sheinPinkCheckeredJeansImg from "@assets/image_1778725660497_crop.png";
+import versaceTopSize10Img from "@assets/image_1778725668013_crop.png";
+import cottonOnKidsRainbowDressImg from "@assets/image_1778725673664_crop.png";
+import greyLongSleeveTop23Img from "@assets/image_1778725679582_crop.png";
+import skeletonLeggings3tImg from "@assets/image_1778725685628_crop.png";
+import rainbowLeggings3tImg from "@assets/image_1778725691459_crop.png";
+import cottonOnKidsLongSleeveDressImg from "@assets/image_1778725698869_crop.png";
 
 // Book product images (clean photos, no text)
 import digDumpRollImg from "@assets/image_1777454587878.png";
