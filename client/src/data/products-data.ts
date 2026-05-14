@@ -41,6 +41,28 @@ import girlsBundle23Img from "@assets/image_1777453887513.png";
 import floralTutuDressImg from "@assets/image_1777453915500.png";
 import hotPinkTutuSkirtImg from "@assets/image_1777453928433.png";
 
+// All-in-one screenshot product images (batch 5)
+import pureWesternHatImg from "@assets/image_1778725539410.png";
+import boysShortsBundle12Img from "@assets/image_1778725550338.png";
+import ergopouchSleepSuitImg from "@assets/image_1778725582645.png";
+import boysSuitSize10Img from "@assets/image_1778725590617.png";
+import cottonOnKinksPinkDress2tImg from "@assets/image_1778725599383.png";
+import bondsSummerZippy2tImg from "@assets/image_1778725606330.png";
+import oodieGreySmallImg from "@assets/image_1778725612911.png";
+import girlsHeadbandsBundleImg from "@assets/image_1778725619967.png";
+import kmartPinkPufferVest2tImg from "@assets/image_1778725627228.png";
+import hoodedTowelNewbornImg from "@assets/image_1778725634033.png";
+import hmUnicornPartyDressImg from "@assets/image_1778725640949.png";
+import rainbowTutuSkirtSize6Img from "@assets/image_1778725647524.png";
+import loveToDreamSleepingBagImg from "@assets/image_1778725654262.png";
+import sheinPinkCheckeredJeansImg from "@assets/image_1778725660497.png";
+import versaceTopSize10Img from "@assets/image_1778725668013.png";
+import cottonOnKidsRainbowDressImg from "@assets/image_1778725673664.png";
+import greyLongSleeveTop23Img from "@assets/image_1778725679582.png";
+import skeletonLeggings3tImg from "@assets/image_1778725685628.png";
+import rainbowLeggings3tImg from "@assets/image_1778725691459.png";
+import cottonOnKidsLongSleeveDressImg from "@assets/image_1778725698869.png";
+
 // Book product images (clean photos, no text)
 import digDumpRollImg from "@assets/image_1777454587878.png";
 import landOfDinosaursImg from "@assets/image_1777454602556.png";
@@ -138,6 +160,7 @@ export const subcategories: Subcategory[] = [
   { id: "sleepwear", categoryId: "clothing-shoes", name: "Sleepwear" },
   { id: "swimwear", categoryId: "clothing-shoes", name: "Swimwear" },
   { id: "tops", categoryId: "clothing-shoes", name: "Tops" },
+  { id: "accessories", categoryId: "clothing-shoes", name: "Accessories" },
   { id: "boots", categoryId: "clothing-shoes", name: "Boots" },
   { id: "runners", categoryId: "clothing-shoes", name: "Runners" },
   { id: "shoes", categoryId: "clothing-shoes", name: "Shoes" },
@@ -532,6 +555,206 @@ export const products: Product[] = [
     originalPrice: 0,
     appPrice: 10,
     image: windUpBusyCarImg,
+  },
+  {
+    id: "pure-western-hat",
+    categoryId: "other",
+    subcategoryId: "other-items",
+    name: "Pure Western Hat",
+    condition: "Good Condition",
+    originalPrice: 100,
+    appPrice: 30,
+    image: pureWesternHatImg,
+  },
+  {
+    id: "boys-shorts-bundle-size-12",
+    categoryId: "clothing-shoes",
+    subcategoryId: "bottoms",
+    name: "Boys Shorts Bundle (Size 12)",
+    condition: "Good Condition",
+    originalPrice: 30,
+    appPrice: 15,
+    image: boysShortsBundle12Img,
+  },
+  {
+    id: "ergopouch-sleep-suit-00-2",
+    categoryId: "clothing-shoes",
+    subcategoryId: "sleepwear",
+    name: "Ergopouch Sleep Suit (Size 00-2)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 5,
+    image: ergopouchSleepSuitImg,
+  },
+  {
+    id: "boys-suit-size-10",
+    categoryId: "clothing-shoes",
+    subcategoryId: "outerwear",
+    name: "Boys Suit (Size 10)",
+    condition: "Good Condition",
+    originalPrice: 100,
+    appPrice: 40,
+    image: boysSuitSize10Img,
+  },
+  {
+    id: "cotton-on-kids-pink-dress-2t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "dresses",
+    name: "Cotton On Kids Pink Dress (Size 2)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 5,
+    image: cottonOnKinksPinkDress2tImg,
+  },
+  {
+    id: "bonds-summer-zippy-2t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "sleepwear",
+    name: "Bonds Summer Zippy (Size 2)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 5,
+    image: bondsSummerZippy2tImg,
+  },
+  {
+    id: "oodie-grey-small",
+    categoryId: "clothing-shoes",
+    subcategoryId: "outerwear",
+    name: "Oodie (Size Small)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 20,
+    image: oodieGreySmallImg,
+  },
+  {
+    id: "girls-headbands-bundle-4x",
+    categoryId: "clothing-shoes",
+    subcategoryId: "accessories",
+    name: "Girls Headbands Bundle (4x)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 4,
+    image: girlsHeadbandsBundleImg,
+  },
+  {
+    id: "kmart-pink-puffer-vest-2t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "outerwear",
+    name: "Kmart Kids Pink Puffer Vest (Size 2)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 5,
+    image: kmartPinkPufferVest2tImg,
+  },
+  {
+    id: "hooded-towel-newborn",
+    categoryId: "feeding-bathing",
+    subcategoryId: "accessories",
+    name: "Baby Hooded Towel (Newborn)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 5,
+    image: hoodedTowelNewbornImg,
+  },
+  {
+    id: "hm-unicorn-party-dress-size-6",
+    categoryId: "clothing-shoes",
+    subcategoryId: "dresses",
+    name: "H&M Unicorn Girls Party Dress (Size 6)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 4,
+    image: hmUnicornPartyDressImg,
+  },
+  {
+    id: "rainbow-tutu-skirt-size-6",
+    categoryId: "clothing-shoes",
+    subcategoryId: "bottoms",
+    name: "Rainbow Tutu Skirt (Size 6)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 3,
+    image: rainbowTutuSkirtSize6Img,
+  },
+  {
+    id: "love-to-dream-sleeping-bag-0-3m",
+    categoryId: "clothing-shoes",
+    subcategoryId: "sleepwear",
+    name: "Love To Dream Sleeping Bag (0-3 Months)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 10,
+    image: loveToDreamSleepingBagImg,
+  },
+  {
+    id: "shein-pink-checkered-jeans-3t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "bottoms",
+    name: "Shein Pink Checkered Jeans (Size 3)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 10,
+    image: sheinPinkCheckeredJeansImg,
+  },
+  {
+    id: "versace-top-size-10-boy",
+    categoryId: "clothing-shoes",
+    subcategoryId: "tops",
+    name: "Versace Top (Size 10)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 10,
+    image: versaceTopSize10Img,
+  },
+  {
+    id: "cotton-on-kids-rainbow-dress-3t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "dresses",
+    name: "Cotton On Kids Dusty Pink Rainbow Tulle Dress (Size 3)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 10,
+    image: cottonOnKidsRainbowDressImg,
+  },
+  {
+    id: "grey-long-sleeve-top-2-3",
+    categoryId: "clothing-shoes",
+    subcategoryId: "tops",
+    name: "Grey Long Sleeve Waffle Top (Size 2-3)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 5,
+    image: greyLongSleeveTop23Img,
+  },
+  {
+    id: "skeleton-skull-leggings-3t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "bottoms",
+    name: "Cotton On Kids Skeleton Skull Leggings (Size 3)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 7,
+    image: skeletonLeggings3tImg,
+  },
+  {
+    id: "rainbow-leggings-3t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "bottoms",
+    name: "Rainbow Striped Leggings (Size 3)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 7,
+    image: rainbowLeggings3tImg,
+  },
+  {
+    id: "cotton-on-kids-long-sleeve-dress-3t",
+    categoryId: "clothing-shoes",
+    subcategoryId: "dresses",
+    name: "Cotton On Kids Long Sleeve Floral Dress (Size 3)",
+    condition: "Good Condition",
+    originalPrice: 0,
+    appPrice: 8,
+    image: cottonOnKidsLongSleeveDressImg,
   },
 ];
 
